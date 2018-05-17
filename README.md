@@ -10,7 +10,7 @@
 |海老コチニール | [@ebicochineal](https://twitter.com/ebicochineal) | C++<br>C#<br>Python | VSCode[***](https://marketplace.visualstudio.com/items?itemName=ebicochineal.select-highlight-cochineal-color) |[TopCoderMM](https://www.topcoder.com/members/ebicochineal/details/?track=DATA_SCIENCE&subTrack=MARATHON_MATCH)(黄)<br>[AtCoder](https://beta.atcoder.jp/users/ebicochineal)(水)<br>[CodinGame](https://www.codingame.com/profile/a79a37f66f7439f3b94bb35f30b329bd8000942)(レジェンド 1回)|
 | えりすしー | [@eris_c](https://twitter.com/eris_c) | C++<br>Python<br>(PHP) | VSCode | [TopCoderMM](https://www.topcoder.com/members/eris_c/details/?track=DATA_SCIENCE&subTrack=MARATHON_MATCH)(黄)<br>[AtCoder](https://beta.atcoder.jp/users/eris_c)(緑)<br>[CodinGame](https://www.codingame.com/profile/b1e1fcdbc5e92e4e99bb1cdf97c9a0dc1800952) |
 | チョットデタ | [@Chotto_Deta](https://twitter.com/Chotto_Deta) | Java<br>Python | VSCode<br>paiza.io | [AtCoder](https://beta.atcoder.jp/users/chottodeta)(灰) |
-|海老もえぎ|[@yuh_](https://twitter.com/yuh_)| Python2 ||[AtCoder](https://beta.atcoder.jp/users/ebimoegi)|
+|海老もえぎ|[@yuh_](https://twitter.com/yuh_)| Python2 | Mery |[AtCoder](https://beta.atcoder.jp/users/ebimoegi)|
 |パルラス|[@pallas_pal](https://twitter.com/pallas_pal)|Python|IDLE||
 
 ---
@@ -124,6 +124,288 @@ CoginGame レジェンド > ゴールド > シルバー > ブロンズ > ウッ�
 [C++ (gcc) で 128 ビット整数を使う](http://kenkoooo.hatenablog.com/entry/2016/11/30/163533)  
 [Kaggle入門 Porto Seguroコンペ Part.1 (イントロ～GCP登録)](https://www.youtube.com/watch?v=NHQTw-ORcSQ)  
 [ei1333's page](https://ei1333.github.io/index.html)  
+
+---
+
+topcoder 時間計測(遅い)  
+
+Topcoderサーバー上では時間取得関数が非常に遅い  
+http://topcoder.g.hatena.ne.jp/CKomaki/20141202/1418158488
+
+#### C++
+    #include <time.h>
+    #include <sys/timeb.h>
+    
+    class StopWatch {
+    public:
+        int starts;
+        int startm;
+        struct timeb timebuffer;
+        StopWatch () {
+            ftime(&this->timebuffer);
+            this->starts = this->timebuffer.time;
+            this->startm = this->timebuffer.millitm;
+        }
+        
+        inline int get_milli_time () {
+            ftime(&this->timebuffer);
+            return (this->timebuffer.time - this->starts) * 1000 + (this->timebuffer.millitm - this->startm);
+        }
+    };
+
+---
+
+atcoderでも使える、と思う  
+factorを呼び出して素因数分解  
+
+#### C++
+    #include <bits/stdc++.h>
+    using namespace std;
+    
+    vector<string> split (string str, string sep = " ", int n = 0) {
+        int prev = 0;
+        vector<string> v;
+        n = n < 1 ? str.size() : n;
+        for (int i = 0; (i = str.find(sep, prev)) > -1 && n; --n) {
+            v.push_back(str.substr(prev, i - prev));
+            prev = i + sep.size();
+        }
+        v.push_back(str.substr(prev, str.size()));
+        return v;
+    }
+    
+    vector<uint64_t> factor (uint64_t n) {
+        char buff[1024];
+        string cmd = "factor " + to_string(n);
+        FILE *fp = popen(cmd.c_str(), "r");
+        vector<uint64_t> r;
+        while (fgets(buff, sizeof(buff), fp)) {
+            vector<string> sp = split(string(buff));
+            for (int i = 1; i < sp.size(); ++i) {
+                r.emplace_back(stoull(sp[i]));
+            }
+            
+        }
+        pclose(fp);
+        return r;
+    }
+    
+    int main () {
+        for (auto& i : factor(999999866000004473)) { cout << i << endl; }
+        return 0;
+    }
+  
+  
+#### C#
+    using System;
+    using System.Linq;
+    using System.Text;
+    using System.Numerics;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Diagnostics;
+    
+    public class Program {
+        static string[] factor (string n) {
+            var pinfo = new ProcessStartInfo() {
+                FileName = "factor",
+                Arguments = n,
+                CreateNoWindow = true,
+                UseShellExecute = false,
+                RedirectStandardOutput = true
+            };
+            Process p = Process.Start(pinfo);
+            string o = p.StandardOutput.ReadToEnd();
+            p.WaitForExit();
+            return o.Split(' ').Skip(1).ToArray();
+        }
+        
+        static void Main (string[] args) {
+            foreach (var i in factor("999999866000004473")) {
+                Console.WriteLine(i);
+            }
+        }
+    }
+  
+#### Python
+    #! /usr/bin/env python3
+    
+    def factor(n):
+        from subprocess import Popen, PIPE
+        o = Popen(['factor', str(n)], stdout=PIPE).communicate()[0]
+        return list(map(int, o.decode('utf-8').strip().split(' ')[1:]))
+        
+    print(factor(999999866000004473))   
+---
+入力高速化
+
+[C++入力の速度測定](http://tatanaideyo.hatenablog.com/entry/2014/10/24/214714)
+
+#### C++
+    #include <bits/stdc++.h>
+    using namespace std;
+    
+    int main () {
+        cin.tie(0);
+        ios::sync_with_stdio(false);
+        
+        
+        return 0;
+    }
+---
+変数の空白区切りとかvectorの中身とかを簡単に出力する
+int, string, pair...  
+array, array< array >  
+vector, vector< vector >  
+set, unordered_set  
+map, unordered_map  
+  
+生配列未対応  
+  
+#### C++
+    #include <string>
+    #include <array>
+    #include <vector>
+    #include <cstdlib>
+    #include <sstream>
+    #include <iostream>
+    #include <set>
+    #include <unordered_set>
+    #include <map>
+    #include <unordered_map>
+    
+    using namespace std;
+    
+    template<class F, class S> string in_v_to_str (const pair<F, S> v);
+    template<class F, class S> string v_to_str (const pair<F, S> v);
+    string in_v_to_str (const char v) { return "'" + string{v} + "'"; }
+    string in_v_to_str (const char *v) { return '"' + v + '"'; }
+    string in_v_to_str (const string v) { return '"' + v + '"'; }
+    template<class T> string in_v_to_str (const T v) { stringstream ss; ss << v; return  ss.str(); }
+    template<class T> string v_to_str (const T v) { stringstream ss; ss << v; return ss. str(); }
+    template<class T, size_t N> string v_to_str (const array<T, N> &v) {
+       stringstream ss;
+       if (v.size() > 0) {
+           ss << "[";
+           for (int i = 0; i < v.size() - 1; ++i) { ss << in_v_to_str(v[i]) << ", "; }
+           ss << in_v_to_str(v[v.size() - 1]) << "]";
+       } else {
+           ss << "[]";
+       }
+       return ss.str();
+    }
+    template<class T, size_t N> string v_to_str (const array< array<T, N>, N > &v) {
+       stringstream ss;
+       if (v.size() > 0) {
+           ss << "[";
+           for (int i = 0; i < v.size() - 1; ++i) { ss << v_to_str(v[i]) << ", "; }
+           ss << v_to_str(v[v.size() - 1]) << "]";
+       } else {
+           ss << "[-]";
+       }
+       return ss.str();
+    }
+    template<class T> string v_to_str (const vector<T> &v) {
+        stringstream ss;
+        if (v.size() > 0) {
+            ss << "[";
+            for (int i = 0; i < v.size() - 1; ++i) { ss << in_v_to_str(v[i]) << ", "; }
+            ss << in_v_to_str(v[v.size() - 1]) << "]";
+        } else {
+            ss << "[]";
+        }
+        return ss.str();
+    }
+    template<class T> string v_to_str (const vector< vector<T> > &v) {
+        stringstream ss;
+        if (v.size() > 0) {
+            ss << "[";
+            for (int i = 0; i < v.size() - 1; ++i) { ss << v_to_str(v[i]) << ", "; }
+            ss << v_to_str(v[v.size() - 1]) << "]";
+        } else {
+            ss << "[-]";
+        }
+        return ss.str();
+    }
+    template<class T> string v_to_str (const set<T> &v) {
+        stringstream ss;
+        int len = v.size();
+        ss << (v.size() > 0 ? "{" : "{}");
+        for (auto& i : v) { ss << in_v_to_str(i) << (len-- > 1 ? ", " : "}"); }
+        return ss.str();
+    }
+    template<class K, class V> string v_to_str (const map<K, V> &v) {
+        stringstream ss;
+        int len = v.size();
+        ss << (v.size() > 0 ? "{" : "{}");
+        for (auto& i : v) { ss << in_v_to_str(i.first) << " : " << in_v_to_str(i.second)  << (len-- > 1 ? ", " : "}"); }
+        return ss.str();
+    }
+    template<class T> string v_to_str (const unordered_set<T> &v) {
+        stringstream ss;
+        int len = v.size();
+        ss << (v.size() > 0 ? "{" : "{}");
+        for (auto& i : v) { ss << in_v_to_str(i) << (len-- > 1 ? ", " : "}"); }
+        return ss.str();
+    }
+    template<class K, class V> string v_to_str (const unordered_map<K, V> &v) {
+        stringstream ss;
+        int len = v.size();
+        ss << (v.size() > 0 ? "{" : "{}");
+        for (auto& i : v) { ss << in_v_to_str(i.first) << " : " << in_v_to_str(i.second)  << (len-- > 1 ? ", " : "}"); }
+        return ss.str();
+    }
+    template<class F, class S> string in_v_to_str (const pair<F, S> v) { stringstream ss ; ss << "<" << v_to_str(v.first) << ", " << v_to_str(v.second) << ">"; return ss .str(); }
+    template<class F, class S> string v_to_str (const pair<F, S> v) { stringstream ss;  ss << "<" << v_to_str(v.first) << ", " << v_to_str(v.second) << ">"; return ss. str(); }
+    string print () { return ""; }
+    template<typename F, typename... R> string print (const F &f, const R &...r) {
+        stringstream ss;
+        ss << v_to_str(f);
+        if (sizeof...(r) > 0) { ss << " " << print(r...); }
+        return ss.str();
+    }
+    
+    int main () {
+        vector<string> vs = {"a", "b"};
+        vector< vector<string> > vvs = {{"a", "b"}, {"c", "d"}};
+        array<string, 2> as = {"a", "b"};
+        array< array<string, 2>, 2> aas = {array<string, 2>{"a", "b"}, array<string, 2>{ "c", "d"}};
+        unordered_set<string> uss = {"s1", "s2"};
+        unordered_map<string, int> umsi = {{"k1", 1}, {"k2", 2}};
+        unordered_map<string, char> umsc = {{"k1", '1'}, {"k2", '2'}};
+        
+        cout << print(vs, vvs, as, aas, uss, umsi, umsc, "s", 'c', 1) << endl;
+        // ["a", "b"] [["a", "b"], ["c", "d"]] ["a", "b"] [["a", "b"], ["c", "d"]]  {"s2", "s1"} {"k2" : 2, "k1" : 1} {"k2" : '2', "k1" : '1'} s c 1
+        
+        vector< vector< vector<int> > > vvvi;
+        cout << print(vvvi) << endl;
+        // [-]
+        
+        vvvi = {{{}, {}}, {{}, {}}, {{}, {}}};
+        cout << print(vvvi) << endl;
+        // [[[], []], [[], []], [[], []]]
+        
+        vector< pair<int, int> > vpii(5, pair<int, int>(5, 55));
+        cout << print(vpii) << endl;
+        // [<5, 55>, <5, 55>, <5, 55>, <5, 55>, <5, 55>]
+        
+        return 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
