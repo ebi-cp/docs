@@ -74,7 +74,7 @@ CoginGame レジェンド > ゴールド > シルバー > ブロンズ > ウッ�
 
 #### 競プロ用語
 |||
-|-|-|
+|--------------------|---------------------------------------|
 |ABC|AtCoder Beginner Contest|
 |ARC|AtCoder Regular Contest|
 |AGC|AtCoder Grand Contest|
@@ -89,5 +89,5 @@ CoginGame レジェンド > ゴールド > シルバー > ブロンズ > ウッ�
 #### テストケースのダウンロードをしてローカルでテストするスクリプト}
 ||||テストケースダウンロードに必要||
 |-|-|-|-|-|
-|[yukicoder用](https://github.com/ebicochineal/yukicoderlocaltest)|Python3.5|win, linux|クッキーのREVEL_SESSION値|サンプルとコンテスト後はすべてのテストケース|
-|[AtCoder用](https://github.com/ebicochineal/atcoder_samplecase_localtest)|Python3.5|win, linux|AtCoderのIDパス（login.txtにIDパスを平文で保存）|サンプルケースのみ|
+|[yukicoder用](https://github.com/ebicochineal/yukicoderlocaltest)|Python3.5|win<br>linux|クッキーのREVEL_SESSION値|サンプルとコンテスト後はすべてのテストケース|
+|[AtCoder用](https://github.com/ebicochineal/atcoder_samplecase_localtest)|Python3.5|win<br>linux|AtCoderのIDパス（login.txtにIDパスを平文で保存）|サンプルケースのみ|
