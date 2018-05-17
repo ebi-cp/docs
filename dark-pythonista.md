@@ -157,3 +157,256 @@ a = {k : v for k, v in zip(range(3), 'abc')}
 print(a)
 -> {0: 'a', 1: 'b', 2: 'c'}
 ```
+
+### if, for, whileを一行で書く
+
+```python
+a = 0
+if 1 : a = 3
+for i in range(a) : print(i)
+while a : a -= 1
+print(a)
+-> 0
+-> 1
+-> 2
+-> 0
+```
+
+### 一行に書く
+
+```python
+# セミコロンの後に書くことができる
+a=[x for x in range(3)]
+print(a)
+
+a=[x for x in range(3)];print(a)
+
+# if文やループ文は;の後ろに書けない
+# x
+a=1;if a==1:print(1)
+
+# o
+a=1
+if a==1:print(1)
+```
+
+### リストのコピー
+
+```python
+a = [1, 2]
+b = a　# 参照渡しになってしまう
+b[0] = 2
+print('a :', a, ' b :', b)
+-> a : [2, 2]  b : [2, 2]
+
+a = [1, 2]
+b = a[:]　# スライスでコピーできる
+b[0] = 2
+print('a :', a, ' b :', b)
+-> a : [1, 2]  b : [2, 2]
+```
+
+### アンパッキング
+
+```python
+# *を使ったリストのアンパッキングでprint(5, 1, 2, 6)と同じになります
+print(*[5, 1, 2, 6])
+-> 5 1 2 6
+
+# Python3.5～ AtCoder(2018-4-10 Python3.4)
+# リスト中でのアンパッキングと複数回のアンパッキング
+print([*[5, 1, 2], 6])
+-> [5, 1, 2, 6]
+
+print(*[5, 1], *[2, 6])
+-> 5 1 2 6
+
+print(*[5, 1, 2], 6)
+-> 5 1 2 6
+```
+
+### 文字列を１文字ずつ変数に入れる
+
+```python
+a, b, c = 'abc'
+
+for i, j in ['ab', 'cd']:
+    print(i, j)
+```
+
+### リストを逆にする
+
+```python
+a = [0, 1, 2, 3]
+a = a[::-1]
+```
+
+### リストの追加
+
+```python
+a = []
+a += [0]
+a.append(0)
+```
+
+### 辞書の追加
+
+```python
+a = {}
+a['key'] = 0
+```
+
+### リスト、辞書の長さ
+
+```python
+len([0, 1, 2])
+-> 3
+```
+
+### 文字列、リスト、辞書に存在するか
+
+```python
+print('11' in '1211')
+-> True
+print(1 in [0, 1, 2])
+-> True
+print('1' in {'1':1, '2':2})
+-> True
+```
+
+### 中身交換
+
+```python
+a, b = 1, 2
+b, a = a, b
+print(a, b)
+-> 2, 1
+```
+
+### tはaより大きくbより小さいなら1
+
+```python
+if a < t and t < b : print(1)
+if a < t < b : print(1)
+```
+
+### 100回 1 と出力
+
+```python
+for i in range(100) : print(1)
+for i in 'a' * 100 : print(1)
+exec('print(1);' * 100)
+```
+
+### 条件演算子
+
+```python
+print(1 if True else 0)
+-> 1
+```
+
+### リストを使うと短くかける（リストを作成するので当然遅い）
+
+```python
+print([0, 1][True])
+-> 1
+```
+
+### aが0ならYes 1ならNo
+
+```python
+# 0なら0から2ずつなので0,2,4
+# 1なら1,3が取り出されます 
+print('YNeos'[a::2])
+```
+
+### 終わりまですべての入力を受け取る
+
+```python
+import sys
+for i in sys.stdin : print(i)
+
+i = open(0).read()
+print(i)
+```
+
+入力  
+a  
+b  
+c  
+を受け取り繋げて表示 
+
+```python
+a=input();b=input();c=input();print(a+b+c)
+
+print(input()+input()+input())
+
+i=input;print(i()+i()+i())
+
+i=input;i(i()+i()+i())
+```
+
+### 空白を詰める
+
+```python
+# o
+1if 1else 0
+'1'if'a'else'0'
+[1]if[1]else[0]
+# x
+1 if1 else0
+1 ifa else 0
+1 if aelse 0
+```
+
+### FizzBuzz問題
+
+```python
+i=1;exec("f,b=i%3<1,i%5<1;print([i,'Fizz'*f+'Buzz'*b][f|b]);i+=1;"*int(input()))
+
+for i in range(int(input())):print(i%3//2*'Fizz'+i%5//4*'Buzz'or i+1)
+```
+
+### 数値が禁止された問題で数値を作る
+
+```python
+print(True+True)
+-> 2
+```
+
+### /や%が禁止された問題で除算剰余を求める
+
+```python
+d, m = divmod(57, 3)
+```
+
+## Pythonの高速化
+
+* グローバル変数は遅いので何度もアクセスしないorすべて関数の中に書く
+
+```python
+def main():
+    # ここに書く
+if __name__ == '__main__':
+    main()
+```
+* リスト内法表記は早いので使える場面なら使う
+* Pythonで書くと遅いので組み込まれてる機能があるならそれ使ってなるべく書かないようにする
+* 数倍程度早ければ通るならPyPyで提出する
+* Python3よりもPython2の方が早い
+
+ここまで来れば闇Python力がかなりついてきたはずだ  
+ここで力を試してみよう！
+
+* [yukicoder Python3ショートコード](https://yukicoder.me/ranking/pure_golfer?lang=python3)
+* [Anarchy Golf](http://golf.shinh.org/)
+
+#### Q & A
+
+Q もしかしてPythonってコードゴルフ強いんですかっ！？  
+A いいえ。なので言語別で楽しみましょう。 
+
+## 更なる闇へ
+
+* [Tips for golfing in Python](https://codegolf.stackexchange.com/questions/54/tips-for-golfing-in-python)
+* [Pythonのリスト内包表記はチューリング完全だから純LISPだって実装できる](https://qiita.com/t-sin/items/662b055447ec87476384)
