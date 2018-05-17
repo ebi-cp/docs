@@ -33,7 +33,7 @@
 
 #### Q&A  
 #### Q 競プロ始めたいけど難しそう  
-A 入力, 出力, if文が分かれば簡単な問題なら解くことができます。闇Python入門  
+A 入力, 出力, if文が分かれば簡単な問題なら解くことができます。[闇Python入門](https://github.com/ebi-cp/docs/blob/master/dark-pythonista.md)  
 #### Q オススメな言語はありますか？  
 A 実行時間に制限があるため早い言語の方が有利、なのでC++がオススメです。プログラミングの入門にはPythonがオススメですが実行速度が遅いですPythonでもABCのD問題までならなんとか解くことができます。(たぶん)  
 #### Q 遅いのに何でPython使っているの？  
@@ -72,3 +72,22 @@ CoginGame レジェンド > ゴールド > シルバー > ブロンズ > ウッ�
 ---
 
 
+#### 競プロ用語
+|||
+|-|-|
+|ABC|AtCoder Beginner Contest|
+|ARC|AtCoder Regular Contest|
+|AGC|AtCoder Grand Contest|
+|tourist|https://atcoder.jp/user/tourist|
+|長期コンテスト<br>MM<br>マラソン<br>マラソンマッチ|数時間～数週間の期間内に高スコアを出すことを競うコンテスト。社会人多い|
+|短期コンテスト<br>アルゴリズム|競プロといえばこっちを指すことが多い。１～数時間で４問ほど出題される|
+|ゴルフ<br>コードゴルフ|どれだけ短くかけるかを競う。言語の習得にオススメ|
+|ゲームAI|ゲームのAIを作成するコンテスト。毎ターンゲームの状況などが入力として渡されるのでそれを受け取り行動を決定する処理を書く。AIとAIを対戦させる|
+
+---
+
+#### テストケースのダウンロードをしてローカルでテストするスクリプト}
+||||テストケースダウンロードに必要||
+|-|-|-|-|-|
+|[yukicoder用](https://github.com/ebicochineal/yukicoderlocaltest)|Python3.5|win, linux|クッキーのREVEL_SESSION値|サンプルとコンテスト後はすべてのテストケース|
+|[AtCoder用](https://github.com/ebicochineal/atcoder_samplecase_localtest)|Python3.5|win, linux|AtCoderのIDパス（login.txtにIDパスを平文で保存）|サンプルケースのみ|
