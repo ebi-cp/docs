@@ -89,5 +89,41 @@ CoginGame レジェンド > ゴールド > シルバー > ブロンズ > ウッ�
 #### テストケースのダウンロードをしてローカルでテストするスクリプト}
 ||||テストケースダウンロードに必要||
 |-|-|-|-|-|
-|[yukicoder用](https://github.com/ebicochineal/yukicoderlocaltest)|Python3.5|win<br>linux|クッキーのREVEL_SESSION値|サンプルとコンテスト後はすべてのテストケース|
+|[yukicoder用](https://github.com/ebicochineal/yukicoderlocaltest)|Python3.5|win<br>linux|クッキーのREVEL_SESSION値|サンプルケース<br>コンテスト後はすべてのテストケース|
 |[AtCoder用](https://github.com/ebicochineal/atcoder_samplecase_localtest)|Python3.5|win<br>linux|AtCoderのIDパス（login.txtにIDパスを平文で保存）|サンプルケースのみ|
+
+---
+
+#### 役立ちそうなリンク
+[AtCoder Problems](http://kenkoooo.com/atcoder/)  
+[AtCoder Scores](https://rsk0315.github.io/AtCoderScores/index.html)  
+[AtCoder Virtual Contest](https://not-522.appspot.com/)  
+  
+[TopCoder CoderRank](https://community.topcoder.com/longcontest/stats/?&sr=1&nr=50&module=CoderRank)  
+[TopCoder Events](https://www.topcoder.com/community/events/)  
+[TopCoder Marathon Practice](https://community.topcoder.com/longcontest/?module=ViewPractice)  
+  
+[Competitive Programming Contests Calendar](https://competitiveprogramming.info/calendar)
+  
+[AtCoder　コンテスト解説](https://www.youtube.com/channel/UCtG3StnbhxHxXfE6Q4cPZwQ)  
+[焼きなまし法のコツ Ver. 1.2](http://shindannin.hatenadiary.com/entry/20121224/1356364040)  
+[マラソンマッチにおける精神論](http://chokudai.hatenablog.com/entry/2014/12/04/000132)  
+[マラソンマッチで最初の12時間にすべきこと](http://hama-du.hatenablog.com/entry/2015/12/14/000000)  
+[Topcoderマラソンマッチの探索問題で重要なこと](https://qiita.com/takapt0226/items/b2f6d1d77a034b529e21)  
+[競プロ解法紹介～レベル別マラソンの戦い方～](https://qiita.com/tsukammo/items/7041a00e429f9f5ac4ae)  
+[競プロ解法紹介～大局観で高得点を取る！～](https://qiita.com/tsukammo/items/85ffbe907e89b051d715)  
+[競技プログラミングにおいて焼きなまし法に堕ちずに落とすコツ](https://qiita.com/tsukammo/items/b410f3202372fe87c919)  
+[Road to 2800+](https://drive.google.com/file/d/0Bw3r2b-mo3r4TTBrNEpwdWVqSDg/view)  
+[AtCoder コンテストについての tips](https://qiita.com/drken/items/8a6f139158cde8a61dce)  
+[AtCoder に登録したら次にやること](https://qiita.com/drken/items/fd4e5e3630d0f5859067)  
+[AtCoder 版！蟻本 (初級編)](https://qiita.com/drken/items/e77685614f3c6bf86f44)  
+[AtCoder 版！蟻本 (中級編)](https://qiita.com/drken/items/2f56925972c1d34e05d8)  
+[AtCoder 版！蟻本 (上級編)](https://qiita.com/drken/items/9b311d553aa434bb26e4)  
+[cpprefjp - C++日本語リファレンス](https://cpprefjp.github.io/reference.html)  
+[Tips for golfing in Python](https://codegolf.stackexchange.com/questions/54/tips-for-golfing-in-python)  
+[C++ (gcc) で 128 ビット整数を使う](http://kenkoooo.hatenablog.com/entry/2016/11/30/163533)  
+[Kaggle入門 Porto Seguroコンペ Part.1 (イントロ～GCP登録)](https://www.youtube.com/watch?v=NHQTw-ORcSQ)  
+[ei1333's page](https://ei1333.github.io/index.html)  
+
+
+
