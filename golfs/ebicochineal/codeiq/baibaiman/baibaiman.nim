@@ -1,5 +1,5 @@
 
-//Nimrod 76+8
+#Nimrod 76+8
 var a,b,c,d,x:int64=1
 for i in 0..99:
  echo a
