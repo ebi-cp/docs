@@ -16,8 +16,7 @@ public:
 };
 
 namespace std {
-    template <>
-    class hash<mpos> {
+    template <> class hash<mpos> {
     public:
         size_t operator () (const mpos& t) const{ return hash<int>()(t.x<<16) | hash<int>()(t.y); }
     };
