@@ -5,4 +5,4 @@
 -- lua 64
 -- a,b,c,d=1,1,1,1;for i=0,99 do print(a);a,b,c,d=b,c,d,d-c+b+a end
 
--- a,b,c,d=1,1,1,1;for i=0,99 do print(a);a,b,c,d=b,c,d,d-c+b+a end
+a,b,c,d=1,1,1,1;for i=0,99 do print(a);a,b,c,d=b,c,d,d-c+b+a end
