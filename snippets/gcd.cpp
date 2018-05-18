@@ -3,22 +3,16 @@
 #include <iostream>
 using namespace std;
 
-uint64_t mgcd (uint64_t a, uint64_t b) {
-    uint64_t t;
-    if (a < b) {
-        t = a;
-        a = b;
-        b = t;
-    }
+uint64_t gcd (uint64_t a, uint64_t b) {
+    if (a < b) { swap(a, b); }
     while (b > 0) {
-        t = a % b;
-        a = b;
-        b = t;
+        a = a % b;
+        swap(a, b);
     }
     return a;
 }
 
-uint64_t mlcm (uint64_t a, uint64_t b) {
+uint64_t lcm (uint64_t a, uint64_t b) {
     return a / gcd(a, b) * b;
 }
 
