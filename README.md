@@ -1,7 +1,14 @@
 # 海老レンジャイ　競技プログラミング部
+---
+## 海老レンジャイについて  
+[部隊 海老レンジャイ](https://www65.atwiki.jp/fantasyearthleash/pages/22.html)  
+[海老レンジャイ @wiki](https://www25.atwiki.jp/ebirenjai/pages/6.html)  
+[ミーアたんと僕](https://ex18.5ch.net/test/read.cgi/net/1165546414/)  
+
+---
 
 0x20歳から始める海老競プロライフ！  
-[初心者こそ、競技プログラミングに挑戦してほしい。](https://persol-tech-s.co.jp/i-engineer/human/atcoder)
+
 
 ## 部員リスト
 
@@ -25,7 +32,7 @@
 るーざー  
 
 #### 部員候補リスト2(才能ありそう今すぐ始めるべき)
-海老プラチナ  
+[海老プラチナ](https://www25.atwiki.jp/ebirenjai/pages/15.html)  
 海老セピア  
 彩代  
 
@@ -33,7 +40,7 @@
 
 #### Q&A  
 #### Q 競プロ始めたいけど難しそう  
-A 入力, 出力, if文が分かれば簡単な問題なら解くことができます。[闇Python入門](https://github.com/ebi-cp/docs/blob/master/dark-pythonista.md)  
+A 入力, 出力, if文が分かれば簡単な問題なら解くことができます。<br>[闇Python入門](https://github.com/ebi-cp/docs/blob/master/dark-pythonista.md)<br>[初心者こそ、競技プログラミングに挑戦してほしい。](https://persol-tech-s.co.jp/i-engineer/human/atcoder)  
 #### Q オススメな言語はありますか？  
 A 実行時間に制限があるため早い言語の方が有利、なのでC++がオススメです。プログラミングの入門にはPythonがオススメですが実行速度が遅いですPythonでもABCのD問題までならなんとか解くことができます。(たぶん)  
 #### Q 遅いのに何でPython使っているの？  
