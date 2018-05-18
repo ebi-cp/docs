@@ -1,0 +1,1 @@
+lifegolf.py < input.txt
