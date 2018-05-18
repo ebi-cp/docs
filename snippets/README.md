@@ -18,3 +18,8 @@ C#にはnext_permutation無いらしいので書いた
 ## mpos.cpp
 x, yのPointクラス  
 unordered_map, unordered_setでも使える  
+## gcd
+言語のバージョンが低いと無いらしいので
+C++17~ std::gcd
+python3.5~ math.gcd
+~python3.4 fraction.gcd
