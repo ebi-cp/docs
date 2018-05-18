@@ -10,7 +10,7 @@
 0x20歳から始める海老競プロライフ！  
 
 
-## 部員リスト
+## 部員リスト [AtCoder 海老検索](https://beta.atcoder.jp/ranking?f.Affiliation=%E6%B5%B7%E8%80%81*)
 
 |海老名 | twitter | 言語 | エディタ | 戦績|
 |-|-|-|-|-|
