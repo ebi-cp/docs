@@ -1,0 +1,23 @@
+.something-colored-cochineal {
+    color:#FFF;
+    background-color:#B12F4F;
+}
+
+/* AtCoder */
+.at-red {color:#FF0000;}
+.at-orange {color:#FF8000;}
+.at-yellow {color:#C0C000;}
+.at-blue {color:#0000FF;}
+.at-cyan {color:#00C0C0;}
+.at-green {color:#008000;}
+.at-brown {color:#804000;}
+.at-gray {color:#808080;}
+.at-unrated {color:#000000;}
+
+/* TopCoder */
+.tc-red {color:#EE0000;}
+.tc-yellow {color:#DDCC00;}
+.tc-blue {color:#6666FF;}
+.tc-green {color:#00A900;}
+.tc-gray {color:#999999;}
+.tc-black {color:#000000;}
