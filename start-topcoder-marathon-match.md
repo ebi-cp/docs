@@ -38,9 +38,9 @@ tester.jarのビルド前のソースファイル、カスタマイズして使�
 見本。この中のクラスを書き換えて提出する  
 
 #### ローカルでテストする
-c++ならコンパイルして<command>に実行ファイルをを入れる  
-<seed>で指定したテストケースを生成してテストしてくれる  
-java -jar tester.jar -exec "<command>" -seed <seed>  
+c++ならコンパイルして(command)に実行ファイルをを入れる  
+(seed)で指定したテストケースを生成してテストしてくれる  
+java -jar tester.jar -exec "(command)" -seed (seed)  
 
 例  
 java -jar tester.jar -exec ”***.exe” -seed 1  
