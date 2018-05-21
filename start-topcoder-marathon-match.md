@@ -76,6 +76,7 @@ https://github.com/ebicochineal/marathon_match/tree/master/topcoder_mm_template
 
 プロフィール　一番反映が遅い
 
-
+#### マラソンマッチの練習がしたい
+[Practice Contests](https://community.topcoder.com/longcontest/?module=ViewPractice)
 
 
