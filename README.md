@@ -1,12 +1,19 @@
 # 海老レンジャイ　競技プログラミング部
 ---
 ## 海老レンジャイについて  
-[部隊 海老レンジャイ](https://www65.atwiki.jp/fantasyearthleash/pages/22.html)  
-[海老レンジャイ @wiki](https://www25.atwiki.jp/ebirenjai/pages/6.html)  
-[ミーアたんと僕](https://ex18.5ch.net/test/read.cgi/net/1165546414/)  
+- [部隊 海老レンジャイ](https://www65.atwiki.jp/fantasyearthleash/pages/22.html)  
+- [海老レンジャイ @wiki](https://www25.atwiki.jp/ebirenjai/pages/6.html)  
+- [ミーアたんと僕](https://ex18.5ch.net/test/read.cgi/net/1165546414/)  
 
 ---
-
+## 海老競プロ部リンク
+- [TopCoder MarathonMatchの始め方](https://github.com/ebi-cp/docs/blob/master/start-topcoder-marathon-match.md)  
+- [TCO18 MM R1 - RoadsAndJunctions](https://github.com/ebi-cp/docs/blob/master/TopCoderMM/RoadsAndJunctions.md)
+- [闇Python入門](https://github.com/ebi-cp/docs/blob/master/dark-pythonista.md)  
+- [コードスニペット](https://github.com/ebi-cp/docs/tree/master/snippets)  
+- [ゴルフコード置き場](https://github.com/ebi-cp/golf)
+- [VB.netでACしてみた](https://github.com/ebi-cp/vb)
+---
 0x20歳から始める海老競プロライフ！  
 
 
@@ -19,17 +26,16 @@
 | チョットデタ | [@Chotto_Deta](https://twitter.com/Chotto_Deta) | Java<br>Python | VSCode<br>paiza.io | [AtCoder](https://beta.atcoder.jp/users/chottodeta)(灰) |
 |海老もえぎ|[@yuh_](https://twitter.com/yuh_)| Python2 | Mery |[AtCoder](https://beta.atcoder.jp/users/ebimoegi)|
 |パルラス|[@pallas_pal](https://twitter.com/pallas_pal)|Python|IDLE||
-
 ---
 
-#### 部員(仮) 競プロサイトでアカウントを作ろう！	
+#### 競プロ酒場常連
 海老ルージュ  
+るーざー  
 
 #### 部員候補リスト(プログラミングできるorできそう)
 海老ホワイト  
 海老セガール  
 でるぴー  
-るーざー  
 
 #### 部員候補リスト2(才能ありそう今すぐ始めるべき)
 [海老プラチナ](https://www25.atwiki.jp/ebirenjai/pages/15.html)  
