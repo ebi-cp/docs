@@ -12,7 +12,7 @@
 - [闇Python入門](https://github.com/ebi-cp/docs/blob/master/dark-pythonista.md)  
 - [コードスニペット](https://github.com/ebi-cp/docs/tree/master/snippets)  
 - [ゴルフコード置き場](https://github.com/ebi-cp/golf)
-- [VB.netでACしてみた](https://github.com/ebi-cp/vb)
+- [VB.netでACしてみた](https://github.com/ebi-cp/vb/tree/master/ebicochineal)
 ---
 0x20歳から始める海老競プロライフ！  
 
