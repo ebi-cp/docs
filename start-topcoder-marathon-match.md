@@ -50,7 +50,7 @@ java -jar tester.jar -exec ”py ***.py” -seed 1
 注意 windows環境で実行できないときは  
 Javaのパス通っているか  
 pythonのテストをする場合はpythonのパスが通っているか  
-コマンドプロンプトでカレントディレクトリにtester.jarやテストファイルのある場所か  
+カレントディレクトリがtester.jarやテストファイルのある場所か  
 を確認  
 
 #### 時間計測する手段を用意する
