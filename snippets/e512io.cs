@@ -5,25 +5,28 @@ using System.Numerics;
 using System.Collections;
 using System.Collections.Generic;
 
-public class EIO {
+public class E512IO {
+    public char separator = ' ';
     private string[] reads;
     private int index;
-    public EIO () {
-        Console.SetOut(new StreamWriter(Console.OpenStandardOutput()));
+    public E512IO (bool autoflush = true) {
+        StreamWriter sw = new StreamWriter(Console.OpenStandardOutput());
+        sw.AutoFlush = autoflush;
+        Console.SetOut(sw);
         this.reads = new string[0];
         this.index = 0;
     }
-    ~EIO () { Console.Out.Flush(); }
+    ~E512IO () { Console.Out.Flush(); }
     private string NextValue () {
         this.index += 1;
         if (this.index > this.reads.Length) {
-            this.reads = Console.ReadLine().Split();
+            this.reads = Console.ReadLine().Split(separator);
             this.index = 0;
         }
         return this.reads[this.index];
     }
     private string[] NextLine () {
-        this.reads = Console.ReadLine().Split();
+        this.reads = Console.ReadLine().Split(separator);
         this.index = this.reads.Length;
         return this.reads;
     }
@@ -43,7 +46,10 @@ public class EIO {
 
 public class Program {
     static void Main (string[] args) {
-        EIO io = new EIO();
+        // E512IO io = new E512IO(false);// AutoFulsh
+        E512IO io = new E512IO();
+        // io.separator = ',';
+        
         var n = io.NextInt();
         Console.WriteLine(n);
     }

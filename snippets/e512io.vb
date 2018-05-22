@@ -2,11 +2,14 @@ Imports System
 Imports System.IO
 Imports System.Collections.Generic
 
-public class EIO
+public class E512IO
+    public separator as char = " "
     private reads() as String
     private index as Int32
-    public sub new ()
-        Console.SetOut(new StreamWriter(Console.OpenStandardOutput()))
+    public sub new (Optional ByVal autoflush as boolean = true)
+        dim sw = new StreamWriter(Console.OpenStandardOutput())
+        sw.AutoFlush = autoflush
+        Console.SetOut(sw)
         me.reads = new String(){}
         me.index = 0
     end sub
@@ -16,13 +19,13 @@ public class EIO
     private function NextValue () as String
         me.index += 1
         if me.index > me.reads.Length then
-            me.reads = Console.ReadLine().Split()
+            me.reads = Console.ReadLine().Split(separator)
             me.index = 0
         end if
         return me.reads(me.index)
     end function
     private function  NextLine () as String()
-        me.reads = Console.ReadLine().Split()
+        me.reads = Console.ReadLine().Split(separator)
         me.index = me.reads.Length
         return me.reads
     end function
@@ -80,7 +83,10 @@ end class
 
 class Program
     shared sub main ()
-        dim io as new EIO()
+        ' dim io as new E512IO(false)' AutoFulsh
+        dim io as new E512IO()
+        ' io.separator = ","
+        
         dim n = io.NextInt()
         Console.WriteLine(n)
     end sub

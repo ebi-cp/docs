@@ -23,7 +23,7 @@ unordered_map, unordered_setでも使える
 C++17~ std::gcd  
 python3.5~ math.gcd  
 ~python3.4 fraction.gcd  
-## eio .net
+## e512io .net
 標準入力から次の値をintやList<int>で取り出せる
-出力高速化のために最後にFlushするようにしてある（デストラクタで。もしかしたら問題あるかも）  
+出力高速化のためにAutoFlushをFalseにできる最後にFlushするようにしてある（デストラクタで。もしかしたら問題あるかも）  
 
