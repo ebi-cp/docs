@@ -20,6 +20,8 @@ VB – .NET Framework 4.0, Microsoft (R) Visual Basic Compiler version 10.0.3031
 [開催されているマラソンマッチ](https://community.topcoder.com/longcontest/?module=ViewActiveContests&rt=13)  
 
 #### 参加登録しなくても問題は見ることができる
+#### 参加登録しても提出しなければレーティング対象にならない
+
 #### 問題を見たら次にすること
 問題ページのどこかにあるリンクから次の３つを入手    
 tester.jar  
@@ -29,17 +31,17 @@ tester.jar
 たまに用意されていないことがある  
 
 #### tester.jar
-プログラムをテストし結果を確認できるオプションで視覚化して表示もできるものがある  
+プログラムをテストし結果を確認できる。オプションで視覚化して表示もできるものがある。  
 
 #### ***Vis.java
-tester.jarのビルド前のソースファイル、カスタマイズして使っている人もいる  
+tester.jarのビルド前のソースファイル、カスタマイズして使っている人もいる。  
 
 #### ***.cpp,java,py,cs
-見本。この中のクラスを書き換えて提出する  
+見本。この中のクラスを書き換えて提出する。  
 
 #### ローカルでテストする
-c++ならコンパイルして(command)に実行ファイルをを入れる  
-(seed)で指定したテストケースを生成してテストしてくれる  
+c++ならコンパイルして(command)に実行ファイルをを入れる。  
+(seed)で指定したテストケースを生成してテストしてくれる。  
 java -jar tester.jar -exec "(command)" -seed (seed)  
 
 例  
@@ -65,16 +67,18 @@ https://github.com/ebicochineal/marathon_match/tree/master/topcoder_mm_template
 
 #### マラソンマッチキュー
 誰かが提出すると[ここ](https://community.topcoder.com/longcontest/?module=ViewQueue)に表示される。空いてるときに提出しないと結果がすぐ帰ってこない。  
+システムテストの時もここに表示される。
 
-
-#### 参加登録しても提出しなければレーティング対象にならない
+#### システムテスト
+最終テスト大体2000件  
 
 #### レーティング確認
-`https://community.topcoder.com/tc?module=SimpleStats&c=long_comp_history&d1=statistics&d2=longHistory&cr=自分の数字プロフィールへのリンクなどから入手`  
+システムテスト終了後。半日～1週間で結果が出てレーティングが反映される  
 
-[CoderRank](https://community.topcoder.com/longcontest/stats/?&sr=1&nr=50&module=CoderRank)
-
-プロフィール　一番反映が遅い
+- TopCoder Arena(Java)  
+- `https://community.topcoder.com/tc?module=SimpleStats&c=long_comp_history&d1=statistics&d2=longHistory&cr=自分の数字プロフィールへのリンクなどから入手`  
+- [TopCoder CoderRank](https://community.topcoder.com/longcontest/stats/?&sr=1&nr=50&module=CoderRank)
+- プロフィール　一番反映が遅い
 
 #### マラソンマッチの練習がしたい
 [Practice Contests](https://community.topcoder.com/longcontest/?module=ViewPractice)
