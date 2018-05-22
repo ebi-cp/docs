@@ -8,12 +8,12 @@ using System.Collections.Generic;
 public class EIO {
     private string[] reads;
     private int index;
-    public EIO() {
+    public EIO () {
         Console.SetOut(new StreamWriter(Console.OpenStandardOutput()));
         this.reads = new string[0];
         this.index = 0;
     }
-    ~EIO() { Console.Out.Flush(); }
+    ~EIO () { Console.Out.Flush(); }
     private string NextValue () {
         this.index += 1;
         if (this.index > this.reads.Length) {
@@ -45,7 +45,7 @@ public class Program {
     static void Main (string[] args) {
         EIO io = new EIO();
         var n = io.NextInt();
-        Console.WriteLine(t[m+1]);
+        Console.WriteLine(n);
     }
 }
 
