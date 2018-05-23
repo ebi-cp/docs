@@ -1,9 +1,9 @@
 Imports System
 Imports System.IO
 Imports System.Collections.Generic
-
+ 
 public class E512IO
-    public separator as char = " "
+    public separator as char = " "c
     private reads() as String
     private index as Int32
     public sub new (Optional ByVal autoflush as boolean = true)
@@ -19,51 +19,55 @@ public class E512IO
     private function NextValue () as String
         me.index += 1
         if me.index > me.reads.Length then
-            me.reads = Console.ReadLine().Split(separator)
+            dim t() as String = Console.ReadLine().Split(separator)
+            me.reads = t
             me.index = 0
         end if
         return me.reads(me.index)
     end function
-    private function  NextLine () as String()
-        me.reads = Console.ReadLine().Split(separator)
-        me.index = me.reads.Length
-        return me.reads
-    end function
     public function NextIntArray () as Int32()
-        dim t = me.NextLine() : dim r(t.Length-1) as Int32
+        dim t() as String = Console.ReadLine().Split(separator) : me.index = t.Length
+        dim r(t.Length-1) as Int32
         for i as Int32 = 0 to t.Length - 1 : r(i) = Int32.Parse(t(i)) : next i
         return r
     end function
     public function NextLongArray () as Int64()
-        dim t = me.NextLine() : dim r(t.Length-1) as Int64
+        dim t() as String = Console.ReadLine().Split(separator) : me.index = t.Length
+        dim r(t.Length-1) as Int64
         for i as Int32 = 0 to t.Length - 1 : r(i) = Int64.Parse(t(i)) : next i
         return r
     end function
     public function NextDoubleArray () as Double()
-        dim t = me.NextLine() : dim r(t.Length-1) as Double
+        dim t() as String = Console.ReadLine().Split(separator) : me.index = t.Length
+        dim r(t.Length-1) as Double
         for i as Int32 = 0 to t.Length - 1 : r(i) = Double.Parse(t(i)) : next i
         return r
     end function
     public function NextStringArray () as String()
-        return me.NextLine()
+        dim t() as String = Console.ReadLine().Split(separator) : me.index = t.Length
+        return t
     end function
     public function NextIntList () as List(of Int32)
-        dim t = me.NextLine() : dim r as new List(of Int32)
+        dim t() as String = Console.ReadLine().Split(separator) : me.index = t.Length
+        dim r as new List(of Int32)
         for i as Int32 = 0 to t.Length - 1 : r.Add(Int32.Parse(t(i))) : next i
         return r
     end function
     public function NextLongList () as List(of Int64)
-        dim t = me.NextLine() : dim r as new List(of Int64)
+        dim t() as String = Console.ReadLine().Split(separator) : me.index = t.Length
+        dim r as new List(of Int64)
         for i as Int32 = 0 to t.Length - 1 : r.Add(Int64.Parse(t(i))) : next i
         return r
     end function
     public function NextDoubleList () as List(of Double)
-        dim t = me.NextLine() : dim r as new List(of Double)
+        dim t() as String = Console.ReadLine().Split(separator) : me.index = t.Length
+        dim r as new List(of Double)
         for i as Int32 = 0 to t.Length - 1 : r.Add(Double.Parse(t(i))) : next i
         return r
     end function
     public function NextStringList () as List(of String)
-        dim t = me.NextLine() : dim r as new List(of String)
+        dim t() as String = Console.ReadLine().Split(separator) : me.index = t.Length
+        dim r as new List(of String)
         for i as Int32 = 0 to t.Length - 1 : r.Add(t(i)) : next i
         return r
     end function
