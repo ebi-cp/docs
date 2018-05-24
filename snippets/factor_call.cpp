@@ -23,6 +23,7 @@ vector<uint64_t> factor (uint64_t n) {
         for (int i = 1; i < sp.size(); ++i) {
             r.emplace_back(stoull(sp[i]));
         }
+        
     }
     pclose(fp);
     return r;
@@ -30,6 +31,5 @@ vector<uint64_t> factor (uint64_t n) {
 
 int main () {
     for (auto& i : factor(999999866000004473)) { cout << i << endl; }
-    cout << "e" << endl;
     return 0;
 }
