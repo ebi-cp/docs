@@ -26,6 +26,4 @@ python3.5~ math.gcd
 ## e512io .net
 標準入力から次の値をintやList<int>で取り出せる
 出力高速化のためにAutoFlushをFalseにできる最後にFlushするようにしてある（デストラクタで。もしかしたら問題あるかも）  
-## pythpon_call.vb  
-vbからpythonを呼び出してunkする  
 
