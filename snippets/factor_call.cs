@@ -18,7 +18,8 @@ public class Program {
         Process p = Process.Start(pinfo);
         string o = p.StandardOutput.ReadToEnd();
         p.WaitForExit();
-        return o.Split(' ').Skip(1).ToArray();
+        string[] sp = o.Split();
+        return sp.Skip(1).Take(sp.Length-2).ToArray();
     }
     
     static void Main (string[] args) {
