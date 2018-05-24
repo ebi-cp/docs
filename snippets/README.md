@@ -12,6 +12,7 @@ topcoderマラソンマッチ用の時間計測
 入力でTLEする場合使うと良いらしいというか常に書いとくと良いらしい  
 cin.tie(0);  
 ios::sync_with_stdio(false);  
+入力だけでなく出力も何十万行とかする場合endlを使わないで"\n"を使う  
 ## permutation.cs
 C#にはnext_permutation無いらしいので書いた  
 書いたけど使ったことないのでもしかしたら間違ってるかも  
