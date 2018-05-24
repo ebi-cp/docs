@@ -30,6 +30,5 @@ vector<uint64_t> factor (uint64_t n) {
 
 int main () {
     for (auto& i : factor(999999866000004473)) { cout << i << endl; }
-    cout << "e" << endl;
     return 0;
 }
