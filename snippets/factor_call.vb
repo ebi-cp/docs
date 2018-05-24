@@ -16,7 +16,7 @@ class Program
         pinfo.RedirectStandardOutput = true
         dim p as Process = Process.Start(pinfo)
         p.WaitForExit()
-        dim s as String = p.StandardOutput.ReadToEnd().ToString()
+        dim s as String = p.StandardOutput.ReadToEnd()
         dim sp() as String = s.Split()
         dim r(sp.Length - 3) as String
         for i as Int32 = 0 to sp.Length - 3 : r(i) = sp(i+1) : next i
