@@ -10,7 +10,7 @@
 - [TopCoder MarathonMatchの始め方](https://github.com/ebi-cp/docs/blob/master/start-topcoder-marathon-match.md)  
 - [TCO18 MM R1 - RoadsAndJunctions](https://github.com/ebi-cp/docs/blob/master/TopCoderMM/RoadsAndJunctions.md)
 - [闇Python入門](https://github.com/ebi-cp/docs/blob/master/dark-pythonista.md)  
-- [コードスニペット](https://github.com/ebi-cp/docs/tree/master/snippets)  
+- [海老ライブラリ](https://github.com/ebi-cp/docs/tree/master/library)  
 - [ゴルフコード置き場](https://github.com/ebi-cp/golf)
 - [VB.netでACしてみた](https://github.com/ebi-cp/vb/tree/master/ebicochineal)
 ---

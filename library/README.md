@@ -1,4 +1,3 @@
-## スニペットコード  
 ## print.cpp
 pythonのprintみたいにvector, array, map, set, pairの中身を表示する  
 ## strlib.cpp
