@@ -1,7 +1,7 @@
-# TopCoder Marathon Matchの始め方2018
+# TopCoder MarathonMatchの始め方 2018
 
 # 必要な物
-TopCoderアカウント  
+[TopCoder](https://www.topcoder.com/)のアカウント  
 Java1.8(1.7の方が良いのかな自分は1.8使ってるけど)  
 使用する言語環境  
 
