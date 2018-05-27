@@ -7,7 +7,7 @@
 [https://language-test-201603.contest.atcoder.jp/](https://language-test-201603.contest.atcoder.jp/)
 
 #### プログラミング未経験
-PCゲームとかのインストールとかネットゲームとか検索とか問題なくできるなら、３日あればプログラミングなんてなんとかできるレベルになると思う  
+アプリのインストールとかネットゲームとか検索とか問題なくできるなら、３日あればプログラミングなんてなんとかできるレベルになると思う  
 [闇Python入門](https://github.com/ebi-cp/docs/blob/master/dark-pythonista.md)
 
 #### 多くのコンテストで禁止される行為
