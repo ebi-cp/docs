@@ -5,6 +5,9 @@
 ここではPython3を使っています [Download Python](https://www.python.org/downloads/)  
 未完成なPythonの入門と闇Pythonっぽい書き方についてのページです
 
+---
+
+## Python入門(未完成)
 ```python
 # #の後ろに書かれた文字はコメントとしてプログラムでは無視されます
 # 入力を受け取り変数aに代入します。変数は好きな名前で構いません
@@ -68,6 +71,8 @@ print(input().replace(' ', '')))
 
 [Python チュートリアル](https://docs.python.jp/3/tutorial/)
 
+---
+
 ## 闇っぽい書き方や必要な知識
 
 以下出力　`.. `
@@ -116,7 +121,7 @@ while[print(a)]:a+=1
 
 ```python
 # lambda 引数 : 式
-# ↓下と同じ感じになる
+# ↓と同じ感じになる
 # def f (引数) : return 式
 
 f = lambda x : x * 5
@@ -232,6 +237,8 @@ a, b, c = 'abc'
 
 for i, j in ['ab', 'cd']:
     print(i, j)
+.. a b
+.. c d
 ```
 
 ### リストを逆にする
@@ -259,11 +266,11 @@ a['key'] = 0
 ### リスト、辞書の長さ
 
 ```python
-len([0, 1, 2])
+print(len([0, 1, 2]))
 .. 3
 ```
 
-### 文字列、リスト、辞書に存在するか
+### 文字列、リスト、辞書に存在するか (aがbに存在するか a in b)
 
 ```python
 print('11' in '1211')
@@ -379,7 +386,7 @@ print(True+True)
 ```python
 d, m = divmod(57, 3)
 ```
-
+---
 ## Pythonの高速化
 
 * グローバル変数は遅いので何度もアクセスしないorすべて関数の中に書く
