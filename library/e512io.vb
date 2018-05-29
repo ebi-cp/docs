@@ -18,7 +18,7 @@ public class E512IO
     end sub
     private function NextValue () as String
         me.index += 1
-        if me.index > me.reads.Length then
+        if me.index > me.reads.Length - 1 then
             dim t() as String = Console.ReadLine().Split(separator)
             me.reads = t
             me.index = 0

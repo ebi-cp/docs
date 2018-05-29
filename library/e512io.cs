@@ -19,7 +19,7 @@ public class E512IO {
     ~E512IO () { Console.Out.Flush(); }
     private string NextValue () {
         this.index += 1;
-        if (this.index > this.reads.Length) {
+        if (this.index > this.reads.Length - 1) {
             this.reads = Console.ReadLine().Split(separator);
             this.index = 0;
         }
