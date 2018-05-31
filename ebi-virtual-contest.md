@@ -2,12 +2,21 @@
 
 ## 開催予定のコンテスト
 
-#### EVC001 - 海老 Virtual Contest
+#### EVC000 - 海老 Virtual Contest
 
 https://not-522.appspot.com/contest/5655799036641280
 
+- テーマ：「仕様確認」
+- 日程：2018/06/01(金) 21:00 - 22:00 (60分)
+- 出題・配点：[AtCoder Beginners Selection](https://beta.atcoder.jp/contests/abs) 以外から 200-200-300-300
+
+
+#### EVC001 - 海老 Virtual Contest
+
+(URL未定)
+
 - テーマ：「初見です」
-- 日程（**予定**）：2018/06/01(金) 21:00 - 22:00 (60分)
+- 日程：未定 (60分程度)
 - 出題・配点：[AtCoder Beginners Selection](https://beta.atcoder.jp/contests/abs) 以外から 100-100-100-200-200
 
 
