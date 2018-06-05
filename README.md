@@ -114,7 +114,7 @@ CoginGame レジェンド > ゴールド > シルバー > ブロンズ > ウッ�
 
 #### 役立ちそうなリンク
 [AtCoder Problems](http://kenkoooo.com/atcoder/)  
-[AtCoder Scores](https://rsk0315.github.io/AtCoderScores/index.html)  
+[AtCoder Scores](https://atcoder-scores.herokuapp.com/index.html)  
 [AtCoder Virtual Contest](https://not-522.appspot.com/)  
   
 [TopCoder CoderRank](https://community.topcoder.com/longcontest/stats/?&sr=1&nr=50&module=CoderRank)  
