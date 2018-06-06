@@ -4,6 +4,8 @@ pythonのprintみたいにvector, array, map, set, pairの中身を表示する
 pythonみたいに文字列をスライスしたり、splitしたりしたかったため作った  
 ## factor_call  
 factorコマンドを使って素因数分解 各種言語例  
+AtCoderで動いた  
+factorコマンドが無いのでWindowsだとWindows Subsystem for Linuxじゃないと使えません  
 ## stopwatch.cpp
 topcoderマラソンマッチ用の時間計測  
 遅いけど使える時間計測を調べるのも大変だったため一応置いておく  
@@ -27,4 +29,4 @@ python3.5~ math.gcd
 標準入力から次の値をintやList<int>で取り出せる
 出力高速化のためにAutoFlushをFalseにできる最後にFlushするようにしてある（デストラクタで。もしかしたら問題あるかも）  
 ## python_call.vb  
-vbからpythonを呼び出してunkする
+vbからpythonを呼び出してunkする  
