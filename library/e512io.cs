@@ -46,7 +46,7 @@ public class E512IO {
 
 public class Program {
     static void Main (string[] args) {
-        // E512IO io = new E512IO(false);// AutoFulsh
+        // E512IO io = new E512IO(false);// AutoFulsh false
         E512IO io = new E512IO();
         // io.separator = ',';
         

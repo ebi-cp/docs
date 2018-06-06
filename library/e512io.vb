@@ -87,7 +87,7 @@ end class
 
 class Program
     shared sub main ()
-        ' dim io as new E512IO(false)' AutoFulsh
+        ' dim io as new E512IO(false)' AutoFulsh false
         dim io as new E512IO()
         ' io.separator = ","
         
