@@ -142,7 +142,7 @@ CoginGame レジェンド > ゴールド > シルバー > ブロンズ > ウッ�
 [C++ (gcc) で 128 ビット整数を使う](http://kenkoooo.hatenablog.com/entry/2016/11/30/163533)  
 [Kaggle入門 Porto Seguroコンペ Part.1 (イントロ～GCP登録)](https://www.youtube.com/watch?v=NHQTw-ORcSQ)  
 [ei1333's page](https://ei1333.github.io/index.html)  
-
+[AtCoderでの競技プログラミングがもっと楽しくなるサイトまとめ](http://noimin.hatenablog.com/entry/2017/12/16/230900)
 ---
 
 topcoder 時間計測(遅い)  
