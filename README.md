@@ -28,24 +28,23 @@
 | チョットデタ | [@Chotto_Deta](https://twitter.com/Chotto_Deta) | Java<br>Python | VSCode<br>paiza.io | [AtCoder](https://beta.atcoder.jp/users/chottodeta)(灰) |
 |海老もえぎ|[@yuh_](https://twitter.com/yuh_)| Python2 | Mery |[AtCoder](https://beta.atcoder.jp/users/ebimoegi)|
 |パルラス|[@pallas_pal](https://twitter.com/pallas_pal)|Python|IDLE||
+
 ---
 
-#### 競プロ酒場常連
-海老ルージュ  
+#### 競プロ部勧誘中
+[海老プラチナ](https://www25.atwiki.jp/ebirenjai/pages/15.html)  
 海老ピンク  
-るーざー  
+海老セピア  
+海老ざいつ  
+ネムトロ  
 
-#### 部員候補リスト(プログラミングできるorできそう)
+#### 部員候補リスト(プログラミングできるorできそうor才能ありそう今すぐ始めるべき)
+海老ルージュ  
 海老ホワイト  
 海老セガール  
 でるぴー  
-
-#### 部員候補リスト2(才能ありそう今すぐ始めるべき)
-[海老プラチナ](https://www25.atwiki.jp/ebirenjai/pages/15.html)  
-海老セピア  
-ネムトロ  
+るーざー  
 彩代  
-
 
 ---
 
