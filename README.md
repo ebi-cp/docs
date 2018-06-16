@@ -13,7 +13,7 @@
 - [闇Python入門](https://github.com/ebi-cp/docs/blob/master/dark-pythonista.md)
 - [海老ライブラリ](https://github.com/ebi-cp/docs/tree/master/library)
 - [海老バーチャルコンテスト](https://github.com/ebi-cp/docs/blob/master/ebi-virtual-contest.md)
-- [海老競プロマガジン](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/README.md)
+- [海老プログラミングマガジン](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/README.md)
 - [ゴルフコード置き場](https://github.com/ebi-cp/golf)
 - [VB.netでACしてみた](https://github.com/ebi-cp/vb/tree/master/ebicochineal)
 ---
