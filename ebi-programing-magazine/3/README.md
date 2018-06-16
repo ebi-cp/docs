@@ -44,8 +44,7 @@ root.bind('<Button-1>', leftclick)
 root.bind('<Button-3>', rightclick)
 root.mainloop()
 ```
-![Gif](https://raw.githubusercontent.com/ebi-cp/docs/ebi-programing-magazine/3/master/unk.gif)
-
+![Gif](https://raw.githubusercontent.com/ebi-cp/docs/master/ebi-programing-magazine/3/unk.gif)
 
 
 GUIの場合コンソールを表示したくない事がありますが、その場合は拡張子をpyではなくpywにするとコンソールは非表示になります。  
