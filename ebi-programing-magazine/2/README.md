@@ -1,4 +1,4 @@
-海老競プロマガジン 実技で学ぶPython3 海老もえぎの配信状況を知ろう  
+実技で学ぶPython3 海老もえぎの配信状況を知ろう  
 moegi_live.pyなどで保存すれば動きます  
 ```python
 import time    # time.sleepを使うために必要なライブラリ
