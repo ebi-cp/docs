@@ -1,4 +1,4 @@
-TCO18 Marathon Round 2 CrystalLightingに参加しました。  
+## TCO18 Marathon Round 2 CrystalLightingに参加しました。  
 暫定順位 49/127 https://community.topcoder.com/longcontest/?module=ViewStandings&rd=17179
 問題 https://community.topcoder.com/longcontest/?module=ViewProblemStatement&rd=17179&pm=14934
 - クリスタルの色通りにランタンで光を当てるとポイントが貰える。青黄赤20、緑紫橙30、違う色-10
