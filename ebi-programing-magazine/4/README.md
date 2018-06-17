@@ -17,7 +17,8 @@ for i in range(1, 10):    # 1~9の値が順番にiに入ります
         # print('%d + %d = %d'%(i, j, i*j))    # このように書くこともできます
 ```
 
-前回までの知識と2重ループでできるマンデルブロ集合をTkinterで描画する
+前回までの知識と2重ループでできる  
+マンデルブロ集合をTkinterで描画する
 ```python
 import tkinter
 def mandelbrot(x, y):
@@ -38,7 +39,7 @@ im = tkinter.PhotoImage(width = 240, height = 240)    # イメージ作成
 for y in range(240):    # 240回繰り返します 0~239の値が yに順番に入ります
     for x in range(240):    # 240回繰り返します 0~239の値が xに順番に入ります
         color = mandelbrot(x, y)    # mandelbrot関数に座標を渡し色を取得します
-        im.put('#%02x%02x%02x'%color, (x, y))    # 色16進数にします, 座標
+        im.put('#%02x%02x%02x'%color, (x, y))    # 色2桁の16進数3つにします, 座標
 cv.create_image(2, 2, image = im, anchor = 'nw')    # イメージをキャンバスに表示させます。２ドットずれるので2, 2とセットします。 nw(左上)が0, 0
 root.mainloop()
 ```
