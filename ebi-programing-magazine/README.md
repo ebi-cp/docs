@@ -16,3 +16,5 @@ Windows x86-64 web-based installer
 - [3 実技で学ぶPython3 TkinterでGUIアプリを作ろう｡](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/3/README.md)  
 - [4 実技で学ぶPython3 九九の表示からマンデルブロ集合の表示まで｡](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/4/README.md)  
 - [5 普通に学ぶPython3 入力](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/5/README.md)  
+- [6 実技で学ぶPython3 ファイル読み込み３Dファイルの平行投影表示](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/6/README.md)  
+
