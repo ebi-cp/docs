@@ -70,7 +70,7 @@ a = [int(input()) for x in range(N)]
 ```
 
 ---
-競技プログラミングは使いませんかファイルからの入力。
+競技プログラミングは使いませんがファイルからの入力。
 ```python
 f = open('unk.txt' , 'r') # 読み込みモードで開きます書き込む場合は'w'です
 for i in f.readlines():
