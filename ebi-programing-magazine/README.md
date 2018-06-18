@@ -15,4 +15,4 @@ Windows x86-64 web-based installer
 - [2 実技で学ぶPython3 海老もえぎの配信状況を知ろう。](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/2/README.md)  
 - [3 実技で学ぶPython3 TkinterでGUIアプリを作ろう｡](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/3/README.md)  
 - [4 実技で学ぶPython3 九九の表示からマンデルブロ集合の表示まで｡](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/4/README.md)  
-
+- [5 普通に学ぶPython3 入力](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/4/README.md)  
