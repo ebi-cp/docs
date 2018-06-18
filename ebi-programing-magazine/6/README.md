@@ -22,6 +22,7 @@ f 1 2 3
 import os    # os.path.dirnameを使うために必要
 import tkinter
 
+i = 0
 vertexs = []    # 空のリストを用意する
 indexs = []
 
@@ -31,11 +32,11 @@ with open(path + '/' + 'suzanne.obj', 'r') as f:    # ファイルを開く
     for i in f.readlines():    # 1行づつ読む
         if i.startswith('v '):    # v から始まるなら
             v1, v2, v3 = map(float, i[2:].split())    # 3文字目～をsplit mapで小数型に
-            vertexs += [(v1*25+120, -v2*25+160, v3*25)]    # 数値が小さいので25倍する。あと線の表示位置をずらします個のキャンバスの中心座標が120
+            vertexs += [(v1*25+120, -v2*25+160, v3*25)]    # 数値が小さいので25倍する。あと線の表示位置をずらします。このキャンバスの中心座標が120
         if i.startswith('f '):    # f から始まるなら
             v1, v2, v3 = map(int, i[2:].split())    # 3文字目～をsplit mapで整数型に
             indexs += [(v1-1, v2-1, v3-1)]    # 1から始まるのでリストで利用できる用に-1で0からに修正する
-i = 0
+
 def drawline():    # 呼ぶごとに１つの3角形を描く
     global i
     x1, y1, unk1 = vertexs[indexs[i][0]]    # 3つめのz座標は今回は使わない
@@ -48,7 +49,6 @@ def drawline():    # 呼ぶごとに１つの3角形を描く
 root = tkinter.Tk()
 cv = tkinter.Canvas(root, width = 240, height = 240)
 cv.pack()
-im = tkinter.PhotoImage(width = 240, height = 240)
 root.after(2, drawline)    # 2ms後にdrawlineを呼ぶ
 root.mainloop()
 ```
