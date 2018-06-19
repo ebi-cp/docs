@@ -77,7 +77,7 @@ print(c)    # [10, 12, 14, 16, 18]
 a = [x for x in range(10)]    # 0~9までrange関数で生成され順番にxに入ります
 a = [x*2 for x in range(10)]    # 2倍したり
 a = [input() for x in range(10)]    # 10回入力を受け取ったり
-a = [input()for x in[0]*10]    # 上と同じこの場合x初かはないので適当な値で良いコードゴルフ用
+a = [input()for x in[0]*10]    # 上と同じこの場合xは使わないので適当な値で良い。コードゴルフ用
 a = [x for x in range(10) if x >= 5]    # filterの様な事もでます
 
 a = []    # リスト内法表記はリストに追加していくよりも早いです
