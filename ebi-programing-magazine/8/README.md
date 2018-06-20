@@ -18,7 +18,7 @@ cellcolor = '#c82c55'    # cochinealred
 p = [(x, y) for x in [-1, 0, 1] for y in [-1, 0, 1]]    # 周辺と中心の座標
 alive = set()
 rid = None
-def draw():    # 集合aliveのすべての座標にあるセルを描画します
+def draw():    # 集合aliveのすべてのセルを描画します
     cv.delete('cells')    # 前のセルが残っているので消します
     for x, y in alive:
         rx, ry= x*8+2, y*8+2    # セルの大きさが8なので8倍し2ピクセルずれるのでずらします
