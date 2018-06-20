@@ -33,8 +33,8 @@ def leftclick(e):
     draw()    # 最後にdrawを呼び結果を画面に反映させます
 def rightclick(e):
     if rid : root.after_cancel(rid)
-    nextgene()
-def nextgene():
+    update()
+def update():
     global rid
     m = dict()
     for sx, sy in alive:    # 辞書に周辺にいくつ生きたセルがあるか記録する
@@ -52,7 +52,7 @@ def nextgene():
         y = abs(i[1]-32) > 64    #
         if a or x or y : alive.remove(i)
     draw()
-    rid = root.after(100, nextgene)    # 次のフレーム100ms後にnextgeneを呼び出します
+    rid = root.after(100, update)    # 次のフレーム100ms後にupdateを呼び出します
 root = tkinter.Tk()
 cv = tkinter.Canvas(root, width = 512, height = 512)
 cv.pack()
