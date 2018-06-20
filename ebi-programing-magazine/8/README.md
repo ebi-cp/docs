@@ -15,7 +15,7 @@
 #! /usr/bin/env python3
 import tkinter
 cellcolor = '#c82c55'    # cochinealred
-p = [(x, y) for x in [-1, 0, 1] for y in [-1, 0, 1]]    # 周辺と中心の座標
+d = [(x, y) for x in [-1, 0, 1] for y in [-1, 0, 1]]    # 周辺と中心の座標
 alive = set()
 rid = None
 def draw():    # 集合aliveのすべてのセルを描画します
@@ -36,18 +36,18 @@ def rightclick(e):
     nextgene()
 def nextgene():
     global rid
-    d = dict()
+    m = dict()
     for sx, sy in alive:    # 辞書に周辺にいくつ生きたセルがあるか記録して行きます
-        for dx, dy in p:
+        for dx, dy in d:
             t = (sx+dx, sy+dy)
-            if t in d:
-                d[t] += 1
+            if t in m:
+                m[t] += 1
             else:
-                d[t] = 1
-    for k, v in d.items():    # 生きたセルがちょうど3つあれば、次の世代が誕生する
+                m[t] = 1
+    for k, v in m.items():    # 生きたセルがちょうど3つあれば、次の世代が誕生する
         if v == 3 : alive.add(k)
     for i in list(alive):    # 死のループ
-        a = d[i] < 3 or d[i] > 4    # 過疎、過密による死です
+        a = m[i] < 3 or m[i] > 4    # 過疎、過密による死です
         x = abs(i[0]-32) > 64    # 知りすぎてしまった探検家は殺さなければなりません
         y = abs(i[1]-32) > 64    #
         if a or x or y : alive.remove(i)
