@@ -37,7 +37,7 @@ def rightclick(e):
 def nextgene():
     global rid
     m = dict()
-    for sx, sy in alive:    # 辞書に周辺にいくつ生きたセルがあるか記録して行きます
+    for sx, sy in alive:    # 辞書に周辺にいくつ生きたセルがあるか記録する
         for dx, dy in d:
             t = (sx+dx, sy+dy)
             if t in m:
