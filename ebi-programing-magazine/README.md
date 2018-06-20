@@ -16,4 +16,4 @@ Windows x86-64 web-based installer
 - [5 普通に学ぶPython3 入力](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/5/README.md)  
 - [6 実技で学ぶPython3 ファイル読み込み３Dファイルの平行投影表示](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/6/README.md)  
 - [7 普通に学ぶPython3 リスト](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/7/README.md)  
-- [8 実技で学ぶPython3 ライフゲームを作る](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/i/README.md)  
+- [8 実技で学ぶPython3 ライフゲームを作る](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/8/README.md)  
