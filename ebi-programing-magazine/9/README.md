@@ -14,33 +14,30 @@ cellcolor = '#c82c55'    # cochinealred
 d = [(x, y) for x in [-1, 0, 1] for y in [-1, 0, 1]]    # 周辺と中心の座標
 alive = set()
 rid = None
-mode = False    # 追加か(True)削除か(False)
 start_pos = (0, 0)    # 左ドラッグ開始地点
-
 def draw():
     cv.delete('cells')
     for x, y in alive:
         rx, ry= x*8+2, y*8+2
         cv.create_rectangle(rx, ry, rx+7, ry+7, fill = cellcolor, tag = 'cells')
 def leftdown(e):
-    global mode, start_pos
+    global start_pos
     if rid : root.after_cancel(rid)
     k = ((e.x-2) // 8, (e.y-2) // 8)
     start_pos = k    # 左ドラッグ開始地点
-    if k in alive:    # 開始地点にあるなら削除モード
-        mode = False
-    else:    # 開始地点にないなら追加モード
-        mode = True
 def leftup(e):
     k = ((e.x-2) // 8, (e.y-2) // 8)
-    sx, ex = min(start_pos[0], k[0]), max(start_pos[0], k[0])    # rangeでexまで+1して行くので小さい方をsx大きい方をex
-    sy, ey = min(start_pos[1], k[1]), max(start_pos[1], k[1])
+    s = start_pos
+    sx, ex = min(s[0], k[0]), max(s[0], k[0])    # rangeでexまで+1して行くので小さい方をsx大きい方をex
+    sy, ey = min(s[1], k[1]), max(s[1], k[1])
+    mode = (s[0], s[1]) in alive    # マウス左が押された地点に生きたセルがあったか無かったか
     for x in range(sx, ex + 1):
-        for y in range(sy, ey + 1):    # 追加
-            if mode:
-                alive.add((x, y))
-            else:    # 削除
+        for y in range(sy, ey + 1):
+            if mode:    # 削除
                 if (x, y) in alive : alive.remove((x, y))    # 集合の中にないものを消そうとするとエラーになるのであるか確かめる
+            else:    # 追加
+                alive.add((x, y))
+                
     draw()
 def rightdown(e):
     if rid : root.after_cancel(rid)
