@@ -6,11 +6,13 @@
 左ドラッグで セル矩形追加削除(開始地点に無いなら追加、あるなら削除)  
 右クリックで 再生  
 
+コメントを書いている部分が前回からの変更があった場所です。  
+[8 実技で学ぶPython3 ライフゲームを作る](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/8/README.md)  
 ```python
 #! /usr/bin/env python3
 import tkinter
-cellcolor = '#c82c55'    # cochinealred
-d = [(x, y) for x in [-1, 0, 1] for y in [-1, 0, 1]]    # 周辺と中心の座標
+cellcolor = '#c82c55'
+d = [(x, y) for x in [-1, 0, 1] for y in [-1, 0, 1]]
 alive = set()
 rid = None
 start_pos = (0, 0)    # 左ドラッグ開始地点
@@ -19,12 +21,12 @@ def draw():
     for x, y in alive:
         rx, ry= x*8+2, y*8+2
         cv.create_rectangle(rx, ry, rx+7, ry+7, fill = cellcolor, tag = 'cells')
-def leftdown(e):
+def leftdown(e):#
     global start_pos
     if rid : root.after_cancel(rid)
     k = ((e.x-2) // 8, (e.y-2) // 8)
     start_pos = k    # 左ドラッグ開始地点
-def leftup(e):
+def leftup(e):#
     k = ((e.x-2) // 8, (e.y-2) // 8)
     s = start_pos
     sx, ex = min(s[0], k[0]), max(s[0], k[0])    # rangeでexまで+1して行くので小さい方をsx大きい方をex
