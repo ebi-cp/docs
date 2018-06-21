@@ -1,6 +1,5 @@
 ## 実技で学ぶPython3 ライフゲームを作る 矩形選択(追加､削除)
 
-
 １つずつ置くのはしんどいので一気に追加できるように改良しましょう。  
 
 左クリックで 時間止める セル追加削除  
@@ -37,7 +36,6 @@ def leftup(e):
                 if (x, y) in alive : alive.remove((x, y))    # 集合の中にないものを消そうとするとエラーになるのであるか確かめる
             else:    # 追加
                 alive.add((x, y))
-                
     draw()
 def rightdown(e):
     if rid : root.after_cancel(rid)
