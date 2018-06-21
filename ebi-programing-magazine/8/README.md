@@ -23,7 +23,7 @@ def draw():    # 集合aliveのすべてのセルを描画します
     for x, y in alive:
         rx, ry= x*8+2, y*8+2    # セルの大きさが8なので8倍し2ピクセルずれるのでずらします
         cv.create_rectangle(rx, ry, rx+7, ry+7, fill = cellcolor, tag = 'cells')
-def leftclick(e):
+def leftdown(e):
     if rid : root.after_cancel(rid)    # 再生中かもしれないのでその場合はキャンセルします
     k = ((e.x-2) // 8, (e.y-2) // 8)
     if k in alive:    # aliveに含まれている場合は削除し無いなら追加します
@@ -31,7 +31,7 @@ def leftclick(e):
     else:
         alive.add(k)
     draw()    # 最後にdrawを呼び結果を画面に反映させます
-def rightclick(e):
+def rightdown(e):
     if rid : root.after_cancel(rid)
     update()
 def update():
@@ -56,8 +56,8 @@ def update():
 root = tkinter.Tk()
 cv = tkinter.Canvas(root, width = 512, height = 512)
 cv.pack()
-root.bind('<Button-1>', leftclick)
-root.bind('<Button-3>', rightclick)
+root.bind('<Button-1>', leftdown)
+root.bind('<Button-3>', rightdown)
 root.mainloop()
 ```
 
