@@ -1,4 +1,4 @@
-## 10 (仮)普通に学ぶPython3 文字列
+## (仮)普通に学ぶPython3 文字列
 
 ```pytnon
 a = 'aaa'
