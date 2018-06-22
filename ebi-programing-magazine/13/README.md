@@ -1,11 +1,16 @@
 ## .Net言語(C#, VB, Boo)でGUIプログラミング TitleUnk再び
 [3 実技で学ぶPython3 TkinterでGUIアプリを作ろう｡](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/3/README.md)  
-他の言語に移植  
+.Net言語(C#, VB, Boo)に移植  
 .Net言語はGUIが楽なので  
+C++よりは遅いけどPythonなんかよりは全然早い  
 
 
 ## C#
-コンパイラの場所多分この辺にあると思う  
+Unityでゲーム制作ができる  
+GUIアプリを作るのも楽  
+Xamarinでスマホアプリが作れる  
+
+コンパイラの場所 多分この辺にあると思う  
 C:/Program Files (x86)/MSBuild/14.0/bin/csc.exe  
 C:/Windows/Microsoft.NET/Framework/v4.0.30319/csc.exe  
 C:/Windows/Microsoft.NET/Framework64/v4.0.30319/csc.exe  
@@ -29,7 +34,7 @@ class Program {
     }
     
     static void TitleUnk (object sender, EventArgs e) {
-        (sender as Form).Text = "unk";
+        (sender as Form).Text = "unk";    // object型なのでForm型にキャストします
     }
 }
 ```
@@ -48,11 +53,11 @@ class Program {
 class Form1 : Form {
     public Form1 () {    // コンストラクタ
         this.Text = "Form1";
-        this.Click += new EventHandler(TitleUnk);
+        this.Click += new EventHandler(this.TitleUnk);
     }
     
     void TitleUnk (object sender, EventArgs e) {
-        (sender as Form).Text = "unk";
+        (sender as Form1).Text = "unk";    // object型なのでForm1型にキャストします
     }
 }
 ```
@@ -61,6 +66,7 @@ class Form1 : Form {
 昔Unityで使えた(0.44%の人しか使っていなかったらしい)Pythonに似ている言語。  
 廃止になると聞いてPythonに似ている言語であることを初めて知った。  
 今でも使おうとすれば使えるはず(Unity)  
+行コメントは //でも#でもいいっぽい  
 [Booコンパイラ](https://github.com/boo-lang/boo)  
 bin/booc.exe  
 booc ファイル.boo  
@@ -71,7 +77,7 @@ import System
 import System.Windows.Forms
 
 def TitleUnk(sender as object, e as EventArgs):
-    (sender as Form).Text = "unk"
+    (sender as Form).Text = "unk"    // object型なのでForm型にキャストします
 f = Form()
 f.Click += EventHandler(TitleUnk)
 Application.Run(f)
@@ -86,7 +92,7 @@ class Form1(Form):
     def constructor():    // コンストラクタ
         self.Click += EventHandler(self.TitleUnk)
     def TitleUnk(sender as object, e as EventArgs):
-        (sender as Form1).Text = "unk"
+        (sender as Form1).Text = "unk"    // object型なのでForm1型にキャストします
 Application.Run(Form1())
 ```
 
@@ -105,9 +111,9 @@ import System.Windows.Forms
 class Form1(Form):
     def constructor():
         b1 = Button(Text : '海老競プロ部に入部します', Width : 240)
-        b1.Click += EventHandler(Button1Click)
+        b1.Click += EventHandler(self.Button1Click)
         b2 = Button(Text : '海老競プロ部に入部しません', Width : 240)
-        b2.Click += EventHandler(Button2Click)
+        b2.Click += EventHandler(self.Button2Click)
         tlp = TableLayoutPanel(Width : 260)
         tlp.Controls.Add(b1)
         tlp.Controls.Add(b2)
