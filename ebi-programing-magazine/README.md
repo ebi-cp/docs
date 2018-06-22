@@ -3,15 +3,15 @@
 競プロ部に入ってもらうことが目的だけど競プロと関係ない記事ばかり。  
 でも作って遊んでるうちにある程度競プロもできるようになると思う。  
 
+---
 
 プログラミング用のテキストエディタ  
 VSCode [download page](https://code.visualstudio.com/download)
 
-Python3 [download page](https://www.python.org/downloads/release/python-365/)  
-Windows x86-64 web-based installer
+Python3 [download page](https://www.python.org/downloads/release/python-365/) Windows x86-64 web-based installer
 
-
-バックナンバー  
+---
+#### バックナンバー  
 - [1 TCO18 Marathon Round 2 CrystalLightingに参加しました。](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/1/README.md)  
 - [2 実技で学ぶPython3 海老もえぎの配信状況を知ろう。](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/2/README.md)  
 - [3 実技で学ぶPython3 TkinterでGUIアプリを作ろう｡](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/3/README.md)  
@@ -23,13 +23,28 @@ Windows x86-64 web-based installer
 - [9 実技で学ぶPython3 ライフゲームを作る 矩形選択(追加､削除)](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/9/README.md)  
 - [10 普通に学ぶPython3 文字列](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/10/README.md)  
 
+---
+
 予定
 - 11 普通に学ぶPython3 関数  
 - 12 普通に学ぶPython3 クラス  
 - [13 .Net言語(C#, VB, Boo)でGUIプログラミング TitleUnk再び](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/13/README.md)  
 - 14 .Net言語(C#, VB, Boo)でGUIプログラミング ライフゲームの移植  
 - 15 少しだけUnity(C#)  
-- 16競技プログラミングとゴルフ
+- 16 競技プログラミングとゴルフ
 - 17 Python3 pip
 - 18 Python3 venv
 - 19 Python3 discordbot
+
+---
+## 海老競プロ部リンク
+- [トップ](https://github.com/ebi-cp/docs/blob/master/README.md)
+- [TopCoder MarathonMatchの始め方](https://github.com/ebi-cp/docs/blob/master/start-topcoder-marathon-match.md)
+- [TCO18 MM R1 - RoadsAndJunctions](https://github.com/ebi-cp/docs/blob/master/TopCoderMM/RoadsAndJunctions.md)
+- [AtCoderの始め方](https://github.com/ebi-cp/docs/blob/master/start-atcoder.md)
+- [闇Python入門](https://github.com/ebi-cp/docs/blob/master/dark-pythonista.md)
+- [海老ライブラリ](https://github.com/ebi-cp/docs/tree/master/library)
+- [海老バーチャルコンテスト](https://github.com/ebi-cp/docs/blob/master/ebi-virtual-contest.md)
+- [ゴルフコード置き場](https://github.com/ebi-cp/golf)
+- [VB.netでACしてみた](https://github.com/ebi-cp/vb/tree/master/ebicochineal)
+---
