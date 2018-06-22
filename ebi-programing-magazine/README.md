@@ -4,7 +4,6 @@
 でも作って遊んでるうちにある程度競プロもできるようになると思う。  
 
 
-
 プログラミング用のテキストエディタ  
 VSCode [download page](https://code.visualstudio.com/download)
 

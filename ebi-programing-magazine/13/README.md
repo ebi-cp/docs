@@ -1,10 +1,16 @@
 ## .Net言語(C#, VB, Boo)でGUIプログラミング TitleUnk再び
 
 #### C#
+コンパイラの場所多分この辺にあると思う  
 C:/Program Files (x86)/MSBuild/14.0/bin/csc.exe  
 C:/Windows/Microsoft.NET/Framework/v4.0.30319/csc.exe  
 C:/Windows/Microsoft.NET/Framework64/v4.0.30319/csc.exe  
-csc ファイル.cs
+コマンド  
+パス通して  
+csc ファイル.cs  
+か  
+C:/Windows/Microsoft.NET/Framework64/v4.0.30319/csc.exe ファイル.cs  
+とすれば良い
 ```cs
 using System;
 using System.Windows.Forms;
@@ -17,7 +23,7 @@ class Program {
     }
     
     static void TitleUnk (object sender, EventArgs e) {
-        Program.f.Text = "unk";
+        (sender as Form).Text = "unk";
     }
 }
 ```
@@ -40,25 +46,41 @@ class Form1 : Form {
     }
     
     void TitleUnk (object sender, EventArgs e) {
-        this.Text = "unk";
+        (sender as Form).Text = "unk";
     }
 }
 ```
 ---
 
-#### Boo
-[boo-lang](https://github.com/boo-lang/boo)  
+昔Unityで使えた(0.44%の人しか使っていなかったらしい)Pythonに似ている言語。  
+廃止になると聞いてPythonに似ている言語であることを初めて知った。  
+今でも使おうとすれば使えるはず(Unity)  
+[Booコンパイラ](https://github.com/boo-lang/boo)  
 bin/booc.exe  
 booc ファイル.boo
+#### Boo
+```py
+import System
+import System.Windows.Forms
+
+def TitleUnk(sender as object, e as EventArgs):
+    (sender as Form).Text = "unk"
+f = Form()
+f.Click += EventHandler(TitleUnk)
+Application.Run(f)
+```
+
+#### Boo
+
 ```py
 import System
 import System.Windows.Forms
 
 class Form1(Form):
-    def constructor () :
+    def constructor():    // コンストラクタ
         self.Click += EventHandler(TitleUnk)
-    def TitleUnk (sender as object, e as EventArgs):
-        self.Text = "unk"
+    def TitleUnk(sender as object, e as EventArgs):
+        (sender as Form1).Text = "unk"
 Application.Run(Form1())
 ```
 
