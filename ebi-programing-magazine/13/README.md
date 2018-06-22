@@ -27,12 +27,11 @@ using System;
 using System.Windows.Forms;
 
 class Program {
-    static Form f = new Form();
     static void Main () {
-        Program.f.Click += new EventHandler(TitleUnk);
+        Form f = new Form();
+        f.Click += new EventHandler(TitleUnk);
         Application.Run(f);
     }
-    
     static void TitleUnk (object sender, EventArgs e) {
         (sender as Form).Text = "unk";    // object型なのでForm型にキャストします
     }
@@ -55,13 +54,35 @@ class Form1 : Form {
         this.Text = "Form1";
         this.Click += new EventHandler(this.TitleUnk);
     }
-    
     void TitleUnk (object sender, EventArgs e) {
         (sender as Form1).Text = "unk";    // object型なのでForm1型にキャストします
     }
 }
 ```
 ---
+## VB.Net
+VBきつい何もかも分からない  
+けどこれでなんとかうまく行った  
+
+#### ウィンドウクリックするとウィンドウタイトルunk
+```vb
+Imports System
+Imports System.Windows.Forms
+
+class Program
+    shared sub main ()
+        dim f as Form = new Form()
+        AddHandler f.Click, AddressOf TitleUnk
+        Application.Run(f)
+    end sub
+    shared sub TitleUnk (ByVal sender as object, ByVal e as EventArgs)
+        CType(sender, Form).Text = "unk"
+    end sub
+end class
+```
+
+---
+
 ## Boo
 昔Unityで使えた(0.44%の人しか使っていなかったらしい)Pythonに似ている言語。  
 廃止になると聞いてPythonに似ている言語であることを初めて知った。  
