@@ -64,6 +64,16 @@ class Form1 : Form {
 VBきつい何もかも分からない  
 けどこれでなんとかうまく行った  
 
+コンパイラの場所
+C:/Program Files (x86)/MSBuild/14.0/bin/vbc.exe  
+C:/Windows/Microsoft.NET/Framework/v4.0.30319/vbc.exe  
+C:/Windows/Microsoft.NET/Framework64/v4.0.30319/vbc.exe  
+コマンド  
+vbc ファイル.vb  
+か  
+C:/Windows/Microsoft.NET/Framework64/v4.0.30319/vbc.exe ファイル.vb  
+
+
 #### ウィンドウクリックするとウィンドウタイトルunk
 ```vb
 Imports System
