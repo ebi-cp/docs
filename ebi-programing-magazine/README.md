@@ -27,7 +27,7 @@ Windows x86-64 web-based installer
 - [13 .Net言語(C#, VB, Boo)でGUIプログラミング TitleUnk再び](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/13/README.md)  
 - 14 .Net言語(C#, VB, Boo)でGUIプログラミング ライフゲームの移植  
 - 15 少しだけUnity(C#)  
-- 競技プログラミングとゴルフ
-- 16 Python3 pip
-- 17 Python3 venv
-- 18 Python3 discordbot
+- 16競技プログラミングとゴルフ
+- 17 Python3 pip
+- 18 Python3 venv
+- 19 Python3 discordbot
