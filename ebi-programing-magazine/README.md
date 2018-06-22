@@ -19,3 +19,14 @@ Windows x86-64 web-based installer
 - [ 8 実技で学ぶPython3 ライフゲームを作る](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/8/README.md)  
 - [ 9 実技で学ぶPython3 ライフゲームを作る 矩形選択(追加､削除)](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/9/README.md)  
 - [10 (仮)普通に学ぶPython3 文字列](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/10/README.md)  
+
+予定
+- 1 普通に学ぶPython3 関数  
+- 2 普通に学ぶPython3 クラス  
+- 1 .Net言語(C#, VB, Boo)でGUIプログラミング TitleUnk再び  
+- 2 .Net言語(C#, VB, Boo)でGUIプログラミング ライフゲームの移植  
+- 3 少しだけUnity(C#)  
+- 競技プログラミングとゴルフ
+- 1 Python3 pip
+- 2 Python3 venv
+- 3 Python3 discordbot
