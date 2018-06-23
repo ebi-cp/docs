@@ -1,10 +1,11 @@
 ## TCO18 Marathon Round 2 CrystalLightingに参加しました。  
 暫定順位 49/127 https://community.topcoder.com/longcontest/?module=ViewStandings&rd=17179
-問題 https://community.topcoder.com/longcontest/?module=ViewProblemStatement&rd=17179&pm=14934
+## 問題  
+[問題ページ](https://community.topcoder.com/longcontest/?module=ViewProblemStatement&rd=17179&pm=14934)  
 - クリスタルの色通りにランタンで光を当てるとポイントが貰える。青黄赤20、緑紫橙30、違う色-10
 - 光を反射(曲げる)するミラーと壁をいくつか設置可能
 - ランタンの光が別のランタンに当たるとダメ
-アプローチ
+## アプローチ  
 - (1) 全スコア計算。最初に壁ミラーすべておいて最後にランタン計算する。遅い
 - (2) ランタンのみのスコア計算。１つごとにどれだけ良くなるか計算。条件の半分を満たしていたらスコアを+10条件を満たすことができない光当ててしまったら-10
 - [1] 区画を分けてその区画で一番スコアの高いのを置いていく。
