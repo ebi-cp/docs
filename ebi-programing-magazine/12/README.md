@@ -29,7 +29,7 @@ class ebi:
         self.sewata = 0
     def eat(self):    # メソッド
         print('美味しい')
-class ebirenjai(ebi):
+class ebirenjai(ebi):    # ebiを継承
     def __init__(self, sewata):    # コンストラクタ
         self.sewata = sewata
     def eat(self):    # メソッドのオーバーライド
@@ -45,7 +45,7 @@ e2 = ebirenjai(0)
 e2.eat()    # 美味しい。
 e3 = ebirenjai(100)
 e3.eat()    # 背ワタ未処理の海老プラチナだ。不味い。
-e3.sewata_remove()
+e3.sewata_remove()    # ebiを継承しているので使える
 e3.eat()    # 美味しい。
 
 ```
