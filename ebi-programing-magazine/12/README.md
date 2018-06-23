@@ -22,6 +22,7 @@ class クラス名(継承元クラス名):で継承できる。
 継承し継承元のメソッドの動作を書き換える。Pythonの場合は継承先で同じメソッドを作ればオーバーライドされそう。
 ---
 ```py
+#! /usr/bin/env python3
 class ebi:
     def __init__(self):    # コンストラクタ
         self.sewata = 0
@@ -59,6 +60,7 @@ tkimage スタティックメソッド 海老の画像を生成する
 画像ファイルを読み込めばもっとシンプルにできるけどコピペで動いた方が楽そうだからpythonで画像生成するようにしました。  
 
 ```py
+#! /usr/bin/env python3
 import tkinter
 class ebi:
     def __init__(self, x, y):
@@ -100,6 +102,7 @@ root.mainloop()
 ---
 #### ebiクラスの継承 colorの追加
 ```py
+#! /usr/bin/env python3
 import tkinter
 class ebi:
     def __init__(self, x, y):
