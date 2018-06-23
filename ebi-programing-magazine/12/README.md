@@ -196,7 +196,7 @@ cv.pack()
 e = []
 for x in range(16):
     for y in range(16):
-        e += [ebirenjai(x*32, y*32, '#%02x%02x%02x'%(x*16, y*16, 127 - x*8 + 127 - y*8))]
+        e += [ebirenjai(x*32, y*32, '#%02x%02x%02x'%(x*16, y*16, 255 - x*8 - y*8))]
 for i in e:
     cv.create_image(2 + i.x, 2 + i.y, image = i.im, tags = 'ebi', anchor = 'nw')
 root.mainloop()
