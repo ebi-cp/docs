@@ -22,11 +22,11 @@ Python3 [download page](https://www.python.org/downloads/release/python-365/) Wi
 - [8 実技で学ぶPython3 ライフゲームを作る](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/8/README.md)  
 - [9 実技で学ぶPython3 ライフゲームを作る 矩形選択(追加､削除)](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/9/README.md)  
 - [10 普通に学ぶPython3 文字列](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/10/README.md)  
+- [11 普通に学ぶPython3 関数 ](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/11/README.md)  
 
 ---
 
 予定
-- 11 普通に学ぶPython3 関数  
 - 12 普通に学ぶPython3 クラス  
 - [13 .Net言語(C#, VB, Boo)でGUIプログラミング TitleUnk再び](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/13/README.md)  
 - 14 .Net言語(C#, VB, Boo)でGUIプログラミング ライフゲームの移植  
