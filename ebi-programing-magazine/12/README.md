@@ -38,12 +38,12 @@ class ebirenjai(ebi):    # ebiを継承
         else:
             print('美味しい。')
         
-e1 = ebi()
+e1 = ebi()    # ebiのインスタンス作成
 e1.eat()    # 美味しい。
 
-e2 = ebirenjai(0)
+e2 = ebirenjai(0)    # ebirenjaiのインスタンス作成 sewata 0
 e2.eat()    # 美味しい。
-e3 = ebirenjai(100)
+e3 = ebirenjai(100)    # ebirenjaiのインスタンス作成 sewata 100
 e3.eat()    # 背ワタ未処理の海老プラチナだ。不味い。
 e3.sewata_remove()    # ebiを継承しているので使える
 e3.eat()    # 美味しい。
