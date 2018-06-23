@@ -2,14 +2,14 @@
 [3 実技で学ぶPython3 TkinterでGUIアプリを作ろう｡](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/3/README.md)  
 .Net言語(C#, VB, Boo)に移植  
 .Net言語はGUIが楽なので  
-C++よりは遅いけどPythonなんかよりは全然早い  
+C++よりは遅いけどPython, Pypyなんかよりは全然早い  
 
 
 ## C#
 Unityでゲーム制作ができる  
 GUIアプリを作るのも楽  
 Xamarinでスマホアプリが作れる  
-
+競技プログラミングでも使えるAtCoder, TopCoder  
 コンパイラの場所 多分この辺にあると思う  
 C:/Program Files (x86)/MSBuild/14.0/bin/csc.exe  
 C:/Windows/Microsoft.NET/Framework/v4.0.30319/csc.exe  
