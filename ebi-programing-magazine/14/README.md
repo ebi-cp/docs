@@ -1,5 +1,5 @@
 ## .Net言語(C#, VB, Boo)でGUIプログラミング ライフゲームの移植
-[6 実技で学ぶPython3 ファイル読み込み３Dファイルの平行投影表示](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/6/README.md)  
+[8 実技で学ぶPython3 ライフゲームを作る](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/8/README.md)  
 .Net言語(C#, VB, Boo)に移植  
 
 ## C#
