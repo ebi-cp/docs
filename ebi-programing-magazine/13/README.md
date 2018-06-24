@@ -156,6 +156,9 @@ Application.Run(Form1())
 ---
 ## ボタンを２つ表示それぞれにイベント  
 
+TableLayoutPanelに追加することで自動的に配置してくれる。  
+Formに追加すると座標指定しないとボタンが重なる。  
+
 #### C#
 ```cs
 using System;
@@ -226,8 +229,6 @@ end class
 ```
 
 #### Boo
-TableLayoutPanelに追加することで自動的に配置してくれる。  
-Formに追加すると座標指定しないとボタンが重なる。  
 ```py
 import System
 import System.Windows.Forms
@@ -251,5 +252,5 @@ class Form1(Form):
 Application.Run(Form1())
 ```
 
-
+![Gif](https://raw.githubusercontent.com/ebi-cp/docs/master/ebi-programing-magazine/13/button2.gif)
 
