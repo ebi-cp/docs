@@ -117,12 +117,12 @@ class Game(Form):
     private def MouseDownEvent (sender as object, e as MouseEventArgs):
         if e.Button == MouseButtons.Left:
             self.timer.Stop();
-            var pos = self.PointToClient(System.Windows.Forms.Cursor.Position);
-            var p = Point(pos.X / Game.CellSize, pos.Y / Game.CellSize);
+            var pos = self.PointToClient(System.Windows.Forms.Cursor.Position)
+            var p = Point(pos.X / Game.CellSize, pos.Y / Game.CellSize)
             if self.alive.Contains(p):
-                self.alive.Remove(p);
+                self.alive.Remove(p)
             else:
-                self.alive.Add(p);
+                self.alive.Add(p)
             self.Draw();
         if e.Button == MouseButtons.Right : self.timer.Start()
     private def Draw():
@@ -141,9 +141,9 @@ class Game(Form):
                 for dx in range(-1, 2):
                     t = Point(i.X+dx, i.Y+dy);
                     if m.ContainsKey(t):
-                        m[t] += 1;
+                        m[t] += 1
                     else:
-                        m[t] = 1;
+                        m[t] = 1
         for i in m:
             if i.Value == 3 : alive.Add(i.Key)
         for i in alive.ToList():
