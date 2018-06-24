@@ -21,7 +21,7 @@ class Game : Form {
     private System.Timers.Timer timer = new System.Timers.Timer(100);
     public Game () {
         this.pb = new PictureBox() { Width = Game.CVSize, Height = Game.CVSize };
-        this.bm = new Bitmap(pb.Width, pb.Height);
+        this.bm = new Bitmap(this.pb.Width, this.pb.Height);
         this.g = Graphics.FromImage(bm);
         this.pb.MouseDown += new MouseEventHandler(this.MouseDownEvent);
         this.Width = Game.CVSize+16;
