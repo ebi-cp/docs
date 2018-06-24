@@ -10,7 +10,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Collections.Generic;
 
-class LifeGame : Form {
+class Game : Form {
     private static int CVSize = 512;
     private static int CellSize = 8;
     private Graphics g;
@@ -18,36 +18,34 @@ class LifeGame : Form {
     private PictureBox pb;
     private HashSet<Point> alive = new HashSet<Point>();
     private System.Timers.Timer timer = new System.Timers.Timer(100);
-    public LifeGame () {
-        this.pb = new PictureBox() { Width = LifeGame.CVSize, Height = LifeGame.CVSize };
+    public Game () {
+        this.pb = new PictureBox() { Width = Game.CVSize, Height = Game.CVSize };
         this.bm = new Bitmap(pb.Width, pb.Height);
         this.g = Graphics.FromImage(bm);
         this.pb.MouseDown += new MouseEventHandler(this.MouseDownEvent);
-        this.Width = LifeGame.CVSize+16;
-        this.Height = LifeGame.CVSize+16;
+        this.Width = Game.CVSize+16;
+        this.Height = Game.CVSize+16;
         this.Text = "LifeGame";
         this.Controls.Add(this.pb);
-        this.timer.Elapsed += new System.Timers.ElapsedEventHandler(this.LifeGameUpdate);
+        this.timer.Elapsed += new System.Timers.ElapsedEventHandler(this.GameUpdate);
     }
     private void CVClear () {
-        this.g.FillRectangle(Brushes.White, 0, 0, LifeGame.CVSize, LifeGame.CVSize);
+        this.g.FillRectangle(Brushes.White, 0, 0, Game.CVSize, Game.CVSize);
         this.Controls.Add(this.pb);
     }
     private void DrawCell (int x, int y) {
-        int px = LifeGame.CellSize * x;
-        int py = LifeGame.CellSize * y;
-        this.g.FillRectangle(Brushes.Black, px, py, LifeGame.CellSize, LifeGame.CellSize);
+        int px = Game.CellSize * x;
+        int py = Game.CellSize * y;
+        this.g.FillRectangle(Brushes.Black, px, py, Game.CellSize, Game.CellSize);
         var b = new SolidBrush(Color.FromArgb(255, 200, 44, 85));
-        this.g.FillRectangle(b, px+1, py+1, LifeGame.CellSize-2, LifeGame.CellSize-2);
+        this.g.FillRectangle(b, px+1, py+1, Game.CellSize-2, Game.CellSize-2);
         b.Dispose();
     }
     private void MouseDownEvent (object sender, MouseEventArgs e) {
         if (e.Button == MouseButtons.Left) {
             this.timer.Stop();
             var pos = this.PointToClient(System.Windows.Forms.Cursor.Position);
-            var x = pos.X / LifeGame.CellSize;
-            var y = pos.Y / LifeGame.CellSize;
-            var p = new Point(x, y);
+            var p = new Point(pos.X / Game.CellSize, pos.Y / Game.CellSize);
             if (this.alive.Contains(p)) {
                 this.alive.Remove(p);
             } else {
@@ -62,8 +60,8 @@ class LifeGame : Form {
         foreach (var i in this.alive) { this.DrawCell(i.X, i.Y); }
         this.pb.Image = this.bm;
     }
-    private void LifeGameUpdate (object sender, EventArgs e) {
-        var s = LifeGame.CVSize / LifeGame.CellSize;
+    private void GameUpdate (object sender, EventArgs e) {
+        var s = Game.CVSize / Game.CellSize;
         var m = new Dictionary<Point, int>();
         foreach (var i in this.alive) {
             for (int dy = -1; dy < 2; ++dy) {
@@ -89,7 +87,8 @@ class LifeGame : Form {
 }
 class Program {
     static void Main () {
-        Application.Run(new LifeGame());
+        Application.Run(new Game());
     }
 }
+
 ```
