@@ -31,7 +31,6 @@ class Game : Form {
     }
     private void CVClear () {
         this.g.FillRectangle(Brushes.White, 0, 0, Game.CVSize, Game.CVSize);
-        this.Controls.Add(this.pb);
     }
     private void DrawCell (int x, int y) {
         int px = Game.CellSize * x;
@@ -90,5 +89,4 @@ class Program {
         Application.Run(new Game());
     }
 }
-
 ```
