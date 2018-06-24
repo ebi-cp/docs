@@ -30,15 +30,6 @@ class Game : Form {
         this.Controls.Add(this.pb);
         this.timer.Elapsed += new System.Timers.ElapsedEventHandler(this.GameUpdate);
     }
-    private void CVClear () {
-        this.g.FillRectangle(Brushes.White, 0, 0, Game.CVSize, Game.CVSize);
-    }
-    private void DrawCell (int x, int y) {
-        int px = Game.CellSize * x;
-        int py = Game.CellSize * y;
-        this.g.FillRectangle(Brushes.Black, px, py, Game.CellSize, Game.CellSize);
-        this.g.FillRectangle(cellcolor, px+1, py+1, Game.CellSize-2, Game.CellSize-2);
-    }
     private void MouseDownEvent (object sender, MouseEventArgs e) {
         if (e.Button == MouseButtons.Left) {
             this.timer.Stop();
@@ -49,13 +40,18 @@ class Game : Form {
             } else {
                 this.alive.Add(p);
             }
-            this.AllDraw();
+            this.Draw();
         }
         if (e.Button == MouseButtons.Right) { this.timer.Start(); }
     }
-    private void AllDraw () {
-        this.CVClear();
-        foreach (var i in this.alive) { this.DrawCell(i.X, i.Y); }
+    private void Draw () {
+        this.g.FillRectangle(Brushes.White, 0, 0, Game.CVSize, Game.CVSize);
+        foreach (var i in this.alive) {
+            int px = Game.CellSize * i.X;
+            int py = Game.CellSize * i.Y;
+            this.g.FillRectangle(Brushes.Black, px, py, Game.CellSize, Game.CellSize);
+            this.g.FillRectangle(cellcolor, px+1, py+1, Game.CellSize-2, Game.CellSize-2);
+        }
         this.pb.Image = this.bm;
     }
     private void GameUpdate (object sender, EventArgs e) {
@@ -80,7 +76,7 @@ class Game : Form {
             var y = Math.Abs(i.Y-s) > s*2;
             if (a || x || y) { this.alive.Remove(i); }
         }
-        this.AllDraw();
+        this.Draw();
     }
 }
 class Program {
