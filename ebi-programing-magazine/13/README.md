@@ -166,9 +166,9 @@ using System.Windows.Forms;
 
 class Form1 : Form {
     public Form1 () {
-        var b1 = new Button(){ Text = "海老競プロ部に入部します", Width = 240 };    // オブジェクト初期化子
+        var b1 = new Button() { Text = "海老競プロ部に入部します", Width = 240 };    // オブジェクト初期化子
         b1.Click += new EventHandler(this.Button1Click);
-        var b2 = new Button(){ Text = "海老競プロ部に入部しません", Width = 240 };
+        var b2 = new Button() { Text = "海老競プロ部に入部しません", Width = 240 };
         b2.Click += new EventHandler(this.Button2Click);
         var p = new TableLayoutPanel() { Width = 260 };
         p.Controls.Add(b1);
