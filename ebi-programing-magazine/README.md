@@ -38,7 +38,7 @@ Python3 [download page](https://www.python.org/downloads/release/python-365/) Wi
 
 予定
 
-- 14 .Net言語(C#, VB, Boo)でGUIプログラミング ライフゲームの移植  
+- [14 .Net言語(C#, VB, Boo)でGUIプログラミング ライフゲームの移植](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/14/README.md)  
 - 15 少しだけUnity(C#)  
 - 16 競技プログラミングとゴルフ
 - 17 Python3 pip
