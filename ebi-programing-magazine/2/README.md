@@ -1,8 +1,19 @@
 ## 実技で学ぶPython3 海老もえぎの配信状況を知ろう  
 moegi_live.pyなどで保存すれば動きます  
-```python
-import time    # time.sleepを使うために必要なライブラリ
-import urllib.request    # URLを開くために必要なライブラリ
+
+- 0 prev 前の状態を記録する変数を宣言
+- 1 URLにアクセスしHTMLを取得
+- 2 HTMLの中に文字列status: 'LIVE'が含まれるか調べるその状態を記録
+- 3 前のループで配信していない　かつ　配信中 -> 配信開始 と表示
+- 4 前のループで配信中　かつ　配信中 -> 配信中 と表示
+- 5 前のループで配信していない　かつ　配信していない -> 配信していません と表示
+- 6 前のループで配信中　かつ　配信していない -> 配信終了 と表示
+- 7 今の状態を覚えておくprevに入れる
+- 8 １０分待って1に戻る
+```py
+#!/usr/bin/python3
+import time    # time.sleepを使うために必要
+import urllib.request    # URLを開くために必要
 prev = False
 while True:    # 繰り返し
     u = urllib.request.urlopen('https://www.cavelis.net/live/yuh_')    # urlを開く

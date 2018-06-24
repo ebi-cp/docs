@@ -2,14 +2,19 @@
 競プロと関係ないのばかりやっているけど、まずプログラミングに興味を持ってもらわないとなのでGUIアプリを作り方を説明します。
 tkinterによるGUIプログラミングはマラソンマッチのヴィジュアライザ作成にも利用できるはず。  
 
-Python3のインストールがまだな方はインストールをしてください。  
+#### Tkinterでウィンドウ表示するだけならすごく簡単
+```py
+import tkinter    # GUIのライブラリインポート
+root = tkinter.Tk()    # ウィンドウを作る
+root.mainloop()    # メインループ
+```
+mainloopで処理が止まる感じになるのでそのあとに何か書くとウィンドウが閉じた後に処理されます
 
-URL https://www.python.org/downloads/release/python-365/  
-Windows x86-64 web-based installer
 
+---
 
 #### ウィンドウを表示しクリックされたらタイトルをunkにする  
-```python
+```py
 import tkinter    # GUIのライブラリインポート
 def titleunk(e):    # タイトルうんこ関数
     root.title('unk')
@@ -17,9 +22,10 @@ root = tkinter.Tk()    # ウィンドウを作る
 root.bind('<Button-1>', titleunk)    # <Button-1>クリックされたら タイトルうんこ関数を呼ぶ
 root.mainloop()
 ```
+---
 
 #### ウィンドウを表示し海老競プロ部に入部しますボタンを作る  
-```python
+```py
 import tkinter
 def button1() : print('あなたは入部しました')
 def button2() : print('残念ながらあなたは入部しました')
@@ -28,9 +34,10 @@ tkinter.Button(root, text = '海老競プロ部に入部します', command = bu
 tkinter.Button(root, text = '海老競プロ部に入部しません', command = button2).pack()
 root.mainloop()
 ```
+---
 
 #### ウィンドウの中にキャンバスを設置し画面内の左クリックした地点に小さな円を描く。右クリックで消去  
-```python
+```py
 import tkinter
 def leftclick(e):    # 引数eにクリックされた位置などが入ってるprint(dir(e))とかで色々出てくる
     cv.create_oval(e.x-4, e.y-4, e.x+4, e.y+4, tag = 'unk')    # tag無しでも行けるけど、付けると消去したりできる

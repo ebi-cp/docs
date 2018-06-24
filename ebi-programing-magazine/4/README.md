@@ -3,7 +3,7 @@
 
 forループ文とrangeの使いかた
 Python3で九九を表示
-```python
+```py
 for i in range(9):    # 0~8の値が順番にiに入ります
     for j in range(9):
         a, b = i + 1, j + 1    # 0からなので+1します
@@ -19,7 +19,7 @@ for i in range(1, 10):    # 1~9の値が順番にiに入ります
   
 前回までの知識と2重ループでできる  
 マンデルブロ集合をTkinterで描画する
-```python
+```py
 import tkinter
 def mandelbrot(x, y):
     # 座標を修正します 0が真ん中に来るように
@@ -43,11 +43,11 @@ for y in range(240):    # 240回繰り返します 0~239の値が yに順番に�
 cv.create_image(2, 2, image = im, anchor = 'nw')    # イメージをキャンバスに表示させます。２ピクセルずれるので2, 2とセットします。 nw(左上)が0, 0
 root.mainloop()
 ```
-  
+
 最初に240*240ピクセル分の計算をしていたので最初に時間がかかってしまいます。
 なので1ラインずつ表示してみます。
 
-```python
+```py
 import tkinter
 def mandelbrot(x, y):
     px = x / 240.0 * 4.0 - 3.0
