@@ -43,12 +43,6 @@ class Program {
 using System;
 using System.Windows.Forms;
 
-class Program {
-    static void Main () {
-        Application.Run(new Form1());
-    }
-}
-
 class Form1 : Form {
     public Form1 () {    // コンストラクタ
         this.Text = "Form1";
@@ -58,11 +52,19 @@ class Form1 : Form {
         (sender as Form1).Text = "unk";    // object型なのでForm1型にキャストします
     }
 }
+
+class Program {
+    static void Main () {
+        Application.Run(new Form1());
+    }
+}
 ```
 ---
-## VB.Net
+## VB.net
 VBきつい何もかも分からない  
 けどこれでなんとかうまく行った  
+
+VBは型ちゃんと書かないとobject型になってしまった速度が極端に落ちることがあるmonoかとかバージョンが古いとか、最新のなら多分問題ない、頻繁にアクセスしないやつでもたいして問題ないと思う。遅くなると５０～１００倍くらい遅くなるので。
 
 コンパイラの場所
 C:/Program Files (x86)/MSBuild/14.0/bin/vbc.exe  
@@ -91,6 +93,28 @@ class Program
 end class
 ```
 
+#### ウィンドウクリックするとウィンドウタイトルunk Form継承版
+```vb
+Imports System
+Imports System.Windows.Forms
+
+public class Form1
+    inherits Form ' Formの継承
+    public sub new () ' コンストラクタ
+        me.Text = "Form1"
+        AddHandler me.Click, AddressOf me.TitleUnk
+    end sub
+    private sub TitleUnk (ByVal sender as object, ByVal e as EventArgs)
+        CType(sender, Form).Text = "unk"
+    end sub
+end class
+
+class Program
+    shared sub main ()
+        Application.Run(new Form1())
+    end sub
+end class
+```
 ---
 
 ## Boo
@@ -130,9 +154,78 @@ Application.Run(Form1())
 ![Gif](https://raw.githubusercontent.com/ebi-cp/docs/master/ebi-programing-magazine/13/titleunk.gif)
 
 ---
+## ボタンを２つ表示それぞれにイベント  
+
+#### C#
+```cs
+using System;
+using System.Windows.Forms;
+
+class Form1 : Form {
+    public Form1 () {
+        var b1 = new Button(){ Text = "海老競プロ部に入部します", Width = 240 };    // オブジェクト初期化子
+        b1.Click += new EventHandler(this.Button1Click);
+        var b2 = new Button(){ Text = "海老競プロ部に入部しません", Width = 240 };
+        b2.Click += new EventHandler(this.Button2Click);
+        var p = new TableLayoutPanel() { Width = 260 };
+        p.Controls.Add(b1);
+        p.Controls.Add(b2);
+        this.Width = 260;
+        this.Height = 100;
+        this.Controls.Add(p);
+    }
+    void Button1Click (object sender, EventArgs e) {
+        Console.WriteLine("あなたは入部しました");
+    }
+    void Button2Click (object sender, EventArgs e) {
+        Console.WriteLine("残念ながらあなたは入部しました");
+    }
+}
+
+class Program {
+    static void Main () {
+        Application.Run(new Form1());
+    }
+}
+```
+
+
+#### VB.net
+```vb
+Imports System
+Imports System.Windows.Forms
+
+public class Form1
+    inherits Form
+    public sub new ()
+        dim b1 as Button = new Button() with { .Text = "海老競プロ部に入部します", .Width = 240 }    ' オブジェクト初期化子
+        AddHandler b1.Click, AddressOf me.Button1Click
+        dim b2 as Button = new Button() with { .Text = "海老競プロ部に入部しません", .Width = 240 }
+        AddHandler b2.Click, AddressOf me.Button2Click
+        dim p as TableLayoutPanel = new TableLayoutPanel() with { .Width = 260 }
+        p.Controls.Add(b1)
+        p.Controls.Add(b2)
+        me.Width = 260
+        me.Height = 100
+        me.Controls.Add(p)
+    end sub
+    private sub Button1Click (ByVal sender as object, ByVal e as EventArgs)
+        Console.WriteLine("あなたは入部しました")
+    end sub
+    private sub Button2Click (ByVal sender as object, ByVal e as EventArgs)
+        Console.WriteLine("残念ながらあなたは入部しました")
+    end sub
+    
+end class
+
+class Program
+    shared sub main ()
+        Application.Run(new Form1())
+    end sub
+end class
+```
 
 #### Boo
-#### ボタンを２つ表示それぞれにイベント  
 TableLayoutPanelに追加することで自動的に配置してくれる。  
 Formに追加すると座標指定しないとボタンが重なる。  
 ```py
@@ -145,12 +238,12 @@ class Form1(Form):
         b1.Click += EventHandler(self.Button1Click)
         b2 = Button(Text : '海老競プロ部に入部しません', Width : 240)
         b2.Click += EventHandler(self.Button2Click)
-        tlp = TableLayoutPanel(Width : 260)
-        tlp.Controls.Add(b1)
-        tlp.Controls.Add(b2)
+        p = TableLayoutPanel(Width : 260)
+        p.Controls.Add(b1)
+        p.Controls.Add(b2)
         self.Width = 260
         self.Height = 100
-        self.Controls.Add(tlp)
+        self.Controls.Add(p)
     def Button1Click(sender as object, e as EventArgs):
         Console.WriteLine('あなたは入部しました')
     def Button2Click(sender as object, e as EventArgs):
