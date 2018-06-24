@@ -13,6 +13,7 @@ using System.Collections.Generic;
 class Game : Form {
     private static int CVSize = 512;
     private static int CellSize = 8;
+    private SolidBrush cellcolor = new SolidBrush(Color.FromArgb(255, 200, 44, 85));
     private Graphics g;
     private Bitmap bm;
     private PictureBox pb;
@@ -36,9 +37,7 @@ class Game : Form {
         int px = Game.CellSize * x;
         int py = Game.CellSize * y;
         this.g.FillRectangle(Brushes.Black, px, py, Game.CellSize, Game.CellSize);
-        var b = new SolidBrush(Color.FromArgb(255, 200, 44, 85));
-        this.g.FillRectangle(b, px+1, py+1, Game.CellSize-2, Game.CellSize-2);
-        b.Dispose();
+        this.g.FillRectangle(cellcolor, px+1, py+1, Game.CellSize-2, Game.CellSize-2);
     }
     private void MouseDownEvent (object sender, MouseEventArgs e) {
         if (e.Button == MouseButtons.Left) {
