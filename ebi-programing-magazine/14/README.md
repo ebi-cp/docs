@@ -50,7 +50,7 @@ class Game : Form {
             int px = Game.CellSize * i.X;
             int py = Game.CellSize * i.Y;
             this.g.FillRectangle(Brushes.Black, px, py, Game.CellSize, Game.CellSize);
-            this.g.FillRectangle(cellcolor, px+1, py+1, Game.CellSize-2, Game.CellSize-2);
+            this.g.FillRectangle(this.cellcolor, px+1, py+1, Game.CellSize-2, Game.CellSize-2);
         }
         this.pb.Image = this.bm;
     }
@@ -138,7 +138,7 @@ public class Game
             dim px as Int32 = Game.CellSize * i.X
             dim py as Int32 = Game.CellSize * i.Y
             me.g.FillRectangle(Brushes.Black, px, py, Game.CellSize, Game.CellSize)
-            me.g.FillRectangle(cellcolor, px+1, py+1, Game.CellSize-2, Game.CellSize-2)
+            me.g.FillRectangle(me.cellcolor, px+1, py+1, Game.CellSize-2, Game.CellSize-2)
         next
         me.pb.Image = me.bm
     end sub
@@ -148,7 +148,7 @@ public class Game
         for each i as Point in me.alive
             for dy as Int32 = -1 to 1
                 for dx as Int32 = -1 to 1
-                    dim t as Point= new Point(i.X+dx, i.Y+dy)
+                    dim t as Point = new Point(i.X+dx, i.Y+dy)
                     if m.ContainsKey(t) then
                         m(t) += 1
                     else
@@ -222,7 +222,7 @@ class Game(Form):
             px = Game.CellSize * i.X
             py = Game.CellSize * i.Y
             self.g.FillRectangle(Brushes.Black, px, py, Game.CellSize, Game.CellSize)
-            self.g.FillRectangle(cellcolor, px+1, py+1, Game.CellSize-2, Game.CellSize-2)
+            self.g.FillRectangle(self.cellcolor, px+1, py+1, Game.CellSize-2, Game.CellSize-2)
         self.pb.Image = self.bm
     private def GameUpdate (sender as object, e as EventArgs):
         s = Game.CVSize / Game.CellSize
