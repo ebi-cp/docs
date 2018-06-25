@@ -15,20 +15,20 @@ cellcolor = '#c82c55'
 d = [(x, y) for x in [-1, 0, 1] for y in [-1, 0, 1]]
 alive = set()
 rid = None
-start_pos = (0, 0)    # 左ドラッグ開始地点
+spos = (0, 0)    # 左ドラッグ開始地点
 def draw():
     cv.delete('cells')
     for x, y in alive:
         rx, ry= x*8+2, y*8+2
         cv.create_rectangle(rx, ry, rx+7, ry+7, fill = cellcolor, tag = 'cells')
 def leftdown(e):#
-    global start_pos
+    global spos
     if rid : root.after_cancel(rid)
     k = ((e.x-2) // 8, (e.y-2) // 8)
-    start_pos = k    # 左ドラッグ開始地点
+    spos = k    # 左ドラッグ開始地点
 def leftup(e):#
     k = ((e.x-2) // 8, (e.y-2) // 8)
-    s = start_pos
+    s = spos
     sx, ex = min(s[0], k[0]), max(s[0], k[0])    # rangeでexまで+1して行くので小さい方をsx大きい方をex
     sy, ey = min(s[1], k[1]), max(s[1], k[1])
     mode = (s[0], s[1]) in alive    # マウス左が押された地点に生きたセルがあったか無かったか
