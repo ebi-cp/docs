@@ -34,6 +34,8 @@ Python3 [download page](https://www.python.org/downloads/release/python-365/) Wi
 - [14 .Net言語(C#, VB, Boo)でGUIプログラミング ライフゲームの移植](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/14/README.md)  
 - [15 少しだけUnity](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/15/README.md)  
 - [16 環境、Python3 pip venv](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/16/README.md)  
+- [17 競技プログラミングとゴルフ](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/17/README.md)  
+
 
 ---
 
@@ -41,7 +43,7 @@ Python3 [download page](https://www.python.org/downloads/release/python-365/) Wi
 
 
 
-- 17 競技プログラミングとゴルフ
+
 
 - 18 Python3 discordbot
 
