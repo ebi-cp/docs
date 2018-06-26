@@ -20,7 +20,7 @@ else:
 
 
 ABC100aゴルフすると  
-```py
+```
 A,B=map(int,input().split());print(['Yay!',':('][A>8or B>8])
 ```
 60byte  
@@ -33,7 +33,7 @@ A,B=map(int,input().split());print(['Yay!',':('][A>8or B>8])
 
 この問題はさらに削ることができます。  
 
-```py
+```
 s=input();print(['Yay!',':('][len(s)>3or'9'in s])
 ```
 49byte  
