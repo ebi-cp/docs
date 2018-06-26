@@ -42,8 +42,7 @@ Python3 [download page](https://www.python.org/downloads/release/python-365/) Wi
 
 - 16 競技プログラミングとゴルフ
 - [17 環境、Python3 pip venv](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/17/README.md)  
-- 18 Python3
-- 19 Python3 discordbot
+- 18 Python3 discordbot
 
 ---
 ## 海老競プロ部リンク
