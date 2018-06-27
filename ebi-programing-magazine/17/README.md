@@ -1,5 +1,7 @@
 ## 競技プログラミングとゴルフ
 
+[AtCoderの始め方](https://github.com/ebi-cp/docs/blob/master/start-atcoder.md)  
+
 ABCのA問題は非常に簡単です。  
 [ABC100a](https://abc100.contest.atcoder.jp/tasks/abc100_a)
 
