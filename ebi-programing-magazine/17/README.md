@@ -1,7 +1,7 @@
 ## 競技プログラミングとゴルフ
 
 ABCのA問題は非常に簡単です。  
-(ABC100a)[https://abc100.contest.atcoder.jp/tasks/abc100_a]
+[ABC100a](https://abc100.contest.atcoder.jp/tasks/abc100_a)
 
 １６等分されたケーキがあって二人でそのケーキを取る、隣り合ったものを取ってはいけない、それぞれA切れとB切れ取ることができるかという問題。  
 
