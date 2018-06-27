@@ -72,7 +72,7 @@ public class UpdateXPlus : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        this.transform.Translate(new Vector3(0.1f, 0f, 0f));
+        this.transform.Translate(0.1f, 0f, 0f);
     }
 }
 ```
