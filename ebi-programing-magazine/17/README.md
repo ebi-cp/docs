@@ -40,7 +40,7 @@ s=input();print(['Yay!',':('][len(s)>3or'9'in s])
 解説
 - len(s)>3  
 どちらも８以下でなければならないなら文字列の長さは３になるはずですなので３より大きいなら:(です。  
-- ('9'not in s)  
+- '9'in s  
 長さ３の文字列のうち条件を満たさないのは９を含む文字列です。なのでこれも:(です。  
 
 [ABC100a order_by=source_length Python](https://abc100.contest.atcoder.jp/submissions/all/1?order_by=source_length&task_screen_name=abc100_a&language_screen_name=python3_3.4.3&status=AC)
