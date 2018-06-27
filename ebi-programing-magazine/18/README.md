@@ -1,7 +1,7 @@
 ## 実技で学ぶPython3 Discordbot
 
 #### 準備
-まずPython3のコマンドプロンプトを開きPython3のパスを通します。  
+まずPython3のコマンドプロンプトを開きPython3とPython3/Scriptsの[Path](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/16/README.md)を通します。  
 次にpip install -U discord.py[voice]とコマンドを入力しPython3にdiscord.pyモジュールをインストールします。  
 
 次はここにアクセスしボットを作成しトークンを取得してください。  

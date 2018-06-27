@@ -13,7 +13,7 @@ C#のコンパイルもパスを通さないと
 #### 一時的にPathを通すバッチファイル
 cmd /kとすればコンソールを開き続けてくれる。  
 
-#### Python
+#### PythonとPython/ScriptsのPathを通してコマンドプロンプトを開くBat
 
 [Windows で Python を使う](https://docs.python.jp/3/using/windows.html)
 
@@ -28,7 +28,7 @@ python3path.bat
 ```bat
 cmd /k path %PATH%;[PythonPath];[PythonScriptsPath]
 ```
-#### .Net
+#### .NetのPathを通してコマンドプロンプトを開くBat
 ついでにC#とVBのPathを通すBat  
 dotnetpath.bat
 ```bat
