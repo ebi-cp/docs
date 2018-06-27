@@ -85,7 +85,7 @@ class UpdateXPlus (MonoBehaviour):
         pass
     
     def Update():
-        self.transform.Translate(0.1, 0,0)
+        self.transform.Translate(0.1, 0, 0)
 ```
 
 Translateは座標を移動させるものだけど、他にも物理コンポーネントを付けてAddForceで力を加えるなどして移動させたり、自身のpositionを直接書き換えたりして移動させたりできる。
