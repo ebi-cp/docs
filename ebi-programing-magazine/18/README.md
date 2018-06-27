@@ -16,7 +16,7 @@ https://discordapp.com/developers/applications/me
 
 ログイン出来たらon_ready  
 誰かが何か話すとon_message  
-とコンソールに表示するだけのボット  
+とコンソールに表示するだけのBot  
 ```py
 #! /usr/bin/env python3
 import discord
@@ -62,14 +62,6 @@ client.run(token)
 - メッセージの内容 ```message.content```  
 - メッセージのチャンネル ```message.channel```  
 - メッセージのID ```message.author.id```  
-
-```py
-targetid = message.author.id
-for server in client.servers:
-    for channel in server.channels:
-        for m in channel.voice_members:
-            if m == targetid : print(channel)
-```
 
 ---
 
