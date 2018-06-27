@@ -33,7 +33,7 @@ public class クラス名 : MonoBehaviour {
 }
 ```
 クラス名.boo
-```boo
+```py
 import UnityEngine
 
 class クラス名 (MonoBehaviour):
