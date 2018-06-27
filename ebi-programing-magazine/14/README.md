@@ -205,7 +205,7 @@ class Game(Form):
         self.Text = "LifeGame"
         self.Controls.Add(self.pb)
         self.timer.Tick += EventHandler(self.GameUpdate)
-    private def MouseDownEvent (sender as object, e as MouseEventArgs):
+    private def MouseDownEvent(sender as object, e as MouseEventArgs):
         if e.Button == MouseButtons.Left:
             self.timer.Stop()
             pos = self.PointToClient(System.Windows.Forms.Cursor.Position)
@@ -224,7 +224,7 @@ class Game(Form):
             self.g.FillRectangle(Brushes.Black, px, py, Game.CellSize, Game.CellSize)
             self.g.FillRectangle(self.cellcolor, px+1, py+1, Game.CellSize-2, Game.CellSize-2)
         self.pb.Image = self.bm
-    private def GameUpdate (sender as object, e as EventArgs):
+    private def GameUpdate(sender as object, e as EventArgs):
         s = Game.CVSize / Game.CellSize
         m = Dictionary[of Point, int]()
         for i in self.alive:
