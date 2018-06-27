@@ -35,17 +35,17 @@ Python3 [download page](https://www.python.org/downloads/release/python-365/) Wi
 - [15 少しだけUnity](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/15/README.md)  
 - [16 環境、Python3 pip venv](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/16/README.md)  
 - [17 競技プログラミングとゴルフ](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/17/README.md)  
-
+- [18 実技で学ぶPython3 Discordbot](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/18/README.md)  
 
 ---
 
-予定
+追加予定
 
 
 
 
 
-- 18 Python3 discordbot
+
 
 ---
 ## 海老競プロ部リンク
