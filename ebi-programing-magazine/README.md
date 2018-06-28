@@ -36,6 +36,7 @@ Python3 [download page](https://www.python.org/downloads/release/python-365/) Wi
 - [16 環境、Python3 pip venv](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/16/README.md)  
 - [17 競技プログラミングとゴルフ](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/17/README.md)  
 - [18 実技で学ぶPython3 Discordbot](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/18/README.md)  
+- [18 ライフゲーム解説](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/18/README.md)  
 
 ---
 
