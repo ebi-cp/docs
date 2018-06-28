@@ -153,6 +153,7 @@ root.mainloop()
 
 全体のコードです。  
 コピペするだけで動くのでPython3をインストールしぜひ試してみてください。  
+Python3 [download page](https://www.python.org/downloads/release/python-365/) Windows x86-64 web-based installer
 
 ```lifegame.py```
 ```python
