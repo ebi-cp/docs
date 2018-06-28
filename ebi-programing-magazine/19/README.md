@@ -37,9 +37,7 @@ tkinterウィンドウの作成
 - 大きさが８のセルなので```rx, ry= x*8+2, y*8+2```で８倍し、少しずれて描画されてしまうので＋２にしています。
 - cv.create_rectangleでcellcolor色で描画します。
 ‐ cvはキャンバスの情報が入っています  
-このスクリプトの下の方でキャンバスを作成しています。  
-cv = tkinter.Canvas(root, width = 512, height = 512)  
-cv.pack()でウィンドウに配置しています。  
+
 ```py
 def draw():
     cv.delete('cells')
