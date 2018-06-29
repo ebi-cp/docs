@@ -82,7 +82,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     global voice
-    if message.author == client.user : print(message.content)
+    if message.author == client.user : return
     print('on_message')
     
     vch = None
@@ -123,7 +123,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     global voice
-    if message.author == client.user : print(message.content)
+    if message.author == client.user : return
     print('on_message')
     
     vch = None
@@ -160,7 +160,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.author == client.user : print(message.content)
+    if message.author == client.user : return
     print('on_message')
     
     t = None
@@ -199,7 +199,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.author == client.user : print(message.content)
+    if message.author == client.user : return
     print('on_message')
 
 client.run(token)
