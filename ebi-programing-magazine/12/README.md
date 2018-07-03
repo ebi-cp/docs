@@ -111,7 +111,7 @@ a._ebi__f()    # こうすれば無理やり呼べる
 ### Tkinterで海老の画像をキャンバスにいっぱい描いてみる
 #### ebiクラス
 座標x, yとTkinter画像を持つクラス  
-tkimage スタティックメソッド 海老の画像を生成する  
+tkimage メソッド 海老の画像を生成する  
 
 画像ファイルを読み込めばもっとシンプルにできるけどコピペで動いた方が楽そうだからpythonで画像生成するようにしました。  
 
@@ -122,10 +122,9 @@ class ebi:
     def __init__(self, x, y):
         self.x = x
         self.y = y
-        self.im = ebi.tkimage('#D03010')
-    @staticmethod
-    def tkimage(color):    # 海老の画像を返す
-        im = tkinter.PhotoImage(width = 32, height = 32)    # 画像生成　ebi画像は16x16なのですが小さくて見にくいので２倍します
+        self.tkimage('#D03010')
+    def tkimage(self, color):    # 海老の画像を生成
+        self.im = tkinter.PhotoImage(width = 32, height = 32)    # 画像生成　ebi画像は16x16なのですが小さくて見にくいので２倍します
         s  = ['0000000000000000'] * 7
         s += ['0000000111100000']
         s += ['0000011000011000']
@@ -139,10 +138,9 @@ class ebi:
         for y in range(16):    # 読み取り 1 color  2 black
             for x in range(16):
                 if s[y][x] == '1':
-                    im.put(color, (x*2, y*2, x*2+2, y*2+2))    # 座標も２倍して４ピクセルずつ塗る
+                    self.im.put(color, (x*2, y*2, x*2+2, y*2+2))    # 座標も２倍して４ピクセルずつ塗る
                 if s[y][x] == '2':
-                    im.put('#000000', (x*2, y*2, x*2+2, y*2+2))
-        return im
+                    self.im.put('#000000', (x*2, y*2, x*2+2, y*2+2))
 root = tkinter.Tk()
 cv = tkinter.Canvas(root, width = 512, height = 512)
 cv.pack()
@@ -164,10 +162,9 @@ class ebi:
     def __init__(self, x, y):
         self.x = x    # 座標
         self.y = y
-        self.im = ebi.tkimage('#D03010')    # 普通の海老なので普通な色
-    @staticmethod
-    def tkimage(color):    # 海老の画像を返す
-        im = tkinter.PhotoImage(width = 32, height = 32)    # 画像生成　ebi画像は16x16なのですが小さくて見にくいので２倍します
+        self.tkimage('#D03010')    # 普通の海老なので普通な色
+    def tkimage(self, color):    # 海老の画像を生成
+        self.im = tkinter.PhotoImage(width = 32, height = 32)    # 画像生成　ebi画像は16x16なのですが小さくて見にくいので２倍します
         s  = ['0000000000000000'] * 7
         s += ['0000000111100000']
         s += ['0000011000011000']
@@ -181,15 +178,14 @@ class ebi:
         for y in range(16):    # 読み取り 1 color  2 black
             for x in range(16):
                 if s[y][x] == '1':
-                    im.put(color, (x*2, y*2, x*2+2, y*2+2))    # 座標も２倍して４ピクセルずつ塗る
+                    self.im.put(color, (x*2, y*2, x*2+2, y*2+2))    # 座標も２倍して４ピクセルずつ塗る
                 if s[y][x] == '2':
-                    im.put('#000000', (x*2, y*2, x*2+2, y*2+2))
-        return im
+                    self.im.put('#000000', (x*2, y*2, x*2+2, y*2+2))
 class ebirenjai(ebi):    # ebiを継承
     def __init__(self, x, y, color):    # 画像に色を設定できるようになった
         self.x = x
         self.y = y
-        self.im = ebi.tkimage(color)    # 引数の色を渡してその色の画像を生成
+        self.tkimage(color)    # 引数の色を渡してその色の画像を生成
 root = tkinter.Tk()
 cv = tkinter.Canvas(root, width = 512, height = 512)
 cv.pack()
