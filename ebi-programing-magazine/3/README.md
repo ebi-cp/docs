@@ -50,6 +50,9 @@ root.bind('<Button-1>', leftclick)
 root.bind('<Button-3>', rightclick)
 root.mainloop()
 ```
+[Cassiopeiaの日記 Tkinter イベントのバインディング - Tkinter Event and binding](http://d.hatena.ne.jp/Cassiopeia/20070821/1187701922)  
+[Tkinter の bind とイベントシーケンス](http://www.rouge.gr.jp/~fuku/tips/python-tkinter/bind.shtml)  
+
 ![Gif](https://raw.githubusercontent.com/ebi-cp/docs/master/ebi-programing-magazine/3/unk.gif)
 
 
