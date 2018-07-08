@@ -41,7 +41,7 @@ Python3 [download page](https://www.python.org/downloads/release/python-365/) Wi
 ---
 
 追加予定
-
+- [20 ピクチャークロスワードパズルを作ろう](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/20/README.md)  
 
 
 
