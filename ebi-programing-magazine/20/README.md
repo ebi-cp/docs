@@ -24,6 +24,16 @@
 0001001000011000
 ```
 
+#### pixクラス  
+- size ピクロスの縦横のサイズ
+- nsize 数字エリアのサイズ
+- cvsize 縦横のサイズと数字エリアのサイズから計算したキャンバスのサイズ
+- __row_str n行目を返す  
+- __row_str 各行のn列目にアクセスして文字列を作りをn列目返す  
+- __to_nums  
+```'00011001'```の文字列をsplitで```['', '', '', '11', '', '1']```に  
+リスト内法表記とifを使ったfilterと要素に対しlenを使うことで[2, 1]に変換  
+- __init_ans 集合self.ansの初期化 1の座標にnsizeと加えたものを追加していく
 
 
 
@@ -76,37 +86,29 @@ def draw():
     for x, y in l:    # lのposを塗りつぶす
         rx, ry = x*size+m, y*size+m
         cv.create_rectangle(rx, ry, rx+size-1, ry+size-1, fill = 'black', tags = 'cells')
-    if is_complete():    # 完成していたらbgを消してrを描かずにここでreturn
+    if p.ans == l:    # 完成していたらbgを消してrを描かずにここでreturn
         cv.delete('bg')
         return
     for x, y in r:    # rのposに×を描く
         rx, ry = x*size+m, y*size+m
         cv.create_line(rx, ry, rx+size, ry+size, tags = 'cells')
         cv.create_line(rx, ry+size, rx+size, ry, tags = 'cells')
-def leftdown(e):    # 塗りつぶすpos追加削除
+def leftdown(e) : mousedown(e, l)    # 塗りつぶすpos追加削除
+def rightdown(e) : mousedown(e, r)    # ×を描くpos追加削除
+def mousedown(e, s):
     k = ((e.x-m) // size, (e.y-m) // size)
-    if k[0] < p.nsize or k[1] < p.nsize or is_complete() : return
-    if k in r : r.remove(k)
-    if k in l:
-        l.remove(k)
-    else:
-        l.add(k)
-    draw()
-def rightdown(e):    # ×を描くpos追加削除
-    k = ((e.x-m) // size, (e.y-m) // size)
-    if k[0] < p.nsize or k[1] < p.nsize or is_complete() : return
+    if k[0] < p.nsize or k[1] < p.nsize or p.ans == l : return
     if k in l : l.remove(k)
-    if k in r:
-        r.remove(k)
+    if k in s:
+        s.remove(k)
     else:
-        r.add(k)
+        s.add(k)
     draw()
-def is_complete() : return p.ans == l
 
-l = set()
-r = set()
-size = 32
-m = 2 # margin
+l = set()    # 塗りつぶすpos 答えと比較する
+r = set()    # ×を描くpos
+size = 16    # セルサイズ
+m = 2    # margin
 root = tkinter.Tk()
 dirpath = os.path.dirname(__file__).replace('\\', '/')
 filetype = (('pix files', '*.pix'),)
