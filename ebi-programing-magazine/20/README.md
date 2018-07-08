@@ -93,16 +93,16 @@ def draw():
         rx, ry = x*size+m, y*size+m
         cv.create_line(rx, ry, rx+size, ry+size, tags = 'cells')
         cv.create_line(rx, ry+size, rx+size, ry, tags = 'cells')
-def leftdown(e) : mousedown(e, l)    # 塗りつぶすpos追加削除
-def rightdown(e) : mousedown(e, r)    # ×を描くpos追加削除
-def mousedown(e, s):
+def leftdown(e) : mousedown(e, l, r)    # 塗りつぶすpos追加削除
+def rightdown(e) : mousedown(e, r, l)    # ×を描くpos追加削除
+def mousedown(e, a, b):
     k = ((e.x-m) // size, (e.y-m) // size)
     if k[0] < p.nsize or k[1] < p.nsize or p.ans == l : return
-    if k in l : l.remove(k)
-    if k in s:
-        s.remove(k)
+    if k in b : b.remove(k)    # k座標がb集合に含まれるなら取り除く
+    if k in a:
+        a.remove(k)
     else:
-        s.add(k)
+        a.add(k)
     draw()
 
 l = set()    # 塗りつぶすpos 答えと比較する
