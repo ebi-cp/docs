@@ -37,11 +37,11 @@ Python3 [download page](https://www.python.org/downloads/release/python-365/) Wi
 - [17 競技プログラミングとゴルフ](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/17/README.md)  
 - [18 実技で学ぶPython3 Discordbot](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/18/README.md)  
 - [19 ライフゲーム解説](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/19/README.md)  
-
+- [20 実技で学ぶPython3 ピクチャークロスワードパズルを作る](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/20/README.md)  
 ---
 
-追加予定
-- [20 実技で学ぶPython3 ピクチャークロスワードパズルを作る](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/20/README.md)  
+追加予定  
+
 
 
 
