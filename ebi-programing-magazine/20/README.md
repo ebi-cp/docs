@@ -28,6 +28,8 @@
 ```
 
 #### pixクラス  
+コンストラクタでファイルパスを受け取りopenで読み取る。  
+サイズを出してrows, colsにヒント入れるansに答えを入れる。  
 - size ピクロスの縦横のサイズ
 - nsize 数字エリアのサイズ
 - cvsize 縦横のサイズと数字エリアのサイズから計算したキャンバスのサイズ
@@ -49,8 +51,8 @@ import tkinter
 import tkinter.filedialog
 
 class pix:
-    def __init__(self, filename, cellsize, maxsize = 32):
-        with open(filename, 'r') as f : reads = f.readlines()
+    def __init__(self, filepath, cellsize, maxsize = 32):
+        with open(filepath, 'r') as f : reads = f.readlines()
         self.data = [i.strip()[:maxsize] for i in reads[:maxsize]]
         self.size = len(self.data)
         self.nsize = len(self.data) // 2 + len(self.data) % 2
@@ -116,8 +118,8 @@ m = 2    # margin
 root = tkinter.Tk()
 dirpath = os.path.dirname(__file__).replace('\\', '/')
 filetype = (('pix files', '*.pix'),)
-root.filename = tkinter.filedialog.askopenfilename(initialdir = dirpath, filetypes = filetype)
-p = pix(root.filename, size)
+filepath = tkinter.filedialog.askopenfilename(initialdir = dirpath, filetypes = filetype)
+p = pix(filepath, size)
 cv = tkinter.Canvas(root, width = p.cvsize+1, height = p.cvsize+1)
 cv.pack()
 background()
