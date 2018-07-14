@@ -78,4 +78,4 @@ im = tkinter.PhotoImage(width = 240, height = 240)
 root.after(1, drawline)    # 1ms後にdrawlineを呼び出す
 root.mainloop()
 ```
-![Gif](https://raw.githubusercontent.com/ebi-cp/docs/master/ebi-programing-magazine/4/mandelbrot.gif)
+![Gif](https://raw.githubusercontent.com/ebi-cp/docs/master/ebi-programming-magazine/4/mandelbrot.gif)

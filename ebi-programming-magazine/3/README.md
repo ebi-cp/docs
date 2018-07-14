@@ -53,7 +53,7 @@ root.mainloop()
 [Cassiopeiaの日記 Tkinter イベントのバインディング - Tkinter Event and binding](http://d.hatena.ne.jp/Cassiopeia/20070821/1187701922)  
 [Tkinter の bind とイベントシーケンス](http://www.rouge.gr.jp/~fuku/tips/python-tkinter/bind.shtml)  
 
-![Gif](https://raw.githubusercontent.com/ebi-cp/docs/master/ebi-programing-magazine/3/unk.gif)
+![Gif](https://raw.githubusercontent.com/ebi-cp/docs/master/ebi-programming-magazine/3/unk.gif)
 
 
 GUIの場合コンソールを表示したくない事がありますが、その場合は拡張子をpyではなくpywにするとコンソールは非表示になります。  

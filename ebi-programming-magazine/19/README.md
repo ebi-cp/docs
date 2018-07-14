@@ -1,6 +1,6 @@
 ## ライフゲーム解説
 
-[8 実技で学ぶPython3 ライフゲームを作る](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/8/README.md)の解説  
+[8 実技で学ぶPython3 ライフゲームを作る](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/8/README.md)の解説  
 わかりづらかったかもしれないので、  
 
 #### ライフゲームのルール[wikipedia](https://ja.wikipedia.org/wiki/%E3%83%A9%E3%82%A4%E3%83%95%E3%82%B2%E3%83%BC%E3%83%A0)より
@@ -10,7 +10,7 @@
 - 過密 生きているセルに隣接する生きたセルが4つ以上ならば、過密により死滅する。
 
 これを実装するだけで複雑そうに見えるライフゲームが完成します。  
-また[.Net言語(C#, VB, Boo)でGUIプログラミング ライフゲームの移植](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/14/README.md)で.Net言語(C#, VB, Boo)に移植したので見比べることで他の言語も学ぶことができます。  
+また[.Net言語(C#, VB, Boo)でGUIプログラミング ライフゲームの移植](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/14/README.md)で.Net言語(C#, VB, Boo)に移植したので見比べることで他の言語も学ぶことができます。  
 
 
 ```python
@@ -208,4 +208,4 @@ root.mainloop()
 ---
 
 
-![Gif](https://raw.githubusercontent.com/ebi-cp/docs/master/ebi-programing-magazine/19/lifegame.gif)
+![Gif](https://raw.githubusercontent.com/ebi-cp/docs/master/ebi-programming-magazine/19/lifegame.gif)

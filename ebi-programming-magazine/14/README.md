@@ -1,5 +1,5 @@
 ## .Net言語(C#, VB, Boo)でGUIプログラミング ライフゲームの移植
-[8 実技で学ぶPython3 ライフゲームを作る](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/8/README.md)  
+[8 実技で学ぶPython3 ライフゲームを作る](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/8/README.md)  
 .Net言語(C#, VB, Boo)に移植  
 
 ## C#

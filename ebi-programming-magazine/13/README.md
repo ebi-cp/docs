@@ -1,5 +1,5 @@
 ## .Net言語(C#, VB, Boo)でGUIプログラミング TitleUnk再び
-[3 実技で学ぶPython3 TkinterでGUIアプリを作ろう｡](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/3/README.md)  
+[3 実技で学ぶPython3 TkinterでGUIアプリを作ろう｡](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/3/README.md)  
 .Net言語(C#, VB, Boo)に移植  
 .Net言語はGUIが楽なので  
 C++よりは遅いけどPython, Pypyなんかよりは全然早い  
@@ -148,7 +148,7 @@ class Form1(Form):
 Application.Run(Form1())
 ```
 
-![Gif](https://raw.githubusercontent.com/ebi-cp/docs/master/ebi-programing-magazine/13/titleunk.gif)
+![Gif](https://raw.githubusercontent.com/ebi-cp/docs/master/ebi-programming-magazine/13/titleunk.gif)
 
 ---
 ## ボタンを２つ表示それぞれにイベント  
@@ -249,5 +249,5 @@ class Form1(Form):
 Application.Run(Form1())
 ```
 
-![Gif](https://raw.githubusercontent.com/ebi-cp/docs/master/ebi-programing-magazine/13/button2.gif)
+![Gif](https://raw.githubusercontent.com/ebi-cp/docs/master/ebi-programming-magazine/13/button2.gif)
 

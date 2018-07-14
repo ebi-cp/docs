@@ -20,7 +20,7 @@ f 1 2 3
 Tkinterの所は今までと同じくウィンドウの表示キャンバスの追加だけです。  
 線を描くのもxとyの座標をほぼそのまま使い奥行の情報は無視します。  
 
-同じフォルダに[suzanne.obj](https://github.com/ebi-cp/docs/blob/master/ebi-programing-magazine/6/suzanne.obj)を置くと読み込むことができます  
+同じフォルダに[suzanne.obj](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/6/suzanne.obj)を置くと読み込むことができます  
 ```python
 #! /usr/bin/env python3
 
@@ -59,4 +59,4 @@ cv.pack()
 root.after(2, drawline)    # 2ms後にdrawlineを呼ぶ
 root.mainloop()
 ```
-![Gif](https://raw.githubusercontent.com/ebi-cp/docs/master/ebi-programing-magazine/6/linedraw.gif)
+![Gif](https://raw.githubusercontent.com/ebi-cp/docs/master/ebi-programming-magazine/6/linedraw.gif)

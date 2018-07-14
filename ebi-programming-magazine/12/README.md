@@ -197,6 +197,6 @@ for i in e:
     cv.create_image(2 + i.x, 2 + i.y, image = i.im, tags = 'ebi', anchor = 'nw')
 root.mainloop()
 ```
-![Image](https://raw.githubusercontent.com/ebi-cp/docs/master/ebi-programing-magazine/12/ebiebirenjaitk.png)
+![Image](https://raw.githubusercontent.com/ebi-cp/docs/master/ebi-programming-magazine/12/ebiebirenjaitk.png)
 
 

@@ -129,4 +129,4 @@ root.mainloop()
 ```
 
 
-![Gif](https://raw.githubusercontent.com/ebi-cp/docs/master/ebi-programing-magazine/20/pix.gif)
+![Gif](https://raw.githubusercontent.com/ebi-cp/docs/master/ebi-programming-magazine/20/pix.gif)
