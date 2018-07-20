@@ -30,18 +30,123 @@ while True:    # 繰り返し
     prev = islive    # 今の状態を覚えておく
     time.sleep(60 * 10)    # 秒 10分待つ 待たないとF5連打とかわらない
 ```
-真 True, 偽 False   条件分岐などで計算結果が真となれば実行される  
-n >= 0   if文に使えばnが0以上なら真(True)次の文が実行される。ループ文なら0以上ならずっと繰り返される。  
-while True:   無限ループ  
-  
-条件分岐if文や繰り返しwhile文  
-pythonの文の有効範囲  
-```python
-if 条件式:文 この行だけ有効 文を2つ書くなら;を使う
 
-if 条件式:文;文;文
+---
+
+- #### コメント  
+```#```から後ろの文字はコメントとして無視されます。
+
+---
+
+- #### 条件分岐 if文  
+```py
+if 条件式:
+    条件式の結果がTrueの時の処理
+
+if 条件式:
+    条件式の結果がTrueの時の処理
+else:
+    条件式の結果がFalseの時の処理
+
+
+if 条件式1:
+    条件式1の結果がTrueの時の処理
+else if 条件式2:
+    条件式1でFalseで条件式2の結果がTrueの時の処理
+else:
+    すべての条件式の結果がFalseの時の処理
+
+
+if 条件式1 and 条件式2:
+    条件式1と2の結果がTrueの時の処理
+
+if 条件式1 or 条件式2:
+    条件式1か2の結果がTrueの時の処理
+```
+---
+
+- #### 繰り返し while文  
+```py
+while 条件式:
+    条件式の結果がTrueの時の処理
+
+cnt = 0
+while cnt < 3:
+    print(cnt)
+    cnt += 1
+# 0
+# 1
+# 2
+
+
+while True:
+    常に式がTrueのため無限ループになる
+
+cnt = 0
+while True:
+    if cnt = 3:# cntが3ならループを抜ける
+        break
+    print(cnt)
+    cnt += 1
+# 0
+# 1
+# 2
+```
+
+---
+
+- #### 繰り返し for文  
+```python
+for 値を受け取る変数 in range(3):
+    処理
+# 0
+# 1
+# 2
+
+for i in range(3):
+    print(i)
+# 0
+# 1
+# 2
+
+for i in [0, 1, 2]:
+    print(i)
+# 0
+# 1
+# 2
+
+
+for i in 'abc':
+    print(i)
+# a
+# b
+# c
+```
+---
+
+- #### continue文, break文
+```py
+for i in range(3):
+    if i == 1 : continue
+    print(i)
+# 0
+# 2
+
+for i in range(3):
+    if i == 1 : break
+    print(i)
+# 0
+```
+---
+
+- #### pythonの文の有効範囲  
+```python
+if 条件式:処理 この行だけ有効 処理を2つ書くなら;を使う
+
+if 条件式:処理;処理;処理
 
 if 条件式:  
     字下げをすると  
     複数行有効  
 ```
+---
