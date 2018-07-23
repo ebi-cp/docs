@@ -59,7 +59,10 @@ Python3のパッケージ仮想環境
 仮想環境を作成して有効化してpipでパッケージをインストールすればPythonの環境が汚れないしPythonを再インストールしても入れたパッケージはそのままだしパッケージのバージョン分けたりとかできる。  
 
 - 仮想環境の作成  
+linux  
 python3 -m venv フォルダパス  
+windows  
+python -m venv フォルダパス  
 
 - アクティベート 仮想環境の有効化  
 フォルダパス\Scripts\activate.bat
