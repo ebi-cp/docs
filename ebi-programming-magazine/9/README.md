@@ -70,7 +70,7 @@ root.bind('<Button-3>', rightdown)
 root.mainloop()
 ```
 
-![Gif](https://raw.githubusercontent.com/ebi-cp/docs/master/ebi-programing-magazine/9/lifegame2.gif)
+![Gif](https://raw.githubusercontent.com/ebi-cp/docs/master/ebi-programming-magazine/9/lifegame2.gif)
 
 
 ---
