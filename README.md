@@ -25,7 +25,7 @@
 |海老名 | twitter | 言語 | エディタ | 戦績|
 |-|-|-|-|-|
 |海老コチニール | [@ebicochineal](https://twitter.com/ebicochineal) | C++<br>C#<br>Python | VSCode[***](https://marketplace.visualstudio.com/items?itemName=ebicochineal.select-highlight-cochineal-color) |[TopCoderMM](https://www.topcoder.com/members/ebicochineal/details/?track=DATA_SCIENCE&subTrack=MARATHON_MATCH)(黄)<br>[AtCoder](https://beta.atcoder.jp/users/ebicochineal)(水)<br>[CodinGame](https://www.codingame.com/profile/a79a37f66f7439f3b94bb35f30b329bd8000942)(レジェンド 1回)|
-| えりすしー | [@eris_c](https://twitter.com/eris_c) | C++<br>Python<br>(PHP) | VSCode | [TopCoderMM](https://www.topcoder.com/members/eris_c/details/?track=DATA_SCIENCE&subTrack=MARATHON_MATCH)(黄)<br>[AtCoder](https://beta.atcoder.jp/users/eris_c)(緑)<br>[CodinGame](https://www.codingame.com/profile/b1e1fcdbc5e92e4e99bb1cdf97c9a0dc1800952) |
+| えりすしー | [@eris_c](https://twitter.com/eris_c) | C++<br>Python<br>(PHP) | VSCode | [TopCoderMM](https://www.topcoder.com/members/eris_c/details/?track=DATA_SCIENCE&subTrack=MARATHON_MATCH)(黄)<br>[AtCoder](https://beta.atcoder.jp/users/eris_c)(水)<br>[CodinGame](https://www.codingame.com/profile/b1e1fcdbc5e92e4e99bb1cdf97c9a0dc1800952) |
 | チョットデタ | [@Chotto_Deta](https://twitter.com/Chotto_Deta) | Java<br>Python | VSCode<br>paiza.io | [AtCoder](https://beta.atcoder.jp/users/chottodeta)(茶) |
 |海老もえぎ|[@yuh_](https://twitter.com/yuh_)| Python2 | Mery |[AtCoder](https://beta.atcoder.jp/users/ebimoegi)(灰)|
 |パルラス|[@pallas_pal](https://twitter.com/pallas_pal)|Python|IDLE||
