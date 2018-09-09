@@ -81,7 +81,7 @@ print(input().replace(' ', '')))
 
 ```python
 #! /usr/bin/env python3
-Unix環境でスクリプトを読み込むインタプリタを指定するものですWindows環境でもPythonランチャーのpy.exeで有効なので書くようにすると良いですが闇Pythonを提出する時には当然消します
+Unix環境でスクリプトを読み込むインタプリタを指定するものですWindows環境でもPythonランチャーのpy.exeで有効なので書くようにすると良いですが闇Pythonを提出する時には当然消します。
 
 フルパスで指定されているpython3
 #! /usr/bin/python3
@@ -327,6 +327,14 @@ print([0, 1][True])
 print('YNeos'[a::2])
 ```
 
+### true falseを小文字で出力
+```py
+['false','true'][式]
+'ftarlusee'[式::2]
+str(式).lower()
+`式`.lower()    # python2only
+```
+
 ### 終わりまですべての入力を受け取る
 
 ```python
@@ -407,11 +415,11 @@ if __name__ == '__main__':
 
 * [yukicoder Python3ショートコード](https://yukicoder.me/ranking/pure_golfer?lang=python3)
 * [Anarchy Golf](http://golf.shinh.org/)
-
+* [CLASH OF CODE(最速、推測、最短のどれかがランダムに出題され２～８人で対戦できる)](https://www.codingame.com/multiplayer/clashofcode)
 #### Q & A
 
 Q もしかしてPythonってコードゴルフ強いんですかっ！？  
-A いいえ。なので言語別で楽しみましょう。 
+A いいえ。なので言語別で楽しみましょう。  
 
 ## 更なる闇へ
 
