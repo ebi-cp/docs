@@ -105,7 +105,7 @@ CoginGame レジェンド > ゴールド > シルバー > ブロンズ > ウッ�
 
 ---
 
-#### テストケースのダウンロードをしてローカルでテストするスクリプト}
+#### テストケースのダウンロードをしてローカルでテストするスクリプト
 ||||テストケースダウンロードに必要||
 |-|-|-|-|-|
 |[yukicoder用](https://github.com/ebicochineal/yukicoderlocaltest)|Python3.5|win<br>linux|クッキーのREVEL_SESSION値|サンプルケース<br>コンテスト後はすべてのテストケース|
