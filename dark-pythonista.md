@@ -382,6 +382,13 @@ i=1;exec("f,b=i%3<1,i%5<1;print([i,'Fizz'*f+'Buzz'*b][f|b]);i+=1;"*int(input()))
 for i in range(int(input())):print(i%3//2*'Fizz'+i%5//4*'Buzz'or i+1)
 ```
 
+### フィボナッチ数列
+```py
+a=[0,1]
+exec('a+=[a[-1]+a[-2]];'*int(input()))
+print(a[:-2])
+```
+
 ### 数値が禁止された問題で数値を作る
 
 ```python
