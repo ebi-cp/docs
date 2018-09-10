@@ -396,6 +396,27 @@ print(True+True)
 .. 2
 ```
 
+### 10進数dをn進数文字列に変換
+```py
+n=int(input())
+d=int(input())
+s='0'*(d<1)
+while d>0:s='0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'[d%n]+s;d//=n
+print(s)
+```
+### 10進数dを２進数文字列に変換
+```py
+d=int(input())
+s=bin(d)    # 16進数ならhex(d)
+print(s)
+```
+### 16進数文字列を10進数に変換
+```py
+s='FF'
+d=int(s,16)    # 2進数ならint(s, 2)
+print(d)
+```
+
 ### /や%が禁止された問題で除算剰余を求める
 
 ```python
