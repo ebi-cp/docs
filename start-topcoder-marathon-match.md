@@ -17,7 +17,7 @@ VB – .NET Framework 4.0, Microsoft (R) Visual Basic Compiler version 10.0.3031
 [Competitive Programming Contests Calendar](https://competitiveprogramming.info/calendar)  
 
 #### マラソンマッチ参加登録
-[開催されているマラソンマッチ](https://community.topcoder.com/longcontest/?module=ViewActiveContests&rt=13)  
+[開催されているマラソンマッチ](https://community.topcoder.com/longcontest/?module=ViewActiveContests)  
 
 #### 参加登録しなくても問題は見ることができる
 #### 参加登録しても提出しなければレーティング対象にならない
