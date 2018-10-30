@@ -2,16 +2,13 @@
 
 # 必要な物
 [TopCoder](https://www.topcoder.com/)のアカウント  
-Java1.8(1.7の方が良いのかな自分は1.8使ってるけど)  
+Java1.8  
 使用する言語環境  
 
 #### TopCoder対応言語
-C++ – g++ (GCC) 4.8.1.
-Compilation options: /usr/local/gcc48/bin/g++ --std=c++0x -W -Wall -Wno-sign-compare -O2 -s -pipe -mmmx -msse -msse2 -msse3  
-Java – java version "1.7.0_17"  
-Python – Python 2.6.6  
-C# – .NET Framework 4.0, Microsoft (R) Visual C# 2010 Compiler version 4.0.30319.1  
-VB – .NET Framework 4.0, Microsoft (R) Visual Basic Compiler version 10.0.30319.233  
+C++, Java, Python2, C#, VB  
+[Processing Server Specifications](https://apps.topcoder.com/wiki/display/tc/Processing+Server+Specifications)
+
 
 #### カレンダー
 [Competitive Programming Contests Calendar](https://competitiveprogramming.info/calendar)  
