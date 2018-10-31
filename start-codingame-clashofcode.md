@@ -1,6 +1,6 @@
-## CodinGame Clash Of Codeを始めよう
+## CodinGame Clash of Codeを始めよう
 
-#### Clash Of Codeとは
+#### Clash of Codeとは
 - 最大８人まで対戦できるコーディングバトル（２分ルームで待機、対戦時間は１５分）
 - 最速, 推測, 最短の３つから出題される（英語）
 - 難易度はAtCoderのABCのA~Bくらい
@@ -28,8 +28,8 @@
 - 全員が提出するか１５分で結果がレートに反映される
 
 #### URL
-[Clash Of Code](https://www.codingame.com/multiplayer/clashofcode)  
-[Clash Of Code 日本ランキング](https://www.codingame.com/leaderboards/clash/country/jp)  
+[Clash of Code](https://www.codingame.com/multiplayer/clashofcode)  
+[Clash of Code 日本ランキング](https://www.codingame.com/leaderboards/clash/country/jp)  
 
 #### 練習もできる
 [Clash Of Code](https://www.codingame.com/multiplayer/clashofcode)の一番下のSTART A PRIVATE CLASH  
