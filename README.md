@@ -7,6 +7,7 @@
 
 ---
 ## 海老競プロ部リンク
+- [CodinGame Clash Of Codeを始めよう](https://github.com/ebi-cp/docs/blob/master/start-codingame-clashofcode.md)
 - [TopCoder MarathonMatchの始め方](https://github.com/ebi-cp/docs/blob/master/start-topcoder-marathon-match.md)
 - [TCO18 MM R1 - RoadsAndJunctions](https://github.com/ebi-cp/docs/blob/master/TopCoderMM/RoadsAndJunctions.md)
 - [AtCoderの始め方](https://github.com/ebi-cp/docs/blob/master/start-atcoder.md)
