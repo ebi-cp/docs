@@ -145,6 +145,8 @@ CoginGame レジェンド > ゴールド > シルバー > ブロンズ > ウッ�
 [Kaggle入門 Porto Seguroコンペ Part.1 (イントロ～GCP登録)](https://www.youtube.com/watch?v=NHQTw-ORcSQ)  
 [ei1333's page](https://ei1333.github.io/index.html)  
 [AtCoderでの競技プログラミングがもっと楽しくなるサイトまとめ](http://noimin.hatenablog.com/entry/2017/12/16/230900)  
+[AtCoderおもしろい問題集（高橋くんの奇行集）](https://ugis.hatenadiary.jp/entry/2018/10/27/011837)  
+
 
 
 ---
