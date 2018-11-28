@@ -69,13 +69,6 @@ print(''.join(input().split()))
 print(input().replace(' ', '')))
 ```
 
-[Python チュートリアル](https://docs.python.jp/3/tutorial/)
-
----
-
-## 闇っぽい書き方や必要な知識
-
-以下出力　`.. `
 
 ### シバン文
 
@@ -89,6 +82,16 @@ Unix環境でスクリプトを読み込むインタプリタを指定するも�
 環境変数のどこかにあるpython3を探す
 #! /usr/bin/env python3
 ```
+
+
+[Python チュートリアル](https://docs.python.jp/3/tutorial/)
+
+---
+
+## 闇っぽい書き方や必要な知識
+
+以下出力　`.. `
+
 
 ### if文
 
@@ -244,34 +247,34 @@ for i, j in ['ab', 'cd']:
 ### リストを逆にする
 
 ```python
-a = [0, 1, 2, 3]
-a = a[::-1]
+a.reverse()
+a[::-1]
 ```
 
 ### リストの追加
-
 ```python
-a = []
-a += [0]
 a.append(0)
+a += [0]
 ```
 
-### 辞書の追加
-
+### 辞書(dict)の追加
 ```python
-a = {}
 a['key'] = 0
 ```
 
-### リスト、辞書の長さ
+### 集合(set)の追加
+```python
+a.add(0)
+a = {0}
+```
 
+### リスト、辞書の長さ
 ```python
 print(len([0, 1, 2]))
 .. 3
 ```
 
 ### 文字列、リスト、辞書に存在するか (aがbに存在するか a in b)
-
 ```python
 print('11' in '1211')
 .. True
@@ -398,30 +401,27 @@ print(True+True)
 
 ### 10進数dをn進数文字列に変換
 ```py
-n=int(input())
 d=int(input())
+n=int(input())
 s='0'*(d<1)
 while d>0:s='0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'[d%n]+s;d//=n
-print(s)
 ```
 ### 10進数dを２進数文字列に変換
 ```py
 d=int(input())
 s=bin(d)    # 16進数ならhex(d)
-print(s)
 ```
 ### 16進数文字列を10進数に変換
 ```py
 s='FF'
 d=int(s,16)    # 2進数ならint(s, 2)
-print(d)
 ```
 
 ### /や%が禁止された問題で除算剰余を求める
-
 ```python
 d, m = divmod(57, 3)
 ```
+
 ---
 ## Pythonの高速化
 

@@ -33,7 +33,7 @@
 |海老名 | twitterとか | 言語 | エディタ | 戦績 |
 |-|-|-|-|-|
 |パルラス|[@pallas_pal](https://twitter.com/pallas_pal)|Python|IDLE||
-|warimu|[github warimu](https://github.com/warimu)|Python3?||[yukicoder](https://yukicoder.me/users/6768)|
+|わりむ|[github warimu](https://github.com/warimu)|Python3?||[yukicoder](https://yukicoder.me/users/6768)|
 
 
 
@@ -67,7 +67,7 @@ A 楽だから
 #### Q 入部するにはどうすれば良いですか？  
 A １問でも問題を解いたようなことを![Image](./images/ebicochineal.png)に知られると部員リストに加えられます  
 #### Q 部員候補リストに加えられているのはなぜですか？  
-A 特定のワードを口にした事があるまたは特定のワードに反応したことがあるなどがありますが？？？の勘違いで載せられている可能性もあります  
+A 特定のワードを口にした事があるまたは特定のワードに反応したことがあるなどがありますが![Image](./images/ebicochineal.png)の勘違いで載せられている可能性もあります  
 #### Q 競プロを始めるには何が必要ですか？  
 A 使いやすいテキストエディタ、使用する言語の実行環境、各サイトのアカウントなどが必要です。yukicoderではtwitterで連携するだけで始めることができます。マラソンマッチではテスター、ビジュアライザーがJavaで書かれているのでJavaの実行環境も必要です  
 #### Q オススメのエディタはありますか？  
