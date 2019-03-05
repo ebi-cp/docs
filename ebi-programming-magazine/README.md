@@ -11,9 +11,6 @@
 プログラミング用のテキストエディタ  
 VSCode [download page](https://code.visualstudio.com/download)
 
-VSCode拡張 選択した同じワードを目立つコチニールレッドカラーでハイライト 言語によって違うけどハイライトの挙動が少し気に入らなかったので作ったやつ580方ダウンロード達成  
-[select-highlight-cochineal-color](https://marketplace.visualstudio.com/items?itemName=ebicochineal.select-highlight-cochineal-color)  
-
 Python3 [download page](https://www.python.org/downloads/release/python-365/) Windows x86-64 web-based installer
 
 ---
