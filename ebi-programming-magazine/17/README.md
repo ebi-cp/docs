@@ -12,7 +12,7 @@ ABCのA問題は非常に簡単です。
 
 A, B = map(int, input().split())
 if A <= 8 and B <= 8:
-    print('')
+    print('Yay!')
 else:
     print(':(')
 ```
