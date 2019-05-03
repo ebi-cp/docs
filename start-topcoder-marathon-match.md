@@ -11,6 +11,7 @@ C++, Java, Python2, C#, VB
 
 
 #### カレンダー
+[Community - Events](https://www.topcoder.com/community/events/)
 [Competitive Programming Contests Calendar](https://competitiveprogramming.info/calendar)  
 
 #### マラソンマッチ参加登録
@@ -67,7 +68,7 @@ https://github.com/ebicochineal/marathon_match/tree/master/topcoder_mm_template
 システムテストの時もここに表示される。
 
 #### システムテスト
-最終テスト大体2000件  
+最終テスト大体1000~2000件  
 
 #### レーティング確認
 システムテスト終了後。半日～1週間で結果が出てレーティングが反映される  
@@ -80,4 +81,6 @@ https://github.com/ebicochineal/marathon_match/tree/master/topcoder_mm_template
 #### マラソンマッチの練習がしたい
 [Practice Contests](https://community.topcoder.com/longcontest/?module=ViewPractice)
 
+#### ヴィジュアライザを撮りたい
+ScreenToGif  
 
