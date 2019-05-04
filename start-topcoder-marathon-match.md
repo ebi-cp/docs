@@ -1,4 +1,4 @@
-# TopCoder MarathonMatchの始め方 2018
+# TopCoder MarathonMatchの始め方
 
 # 必要な物
 [TopCoder](https://www.topcoder.com/)のアカウント  
@@ -25,8 +25,8 @@ C++, Java, Python2, C#, VB
 tester.jar  
 問題名Vis.java  
 問題名.cpp,java,py,cs  
-
 たまに用意されていないことがある  
+
 
 #### tester.jar
 プログラムをテストし結果を確認できる。オプションで視覚化して表示もできるものがある。  
@@ -52,6 +52,9 @@ Javaのパス通っているか
 pythonのテストをする場合はpythonのパスが通っているか  
 カレントディレクトリがtester.jarやテストファイルのある場所か  
 を確認  
+
+#### フォーラムを確認する
+開始時はテスターのバグが結構あるので確認する  
 
 #### 時間計測する手段を用意する
 Topcoderサーバー上では時間取得関数が非常に遅い  
@@ -81,6 +84,10 @@ https://github.com/ebicochineal/marathon_match/tree/master/topcoder_mm_template
 #### マラソンマッチの練習がしたい
 [Practice Contests](https://community.topcoder.com/longcontest/?module=ViewPractice)
 
-#### ヴィジュアライザを撮りたい
+#### ヴィジュアライザをGIFで撮りたい
 ScreenToGif  
 
+#### フォーラム
+[Marathon Match Discussion](https://apps.topcoder.com/forums/?module=ThreadList&forumID=506048&mc=3073)  
+[新プラットフォーム MM110 フォーラム１](https://apps.topcoder.com/forums/?module=ThreadList&forumID=7120)  
+[新プラットフォーム MM110 フォーラム２](https://apps.topcoder.com/forums/?module=ThreadList&forumID=673710)  
