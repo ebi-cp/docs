@@ -87,7 +87,7 @@ https://github.com/ebicochineal/marathon_match/tree/master/topcoder_mm_template
 #### ヴィジュアライザをGIFで撮りたい
 ScreenToGif  
 
-#### フォーラム
+----
 [Marathon Match Discussion](https://apps.topcoder.com/forums/?module=ThreadList&forumID=506048&mc=3073)  
-[新プラットフォーム MM110 フォーラム１](https://apps.topcoder.com/forums/?module=ThreadList&forumID=7120)  
-[新プラットフォーム MM110 フォーラム２](https://apps.topcoder.com/forums/?module=ThreadList&forumID=673710)  
+[新プラットフォームに移行したMM110のフォーラム１](https://apps.topcoder.com/forums/?module=ThreadList&forumID=7120)  
+[新プラットフォームに移行したMM110のフォーラム２](https://apps.topcoder.com/forums/?module=ThreadList&forumID=673710)  
