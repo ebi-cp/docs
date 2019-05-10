@@ -1,4 +1,4 @@
-## AtCoderの始め方 2018
+## AtCoderの始め方
 
 #### AtCoderに登録しよう
 [AtCoder](https://atcoder.jp/?lang=ja)
@@ -22,21 +22,21 @@
 ほぼ毎週 1, 2つのコンテストが開催されている  
 マラソンマッチ系のコンテストも不定期で開催されている(レーティングはつかない)  
 - AtCoder Beginner Contest(ABC)  
-レーティング変化1200 未満  
-ABC,ARCが同時開催の場合パフォーマンス上限が1600までなので1600以上出せる自信がないレーティング1200満たない場合はこっち
+レーティング変化 ~ 1999  
 - AtCoder Regular Contest(ARC)  
-レーティング変化2800 未満  
-ABCのCDの難易度の問題とさらに高難易度のEFが出題される  
-パフォーマンス1600以上確実に出せるならレーティング1200未満でもこっちに出るべき  
-同時開催されていないなら普段ABCでも出ていいきがする  
+レーティング変化 ~ 2799  
 - AtCoder Grand Contest(AGC)  
 レーティング変化 すべて  
 CDくらいの難易度から超高難易度の問題が出題される  
 最初から出てもいいし避けてもいい  
+- RCO日本橋ハーフマラソン  
+- HACK TO THE FUTUREコンテスト  
+- Hokkaido Univ.& Hitachi New-concept Computing Contest  
+- Asprova プログラミングコンテスト  
 
 #### コンテストの流れ
 - 登録  
-トップページか[AtCoder コンテストページ](https://atcoder.jp/contest)から登録  
+トップページか[AtCoder コンテストページ](https://atcoder.jp/contests/)から登録  
 登録していても１回提出するまではレーティングに反映されません
 - 開始～提出  
 時間になったら問題のページを開きコードが書き終わったら提出(１ファイルまたはコピペで)  
@@ -47,7 +47,7 @@ CDくらいの難易度から超高難易度の問題が出題される
 - 終了後  
 レーティング更新(数十分～数時間後)
 
-#### 毎回サンプルケースコピペしてテストするのしんどい
+#### サンプルケーステストスクリプト
 [atcoder_samplecase_localtest](https://github.com/ebicochineal/atcoder_samplecase_localtest)  
 - ここが便利  
 入力と出力とプログラムの出力を並べてみることができる  
@@ -56,7 +56,16 @@ CDくらいの難易度から超高難易度の問題が出題される
 login.txtにIDパスを平文で保存(安心と信頼の海老レンジャイ製ソフトウェア)  
 Javaとかkotlinは使えません  
 正解が複数ある系の問題も使えません  
-
+#### マラソンマッチ用のテストスクリプト
+[atcoder_rcomm_template/a](https://github.com/ebicochineal/marathon_match/tree/master/atcoder_rcomm_template/a)  
+[atcoder_rcomm_template/interactive](https://github.com/ebicochineal/marathon_match/tree/master/atcoder_rcomm_template/interactive)  
+```rco_mm_mtest.py 開始位置 件数```  
+```setting.ini```  
+テストするソールファイル名  
+実行時に追加するパス  
+スコア比較大小の設定  
+スレッド数  
+コンパイルオプション  
 
 #### レーティングについて
 １０回は参加しないと低く出ます  
@@ -65,5 +74,8 @@ Javaとかkotlinは使えません
 赤/虹(金冠) > 赤/虹(銀冠) > 赤 > 橙 > 黄 > 青 > 水 > 緑 > 茶 > 灰 > 無  
 虹 好きな色つけられるよってこと  
 
-#### 今の仕事辛い転職したい or もう引きこもって１９年目めだよそろそろやばいよ・・・
+#### 今の仕事辛い転職したい
 [AtCoderJobs](https://jobs.atcoder.jp/)
+
+  
+
