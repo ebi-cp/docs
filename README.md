@@ -37,6 +37,7 @@
 |-|-|-|-|-|
 |パルラス|[@pallas_pal](https://twitter.com/pallas_pal)|Python|IDLE||
 |わりむ|[github warimu](https://github.com/warimu)|Python3?||[yukicoder](https://yukicoder.me/users/6768)|
+|でるぴー|||||
 
 
 
@@ -55,7 +56,6 @@
 海老ルージュ  
 海老ホワイト  
 海老セガール  
-でるぴー  
 彩代  
 
 ---
