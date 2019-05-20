@@ -37,7 +37,7 @@
 |-|-|-|-|-|
 |パルラス|[@pallas_pal](https://twitter.com/pallas_pal)|Python|IDLE||
 |わりむ|[github warimu](https://github.com/warimu)|Python3?||[yukicoder](https://yukicoder.me/users/6768)|
-|でるぴー|||||
+|でるぴー||||[1](https://atcoder.jp/contests/abc124/tasks/abc124_a), [2](https://atcoder.jp/contests/abc123/tasks/abc123_a), [3](https://atcoder.jp/contests/abc123/tasks/abc123_b), [4](https://atcoder.jp/contests/agc030/tasks/agc030_a)|
 
 
 
