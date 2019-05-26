@@ -30,14 +30,14 @@
 | えりすしー | [@eris_c](https://twitter.com/eris_c) | C++<br>Python<br>(PHP) | VSCode | [TopCoderMM](https://www.topcoder.com/members/eris_c/details/?track=DATA_SCIENCE&subTrack=MARATHON_MATCH)(黄)<br>[AtCoder](https://beta.atcoder.jp/users/eris_c)(水)<br>[CodinGame](https://www.codingame.com/profile/b1e1fcdbc5e92e4e99bb1cdf97c9a0dc1800952) |
 | チョットデタ | [@Chotto_Deta](https://twitter.com/Chotto_Deta) | Java<br>Python | VSCode<br>paiza.io | [AtCoder](https://beta.atcoder.jp/users/chottodeta)(茶) |
 |海老もえぎ|[@yuh_](https://twitter.com/yuh_)| Python2 | Mery |[AtCoder](https://beta.atcoder.jp/users/ebimoegi)(灰)|
-
+|でるぴー||Perl||[1](https://atcoder.jp/contests/abc124/tasks/abc124_a), [2](https://atcoder.jp/contests/abc123/tasks/abc123_a), [3](https://atcoder.jp/contests/abc123/tasks/abc123_b), [4](https://atcoder.jp/contests/agc030/tasks/agc030_a), [5](https://yukicoder.me/problems/no/810), [6](https://atcoder.jp/contests/agc002/tasks/agc002_a), [7](https://atcoder.jp/contests/iroha2019-day3/tasks/iroha2019_day3_a), [8](https://atcoder.jp/contests/abc085/tasks/abc085_c)|
 
 ## 仮入部
 |海老名 | twitterとか | 言語 | エディタ | 戦績 |
 |-|-|-|-|-|
 |パルラス|[@pallas_pal](https://twitter.com/pallas_pal)|Python|IDLE||
 |わりむ|[github warimu](https://github.com/warimu)|Python3?||[yukicoder](https://yukicoder.me/users/6768)|
-|でるぴー||||[1](https://atcoder.jp/contests/abc124/tasks/abc124_a), [2](https://atcoder.jp/contests/abc123/tasks/abc123_a), [3](https://atcoder.jp/contests/abc123/tasks/abc123_b), [4](https://atcoder.jp/contests/agc030/tasks/agc030_a)|
+
 
 
 
@@ -141,8 +141,8 @@ CoginGame レジェンド > ゴールド > シルバー > ブロンズ > ウッ�
 ---
 
 #### 役立ちそうなリンク
-[AtCoder Problems](http://kenkoooo.com/atcoder/)  
-[AtCoder Scores](https://atcoder-scores.herokuapp.com/index.html)  
+[AtCoder Problems](https://kenkoooo.com/atcoder/#/table//)  
+[AtCoder Scores](https://atcoder-scores.herokuapp.com/)  
 [AtCoder Virtual Contest](https://not-522.appspot.com/)  
   
 [TopCoder CoderRank](https://community.topcoder.com/longcontest/stats/?&sr=1&nr=50&module=CoderRank)  
