@@ -83,7 +83,7 @@ https://github.com/ebicochineal/marathon_match/tree/master/topcoder_mm_template
 #### マラソンマッチの練習がしたい
 [Practice Contests](https://community.topcoder.com/longcontest/?module=ViewPractice)
 
-#### ヴィジュアライザをGIFで撮りたい
+#### ビジュアライザをGIFで撮りたい
 ScreenToGif  
 
 #### リンク
@@ -104,7 +104,7 @@ ScreenToGif
 - zipファイルは500MBまで。
 - Python3になった。
 - マルチスレッド(コア数１)が使える。
-- 時間計測が遅い問題が解決された。
+- 時間計測が遅い問題が無くなった。
 
 [TopCoder MarathonMatchの始め方（新プラットフォーム）](https://github.com/ebi-cp/docs/blob/master/start-topcoder-newplatform-marathon-match.md)
 [Marathon Match Discussion](https://apps.topcoder.com/forums/?module=ThreadList&forumID=506048&mc=3073)  
