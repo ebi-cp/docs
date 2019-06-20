@@ -9,7 +9,6 @@ Java1.8
 C++, Java, Python2, C#, VB  
 [Processing Server Specifications](https://apps.topcoder.com/wiki/display/tc/Processing+Server+Specifications)
 
-
 #### カレンダー
 [Community - Events](https://www.topcoder.com/community/events/)  
 [Competitive Programming Contests Calendar](https://competitiveprogramming.info/calendar)  
@@ -32,10 +31,10 @@ tester.jar
 プログラムをテストし結果を確認できる。オプションで視覚化して表示もできるものがある。  
 
 #### ***Vis.java
-tester.jarのビルド前のソースファイル、カスタマイズして使っている人もいる。  
+tester.jarのビルド前のソースファイル。  
 
 #### ***.cpp,java,py,cs
-見本。この中のクラスを書き換えて提出する。  
+見本。この中のクラスを実装して提出する。  
 
 #### ローカルでテストする
 c++ならコンパイルして(command)に実行ファイルをを入れる。  
@@ -87,7 +86,34 @@ https://github.com/ebicochineal/marathon_match/tree/master/topcoder_mm_template
 #### ヴィジュアライザをGIFで撮りたい
 ScreenToGif  
 
+#### リンク
+[焼きなまし法のコツ Ver. 1.2](http://shindannin.hatenadiary.com/entry/20121224/1356364040)  
+[マラソンマッチにおける精神論](http://chokudai.hatenablog.com/entry/2014/12/04/000132)  
+[マラソンマッチで最初の12時間にすべきこと](http://hama-du.hatenablog.com/entry/2015/12/14/000000)  
+[Topcoderマラソンマッチの探索問題で重要なこと](https://qiita.com/takapt0226/items/b2f6d1d77a034b529e21)  
+[競プロ解法紹介～レベル別マラソンの戦い方～](https://qiita.com/tsukammo/items/7041a00e429f9f5ac4ae)  
+[競プロ解法紹介～大局観で高得点を取る！～](https://qiita.com/tsukammo/items/85ffbe907e89b051d715)  
+[競技プログラミングにおいて焼きなまし法に堕ちずに落とすコツ](https://qiita.com/tsukammo/items/b410f3202372fe87c919)  
+
 ----
+#### MM110から新プラットフォームに移行しました
+- ソースコードの提出ではなくソースファイルとshファイルをzipでまとめた物を提出するようになった。ファイルはフォルダに入れてから圧縮したものを提出すると失敗するのでファイルを複数選択したものを圧縮してまとめる。
+- 提出後順位表に反映されるまで数十分かかる。
+- 提出すると[ここ](https://submission-review.topcoder.com/)から提出ファイルやエラーメッセージなどがダウンロードできる。
+- マラソンマッチのQueue Statusを確認することできなくなった。
+- zipファイルは500MBまで。
+- Python3になった。
+- マルチスレッド(コア数１)が使える。
+- 時間計測が遅い問題が解決された。
+
+[TopCoder MarathonMatchの始め方（新プラットフォーム）](https://github.com/ebi-cp/docs/blob/master/start-topcoder-newplatform-marathon-match.md)
 [Marathon Match Discussion](https://apps.topcoder.com/forums/?module=ThreadList&forumID=506048&mc=3073)  
 [新プラットフォームに移行したMM110のフォーラム１](https://apps.topcoder.com/forums/?module=ThreadList&forumID=7120)  
 [新プラットフォームに移行したMM110のフォーラム２](https://apps.topcoder.com/forums/?module=ThreadList&forumID=673710)  
+[MM わくわく新プラットフォームまとめ](http://hakomof.hatenablog.com/entry/2019/06/05/214722)  
+
+[練習マッチ VanishingMaze  ](https://www.topcoder.com/challenges/30092483)  
+[順位表](http://leaderboards.topcoder.com/challenges/30091712?reviewTypeId=0d5b13d6-7562-4045-af35-d6a5cf62de31)  
+
+[練習マッチ TCO19 Marathon Match Round 1](https://www.topcoder.com/challenges/30092166)  
+[順位表](http://cmap-leaders.topcoder.com/challenges/30092166?reviewTypeId=0d5b13d6-7562-4045-af35-d6a5cf62de31)  
