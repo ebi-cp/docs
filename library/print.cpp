@@ -14,11 +14,11 @@ using namespace std;
 template<class F, class S> string in_v_to_str (const pair<F, S> v);
 template<class F, class S> string v_to_str (const pair<F, S> v);
 string in_v_to_str (const char v) { return "'" + string{v} + "'"; }
-string in_v_to_str (const char *v) { return '"' + v + '"'; }
+string in_v_to_str (const char* v) { return '"' + v + '"'; }
 string in_v_to_str (const string v) { return '"' + v + '"'; }
 template<class T> string in_v_to_str (const T v) { stringstream ss; ss << v; return ss.str(); }
 template<class T> string v_to_str (const T v) { stringstream ss; ss << v; return ss.str(); }
-template<class T, size_t N> string v_to_str (const array<T, N> &v) {
+template<class T, size_t N> string v_to_str (const array<T, N>& v) {
     stringstream ss;
     if (v.size() > 0) {
         ss << "[";
@@ -29,7 +29,7 @@ template<class T, size_t N> string v_to_str (const array<T, N> &v) {
     }
     return ss.str();
 }
-template<class T, size_t N> string v_to_str (const array< array<T, N>, N > &v) {
+template<class T, size_t N> string v_to_str (const array< array<T, N>, N >& v) {
     stringstream ss;
     if (v.size() > 0) {
         ss << "[";
@@ -40,7 +40,7 @@ template<class T, size_t N> string v_to_str (const array< array<T, N>, N > &v) {
     }
     return ss.str();
 }
-template<class T> string v_to_str (const vector<T> &v) {
+template<class T> string v_to_str (const vector<T>& v) {
     stringstream ss;
     if (v.size() > 0) {
         ss << "[";
@@ -51,7 +51,7 @@ template<class T> string v_to_str (const vector<T> &v) {
     }
     return ss.str();
 }
-template<class T> string v_to_str (const vector< vector<T> > &v) {
+template<class T> string v_to_str (const vector< vector<T> >& v) {
     stringstream ss;
     if (v.size() > 0) {
         ss << "[";
@@ -62,28 +62,28 @@ template<class T> string v_to_str (const vector< vector<T> > &v) {
     }
     return ss.str();
 }
-template<class T> string v_to_str (const set<T> &v) {
+template<class T> string v_to_str (const set<T>& v) {
     stringstream ss;
     int len = v.size();
     ss << (v.size() > 0 ? "{" : "{}");
     for (auto& i : v) { ss << in_v_to_str(i) << (len-- > 1 ? ", " : "}"); }
     return ss.str();
 }
-template<class K, class V> string v_to_str (const map<K, V> &v) {
+template<class K, class V> string v_to_str (const map<K, V>& v) {
     stringstream ss;
     int len = v.size();
     ss << (v.size() > 0 ? "{" : "{}");
     for (auto& i : v) { ss << in_v_to_str(i.first) << " : " << in_v_to_str(i.second) << (len-- > 1 ? ", " : "}"); }
     return ss.str();
 }
-template<class T> string v_to_str (const unordered_set<T> &v) {
+template<class T> string v_to_str (const unordered_set<T>& v) {
     stringstream ss;
     int len = v.size();
     ss << (v.size() > 0 ? "{" : "{}");
     for (auto& i : v) { ss << in_v_to_str(i) << (len-- > 1 ? ", " : "}"); }
     return ss.str();
 }
-template<class K, class V> string v_to_str (const unordered_map<K, V> &v) {
+template<class K, class V> string v_to_str (const unordered_map<K, V>& v) {
     stringstream ss;
     int len = v.size();
     ss << (v.size() > 0 ? "{" : "{}");
@@ -93,7 +93,7 @@ template<class K, class V> string v_to_str (const unordered_map<K, V> &v) {
 template<class F, class S> string in_v_to_str (const pair<F, S> v) { stringstream ss; ss << "<" << v_to_str(v.first) << ", " << v_to_str(v.second) << ">"; return ss.str(); }
 template<class F, class S> string v_to_str (const pair<F, S> v) { stringstream ss; ss << "<" << v_to_str(v.first) << ", " << v_to_str(v.second) << ">"; return ss.str(); }
 string print () { return ""; }
-template<typename F, typename... R> string print (const F &f, const R &...r) {
+template<typename F, typename... R> string print (const F& f, const R& ...r) {
     stringstream ss;
     ss << v_to_str(f);
     if (sizeof...(r) > 0) { ss << " " << print(r...); }
