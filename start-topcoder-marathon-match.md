@@ -106,7 +106,6 @@ ScreenToGif
 - マルチスレッド(コア数１)が使える。
 - 時間計測が遅い問題が無くなった。
 
-[TopCoder MarathonMatchの始め方（新プラットフォーム）](https://github.com/ebi-cp/docs/blob/master/start-topcoder-newplatform-marathon-match.md)
 [Marathon Match Discussion](https://apps.topcoder.com/forums/?module=ThreadList&forumID=506048&mc=3073)  
 [新プラットフォームに移行したMM110のフォーラム１](https://apps.topcoder.com/forums/?module=ThreadList&forumID=7120)  
 [新プラットフォームに移行したMM110のフォーラム２](https://apps.topcoder.com/forums/?module=ThreadList&forumID=673710)  
