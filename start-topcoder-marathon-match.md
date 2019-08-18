@@ -116,3 +116,16 @@ ScreenToGif
 
 [練習マッチ TCO19 Marathon Match Round 1](https://www.topcoder.com/challenges/30092166)  
 [順位表](http://cmap-leaders.topcoder.com/challenges/30092166?reviewTypeId=0d5b13d6-7562-4045-af35-d6a5cf62de31)  
+
+---
+## 海老競プロ部リンク
+- [トップ](https://github.com/ebi-cp/docs/blob/master/README.md)
+- [TopCoder MarathonMatchの始め方](https://github.com/ebi-cp/docs/blob/master/start-topcoder-marathon-match.md)
+- [TCO18 MM R1 - RoadsAndJunctions](https://github.com/ebi-cp/docs/blob/master/TopCoderMM/RoadsAndJunctions.md)
+- [AtCoderの始め方](https://github.com/ebi-cp/docs/blob/master/start-atcoder.md)
+- [闇Python入門](https://github.com/ebi-cp/docs/blob/master/dark-pythonista.md)
+- [海老ライブラリ](https://github.com/ebi-cp/docs/tree/master/library)
+- [海老バーチャルコンテスト](https://github.com/ebi-cp/docs/blob/master/ebi-virtual-contest.md)
+- [ゴルフコード置き場](https://github.com/ebi-cp/golf)
+- [VB.netでACしてみた](https://github.com/ebi-cp/vb/tree/master/ebicochineal)
+---
