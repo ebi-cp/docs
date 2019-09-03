@@ -46,7 +46,7 @@ namespace std {
 }
 
 class GraphDijkstra {
-public:
+private:
     class Node {
     public:
         int cost;
@@ -58,23 +58,21 @@ public:
         bool operator > (const Node &t) const { return this->cost > t.cost; }
         bool operator < (const Node &t) const { return this->cost < t.cost; }
     };
-    
-    int n;
-    vector< vector< pair<int, int> > > edgecost;
-    vector<int> path;
-    vector<int> rpath;
-    int pathcost;
-    
     int tmp = -1;
     vector<int> prevs;
     vector<int> costs;
     priority_queue<Node, vector<Node>, greater<Node> > que;
+    vector< vector< pair<int, int> > > edgecost;
+public:
+    int n;
+    vector<int> path;
+    vector<int> rpath;
+    int pathcost;
     
     GraphDijkstra (int n, vector<Edge> edges, bool undir = false) {
         this->pathcost = 0;
         this->path.clear();
         this->n = n;
-        
         this->edgecost = vector< vector< pair<int, int> > >(this->n, vector< pair<int, int> >());
         if (undir) {// undirected
             for (auto&& i : edges) {
@@ -161,8 +159,8 @@ vector<Edge> gridToGraph (vector< vector<int> >& grid) {
             int ax = x;
             int ay = y;
             for (int i = 0; i < 4; ++i) {
-                int bx = ax +-dx[i];
-                int by = ay +-dy[i];
+                int bx = ax + dx[i];
+                int by = ay + dy[i];
                 if (bx < 0 || bx >= w || by < 0 || by >= h) { continue; }
                 r.emplace_back(Edge(ay*w+ax, by*w+bx, grid[by][bx]));
             }
