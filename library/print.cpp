@@ -14,8 +14,8 @@ using namespace std;
 template<class F, class S> string in_v_to_str (const pair<F, S> v);
 template<class F, class S> string v_to_str (const pair<F, S> v);
 string in_v_to_str (const char v) { return "'" + string{v} + "'"; }
-string in_v_to_str (const char* v) { return '"' + v + '"'; }
-string in_v_to_str (const string v) { return '"' + v + '"'; }
+string in_v_to_str (const char* v) { return "\"" + string(v) + "\""; }
+string in_v_to_str (const string v) { return "\"" + v + "\""; }
 template<class T> string in_v_to_str (const T v) { stringstream ss; ss << v; return ss.str(); }
 template<class T> string v_to_str (const T v) { stringstream ss; ss << v; return ss.str(); }
 template<class T, size_t N> string v_to_str (const array<T, N>& v) {
