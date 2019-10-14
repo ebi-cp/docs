@@ -50,10 +50,10 @@ private:
     class Node {
     public:
         int cost;
-        int prev;
-        Node (int cost, int prev) {
+        int index;
+        Node (int cost, int index) {
             this->cost = cost;
-            this->prev = prev;
+            this->index = index;
         }
         bool operator > (const Node &t) const { return this->cost > t.cost; }
         bool operator < (const Node &t) const { return this->cost < t.cost; }
@@ -119,14 +119,14 @@ public:
         this->tmp = start_i;
         
         while (!this->que.empty()) {
-            Node t = this->que.top();
+            const Node t = this->que.top();
             if (t.cost >= this->costs[end_i]) { break; }
             this->que.pop();
-            for (auto&& i : this->edgecost[t.prev]) {
-                int cost = t.cost + i.second;
+            for (auto&& i : this->edgecost[t.index]) {
+                const int cost = t.cost + i.second;
                 if (cost < this->costs[i.first]) {
                     this->costs[i.first] = cost;
-                    this->prevs[i.first] = t.prev;
+                    this->prevs[i.first] = t.index;
                     this->que.emplace(cost, i.first);
                 }
             }
@@ -137,7 +137,7 @@ public:
             int e = end_i;
             while (e > -1) {
                 this->rpath.emplace_back(e);
-                e = prevs[e];
+                e = this->prevs[e];
             }
             this->path = this->rpath;
             reverse(this->path.begin(), this->path.end());
