@@ -16,6 +16,34 @@
 #include <sys/timeb.h>
 using namespace std;
 
+class StopWatch {
+public:
+    int starts;
+    int startm;
+    int tstarts = 0;
+    int tstartm = 0;
+    struct timeb timebuffer;
+    StopWatch () {
+        ftime(&this->timebuffer);
+        this->starts = this->timebuffer.time;
+        this->startm = this->timebuffer.millitm;
+    }
+    inline void stop () {
+        ftime(&this->timebuffer);
+        this->tstarts = this->timebuffer.time;
+        this->tstartm = this->timebuffer.millitm;
+    }
+    inline void resume () {
+        ftime(&this->timebuffer);
+        this->starts += this->timebuffer.time - this->tstarts;
+        this->startm += this->timebuffer.millitm - this->tstartm;
+    }
+    inline int get_milli_time () {
+        ftime(&this->timebuffer);
+        return (this->timebuffer.time - this->starts) * 1000 + (this->timebuffer.millitm - this->startm);
+    }
+};
+
 inline uint32_t xrnd() {
     static uint32_t y = 2463534242;
     y = y ^ (y << 13);
@@ -36,7 +64,7 @@ public:
         this->b = b;
         this->cost = cost;
     }
-    bool operator == (const Edge &t) const { return this->a == t.a && this->b == t.b; }
+    bool operator == (const Edge& t) const { return this->a == t.a && this->b == t.b; }
 };
 namespace std {
     template <> class hash<Edge> {
@@ -55,8 +83,8 @@ private:
             this->cost = cost;
             this->index = index;
         }
-        bool operator > (const Node &t) const { return this->cost > t.cost; }
-        bool operator < (const Node &t) const { return this->cost < t.cost; }
+        bool operator > (const Node& t) const { return this->cost > t.cost; }
+        bool operator < (const Node& t) const { return this->cost < t.cost; }
     };
     int tmp = -1;
     vector<int> prevs;
@@ -185,7 +213,9 @@ int main () {
         int a = xrnd()%1000000;
         int b = xrnd()%1000000;
         gd.calcPath(a, b);
-        cout << a << ", " << b << ", " << gd.pathcost << endl;
+        cout << "(" << a/1000 << ", " << a%1000 << ")->";
+        cout << "(" << b/1000 << ", " << b%1000 << ") ";
+        cout << gd.pathcost << endl;
     }
     return 0;
 }
