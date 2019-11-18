@@ -1,4 +1,5 @@
 ## AtCoderの始め方
+[海老レンジャイ](https://github.com/ebi-cp/docs/blob/master/README.md)向けに書いたから適当に書いたので間違っているとこもあるかも
 
 #### AtCoderに登録しよう
 [AtCoder](https://atcoder.jp/?lang=ja)
@@ -19,22 +20,31 @@
 インターネットでの検索  
 
 #### コンテスト
-ほぼ毎週 1, 2つのコンテストが開催されている  
-マラソンマッチ系のコンテストも不定期で開催されている(レーティングはつかない)  
-- AtCoder Beginner Contest(ABC)  
+ほぼ毎週 1, 2つのアルゴリズム系コンテスト(１時間～数時間)が開催されている  
+マラソンマッチ系(数時間～数週間)の企業コンテストも不定期で開催されている  
+#### アルゴリズム系コンテスト
+- AtCoder Beginner Contest(ABC), ABCクラスのコンテスト  
 レーティング変化 ~ 1999  
-- AtCoder Regular Contest(ARC)  
+- AtCoder Regular Contest(ARC), ARCクラスのコンテスト  
 レーティング変化 ~ 2799  
 - AtCoder Grand Contest(AGC)  
 レーティング変化 すべて  
 CDくらいの難易度から超高難易度の問題が出題される  
-最初から出てもいいし避けてもいい  
+#### マラソン系コンテスト
+マラソンはまだ公式なレーティングがありません  
+[AtCoder Marathon Ranking (Unofficial)](https://tomerun.github.io/atcoder_marathon_ranking/index.html)
+- Chokudai Contest(大根)
 - RCO日本橋ハーフマラソン  
 - HACK TO THE FUTUREコンテスト  
 - Hokkaido Univ.& Hitachi New-concept Computing Contest  
 - Asprova プログラミングコンテスト  
 
 #### コンテストの流れ
+- 準備  
+無くても良いけど、ノートとかメモ用紙とか  
+スマホでもできるけどプログラムが実行可能なPC  
+標準入出力が分からなかったら[ここを見て試しましょう](https://atcoder.jp/contests/practice/tasks/practice_1)
+
 - 登録  
 トップページか[AtCoder コンテストページ](https://atcoder.jp/contests/)から登録  
 登録していても１回提出するまではレーティングに反映されません
@@ -87,6 +97,7 @@ Javaとかkotlinは使えません
 - [闇Python入門](https://github.com/ebi-cp/docs/blob/master/dark-pythonista.md)
 - [海老ライブラリ](https://github.com/ebi-cp/docs/tree/master/library)
 - [海老バーチャルコンテスト](https://github.com/ebi-cp/docs/blob/master/ebi-virtual-contest.md)
+- [海老プログラミングマガジン](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/README.md)
 - [ゴルフコード置き場](https://github.com/ebi-cp/golf)
 - [VB.netでACしてみた](https://github.com/ebi-cp/vb/tree/master/ebicochineal)
 ---
