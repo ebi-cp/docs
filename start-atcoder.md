@@ -23,13 +23,14 @@
 ほぼ毎週 1, 2つのアルゴリズム系コンテスト(１時間～数時間)が開催されている  
 マラソンマッチ系(数時間～数週間)の企業コンテストも不定期で開催されている  
 #### アルゴリズム系コンテスト
-- AtCoder Beginner Contest(ABC), ABCクラスのコンテスト  
+- [AtCoder Beginner Contest](https://atcoder.jp/contests/archive?ratedType=1&category=0&keyword=)(ABC), [ABCクラスのコンテスト](https://atcoder.jp/contests/archive?ratedType=1&category=0&keyword=)  
 レーティング変化 ~ 1999  
-- AtCoder Regular Contest(ARC), ARCクラスのコンテスト  
+- [AtCoder Regular Contest](https://atcoder.jp/contests/archive?ratedType=2&category=0&keyword=)(ARC), [ARCクラスのコンテスト](https://atcoder.jp/contests/archive?ratedType=2&category=0&keyword=)  
 レーティング変化 ~ 2799  
-- AtCoder Grand Contest(AGC)  
+- [AtCoder Grand Contest](https://atcoder.jp/contests/archive?ratedType=3&category=0&keyword=)([AGC](https://www.youtube.com/watch?v=Xh7Uc486SrM&feature=emb_logo)), [AGCクラスのコンテスト](https://atcoder.jp/contests/archive?ratedType=3&category=0&keyword=)  
 レーティング変化 すべて  
-CDくらいの難易度から超高難易度の問題が出題される  
+天才以外お断りパズルコンテスト  
+ABCクラスのCDくらいの難易度から超高難易度の問題が出題される  
 #### マラソン系コンテスト
 マラソンはまだ公式なレーティングがありません  
 [AtCoder Marathon Ranking (Unofficial)](https://tomerun.github.io/atcoder_marathon_ranking/index.html)
