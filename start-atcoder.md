@@ -1,5 +1,5 @@
 ## AtCoderの始め方
-[海老レンジャイ](https://github.com/ebi-cp/docs/blob/master/README.md)向けに書いたから適当に書いたので間違っているとこもあるかも
+[海老レンジャイ](https://github.com/ebi-cp/docs/blob/master/README.md)向けに適当に書いたので間違っているとこもあるかも
 
 #### AtCoderに登録しよう
 [AtCoder](https://atcoder.jp/?lang=ja)
