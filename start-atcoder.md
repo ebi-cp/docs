@@ -68,8 +68,8 @@ login.txtにIDパスを平文で保存(安心と信頼の海老レンジャイ�
 Javaとかkotlinは使えません  
 正解が複数ある系の問題も使えません  
 #### マラソンマッチ用のテストスクリプト
-[atcoder_rcomm_template/a](https://github.com/ebicochineal/marathon_match/tree/master/atcoder_rcomm_template/a)  
-[atcoder_rcomm_template/interactive](https://github.com/ebicochineal/marathon_match/tree/master/atcoder_rcomm_template/interactive)  
+[atcoder_rcomm_template/a](https://github.com/ebicochineal/marathon_match/tree/master/atcoder_rco_marathon_match_template/a)  
+[atcoder_rcomm_template/interactive](https://github.com/ebicochineal/marathon_match/tree/master/atcoder_rco_marathon_match_template/interactive)  
 ```rco_mm_mtest.py 開始位置 件数```  
 ```setting.ini```  
 テストするソールファイル名  
@@ -84,6 +84,9 @@ Javaとかkotlinは使えません
 #### 色ランク  
 赤/虹(金冠) > 赤/虹(銀冠) > 赤 > 橙 > 黄 > 青 > 水 > 緑 > 茶 > 灰 > 無  
 虹 好きな色つけられるよってこと  
+[chokudaiのブログ AtCoder（競技プログラミング）の色・ランクと実力評価、問題例](http://chokudai.hatenablog.com/entry/2019/02/11/155904)  
+[AtCoder コンテストについての tips](https://qiita.com/drken/items/8a6f139158cde8a61dce)
+
 
 #### 今の仕事辛い転職したい
 [AtCoderJobs](https://jobs.atcoder.jp/)
