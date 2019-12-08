@@ -9,7 +9,8 @@
 
 #### プログラミング未経験
 アプリのインストールとかネットゲームとか検索とか問題なくできるなら、３日あればプログラミングがなんとかできるレベルにはなると思う  
-[闇Python入門](https://github.com/ebi-cp/docs/blob/master/dark-pythonista.md)
+[闇Python入門](https://github.com/ebi-cp/docs/blob/master/dark-pythonista.md)  
+[海老プログラミングマガジン](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/README.md)  
 
 #### 多くのコンテストで禁止される行為
 2人以上で結託し、解答する行為  
@@ -36,16 +37,16 @@ ABCクラスのCDくらいの難易度から超高難易度の問題が出題さ
 [AtCoder Marathon Ranking (Unofficial)](https://tomerun.github.io/atcoder_marathon_ranking/index.html)
 - Chokudai Contest(大根)
 - RCO日本橋ハーフマラソン  
-- HACK TO THE FUTUREコンテスト  
-- Hokkaido Univ.& Hitachi New-concept Computing Contest  
+- HACK TO THE FUTUREコンテスト(HTTF)  
+- Hokkaido Univ.& Hitachi New-concept Computing Contest(新概念)  
 - Asprova プログラミングコンテスト  
 
-#### コンテストの流れ
-- 準備  
+#### コンテストの準備  
 無くても良いけど、ノートとかメモ用紙とか  
 スマホでもできるけどプログラムが実行可能なPC  
 標準入出力が分からなかったら[ここを見て試しましょう](https://atcoder.jp/contests/practice/tasks/practice_1)
 
+#### コンテストの流れ
 - 登録  
 トップページか[AtCoder コンテストページ](https://atcoder.jp/contests/)から登録  
 登録していても１回提出するまではレーティングに反映されません
@@ -56,6 +57,7 @@ ABCクラスのCDくらいの難易度から超高難易度の問題が出題さ
 プログラムの実行時間が遅すぎるとTLE(数秒かかるとか)  
 コンパイルエラーCE  
 - 終了後  
+[AtCoder Live コンテスト解説動画](https://www.youtube.com/channel/UCtG3StnbhxHxXfE6Q4cPZwQ)  
 レーティング更新(数十分～数時間後)
 
 #### サンプルケーステストスクリプト
@@ -95,6 +97,7 @@ Javaとかkotlinは使えません
 ---
 ## 海老競プロ部リンク
 - [トップ](https://github.com/ebi-cp/docs/blob/master/README.md)
+- [CodinGame Clash of Codeを始めよう](https://github.com/ebi-cp/docs/blob/master/start-codingame-clashofcode.md)
 - [TopCoder MarathonMatchの始め方](https://github.com/ebi-cp/docs/blob/master/start-topcoder-marathon-match.md)
 - [TCO18 MM R1 - RoadsAndJunctions](https://github.com/ebi-cp/docs/blob/master/TopCoderMM/RoadsAndJunctions.md)
 - [AtCoderの始め方](https://github.com/ebi-cp/docs/blob/master/start-atcoder.md)
