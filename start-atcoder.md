@@ -11,6 +11,8 @@
 アプリのインストールとかネットゲームとか検索とか問題なくできるなら、３日あればプログラミングがなんとかできるレベルにはなると思う  
 [闇Python入門](https://github.com/ebi-cp/docs/blob/master/dark-pythonista.md)  
 [海老プログラミングマガジン](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/README.md)  
+[AtCoder プログラミングガイド (C++)](https://atcoder.jp/contests/apg4b?lang=ja)  
+
 
 #### 多くのコンテストで禁止される行為
 2人以上で結託し、解答する行為  
