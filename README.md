@@ -154,6 +154,7 @@ CoginGame レジェンド > ゴールド > シルバー > ブロンズ > ウッ�
   
 [AtCoder　コンテスト解説](https://www.youtube.com/channel/UCtG3StnbhxHxXfE6Q4cPZwQ)  
 [焼きなまし法のコツ Ver. 1.2](http://shindannin.hatenadiary.com/entry/20121224/1356364040)  
+[Topcoder Marathon Matchの始め方（最新版）](https://qiita.com/phocom/items/da0f8123f7a8d5201cbf)  
 [マラソンマッチにおける精神論](http://chokudai.hatenablog.com/entry/2014/12/04/000132)  
 [マラソンマッチで最初の12時間にすべきこと](http://hama-du.hatenablog.com/entry/2015/12/14/000000)  
 [Topcoderマラソンマッチの探索問題で重要なこと](https://qiita.com/takapt0226/items/b2f6d1d77a034b529e21)  
