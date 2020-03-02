@@ -5,7 +5,10 @@ namespace strlib {
     // 置き換え
     string replace (string str, string old_s, string new_s, int n = 0) {
         n = n < 1 ? str.size() : n;
-        for (int i; (i = str.find(old_s)) > -1 && n; --n) { str.replace(i, old_s.size(), new_s); }
+        for (int i = 0; (i = str.find(old_s, i)) > -1 && n; --n) {
+            str.replace(i, old_s.size(), new_s);
+            i += new_s.size();
+        }
         return str;
     }
 
