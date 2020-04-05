@@ -16,14 +16,14 @@
 
 #### 多くのコンテストで禁止される行為
 2人以上で結託し、解答する行為  
-コンテスト中にTwitterなどでネタバレ  
+コンテスト中にTwitterなどSNSでネタバレ  
 
 #### 多くのコンテストで許可されている行為
 自作ライブラリの使用  
 インターネットでの検索  
 
 #### コンテスト
-ほぼ毎週 1, 2つのアルゴリズム系コンテスト(１時間～数時間)が開催されている  
+ほぼ毎週 1～2つのアルゴリズム系コンテスト(１時間～数時間)が開催されている  
 マラソンマッチ系(数時間～数週間)の企業コンテストも不定期で開催されている  
 #### アルゴリズム系コンテスト
 - [AtCoder Beginner Contest](https://atcoder.jp/contests/archive?ratedType=1&category=0&keyword=)(ABC), [ABCクラスのコンテスト](https://atcoder.jp/contests/archive?ratedType=1&category=0&keyword=)  
@@ -50,8 +50,8 @@ ABCクラスのCDくらいの難易度から超高難易度の問題が出題さ
 
 #### コンテストの流れ
 - 登録  
-トップページか[AtCoder コンテストページ](https://atcoder.jp/contests/)から登録  
-登録していても１回提出するまではレーティングに反映されません
+参加するコンテストに登録[AtCoder コンテストページ](https://atcoder.jp/contests/)  
+登録していても１回提出するまではレーティングは変化しません
 - 開始～提出  
 時間になったら問題のページを開きコードが書き終わったら提出(１ファイルまたはコピペで)  
 問題ごとに複数テストされすべて正解でAC  
@@ -72,9 +72,7 @@ login.txtにIDパスを平文で保存(安心と信頼の海老レンジャイ�
 Javaとかkotlinは使えません  
 正解が複数ある系の問題も使えません  
 #### マラソンマッチ用のテストスクリプト
-[atcoder_rcomm_template/a](https://github.com/ebicochineal/marathon_match/tree/master/atcoder_rco_marathon_match_template/a)  
-[atcoder_rcomm_template/interactive](https://github.com/ebicochineal/marathon_match/tree/master/atcoder_rco_marathon_match_template/interactive)  
-```rco_mm_mtest.py 開始位置 件数```  
+[atcoder_rcomm_template](https://github.com/ebicochineal/marathon_match/tree/master/atcoder_rco_marathon_match_template)  
 ```setting.ini```  
 テストするソールファイル名  
 実行時に追加するパス  
@@ -93,9 +91,8 @@ Javaとかkotlinは使えません
 
 
 #### 今の仕事辛い転職したい
-[AtCoderJobs](https://jobs.atcoder.jp/)
+[AtCoderJobs](https://jobs.atcoder.jp/)  
 
-  
 ---
 ## 海老競プロ部リンク
 - [トップ](https://github.com/ebi-cp/docs/blob/master/README.md)
