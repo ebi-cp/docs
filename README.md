@@ -38,7 +38,7 @@
 |パルラス|[@pallas_pal](https://twitter.com/pallas_pal)|Python|IDLE||
 |わりむ|[github warimu](https://github.com/warimu)|Python3?||[yukicoder](https://yukicoder.me/users/6768)|
 |海老ブルー|[@ebiblue](https://twitter.com/ebiblue)|||[CodinGame](https://www.codingame.com/profile/b5f4c56a4fd60ccc413585c0d5a24dab7117692)|
-
+|海老ライラック|[@ab_lilac](https://twitter.com/ab_lilac)||||
 
 
 ---
@@ -51,8 +51,6 @@
 ネムトロ  
 ちゃぺを  
 るーざー  
-
-#### 部員候補リスト(プログラミングできるorできそうor才能ありそう今すぐ始めるべき)
 海老ルージュ  
 海老ホワイト  
 海老セガール  
