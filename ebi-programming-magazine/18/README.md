@@ -20,15 +20,15 @@ pythonでボットの作成、実行
 ```pip install discord.py[voice]```
 ---
 #### discordのボットの作成
-ここにアクセスしボットをNew　ApplicationでBotを作成します  
+ここにアクセスしNew ApplicationでBotを作成します  
 https://discordapp.com/developers/applications/me  
 
-- Bot
+- Bot  
 AddBotを押します  
 TOKEN Click to Reveal TokenのCopyでメモ帳などにトークンを保存しておきます
 
 
-- OAuth2
+- OAuth2  
 下のチェックボックスのBotにチェックを入れると出てくるURLにアクセスします  
 ボットを呼びたいサーバーを選びます
 
