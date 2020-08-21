@@ -13,11 +13,16 @@ pythonでボットの作成、実行
 ```py -V```  
 3.8未満なら3.8以上Pythonをインストールしてください
 
-- pipコマンドでdiscord.pyライブラリををインストールします  
-- テキストチャンネルのみのボット  
+- pipコマンドでdiscord.pyライブラリを目的に合わせてどちらかをインストールします  
+- テキストチャンネルのみのボット作成したいなら  
+```py -3 -m pip install discord.py```  
+python, pipのパスが通ってるなら  
 ```pip install discord.py```
-- 音の再生もできるボット  
-```pip install discord.py[voice]```
+- 音の再生もできるボット作成したいなら  
+```py -3 -m pip install discord.py[voice]```  
+python, pipのパスが通ってるなら  
+```pip install discord.py```  
+加えてffmpegも必要ですダウンロードしておきましょう
 ---
 #### discordのボットの作成
 ここにアクセスしNew ApplicationでBotを作成します  
