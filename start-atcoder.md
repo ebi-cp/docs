@@ -31,7 +31,7 @@
 - [AtCoder Regular Contest](https://atcoder.jp/contests/archive?ratedType=2&category=0&keyword=)(ARC), [ARCクラスのコンテスト](https://atcoder.jp/contests/archive?ratedType=2&category=0&keyword=)  
 レーティング変化 ~ 2799  
 - [AtCoder Grand Contest](https://atcoder.jp/contests/archive?ratedType=3&category=0&keyword=)([AGC](https://www.youtube.com/watch?v=Xh7Uc486SrM&feature=emb_logo)), [AGCクラスのコンテスト](https://atcoder.jp/contests/archive?ratedType=3&category=0&keyword=)  
-レーティング変化 すべて  
+レーティング変化 1200 ~  
 天才以外お断りパズルコンテスト  
 ABCクラスのCDくらいの難易度から超高難易度の問題が出題される  
 #### マラソン系コンテスト
