@@ -63,7 +63,7 @@ http://topcoder.g.hatena.ne.jp/CKomaki/20141202/1418158488
 https://github.com/ebi-cp/docs/blob/master/snippets/stopwatch.cpp
 
 #### 簡単にマルチスレッドでテストしたい
-https://github.com/ebicochineal/marathon_match/tree/master/topcoder_mm_template
+https://github.com/ebicochineal/marathon_match/tree/master/marathon_contest_template_v2
 
 #### マラソンマッチキュー
 誰かが提出すると[ここ](https://community.topcoder.com/longcontest/?module=ViewQueue)に表示される。空いてるときに提出しないと結果がすぐ帰ってこない。  
