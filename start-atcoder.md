@@ -24,7 +24,7 @@
 
 #### コンテスト
 ほぼ毎週 1～2つのアルゴリズム系コンテスト(１時間～数時間)が開催されている  
-マラソンマッチ系(数時間～数週間)の企業コンテストも不定期で開催されている  
+ヒューリスティック(マラソン)系(数時間～数週間)のコンテストも毎月開催されている  
 #### アルゴリズム系コンテスト
 - [AtCoder Beginner Contest](https://atcoder.jp/contests/archive?ratedType=1&category=0&keyword=)(ABC), [ABCクラスのコンテスト](https://atcoder.jp/contests/archive?ratedType=1&category=0&keyword=)  
 レーティング変化 ~ 1999  
@@ -32,16 +32,16 @@
 レーティング変化 ~ 2799  
 - [AtCoder Grand Contest](https://atcoder.jp/contests/archive?ratedType=3&category=0&keyword=)([AGC](https://www.youtube.com/watch?v=Xh7Uc486SrM&feature=emb_logo)), [AGCクラスのコンテスト](https://atcoder.jp/contests/archive?ratedType=3&category=0&keyword=)  
 レーティング変化 1200 ~  
-天才以外お断りパズルコンテスト  
 ABCクラスのCDくらいの難易度から超高難易度の問題が出題される  
-#### マラソン系コンテスト
-マラソンはまだ公式なレーティングがありません  
+#### ヒューリスティック系コンテスト  
 [AtCoder Marathon Ranking (Unofficial)](https://tomerun.github.io/atcoder_marathon_ranking/index.html)
 - Chokudai Contest(大根)
 - RCO日本橋ハーフマラソン  
 - HACK TO THE FUTUREコンテスト(HTTF)  
 - Hokkaido Univ.& Hitachi New-concept Computing Contest(新概念)  
 - Asprova プログラミングコンテスト  
+- AtCoder Heuristic Contest（AHC）  
+AHCでは、ABC/ARC/AGCでのレーティングとは異なる、ヒューリスティック部門用の新しいレーティングが付与されます。ABC等でのレーティングと異なり、コンテスト成績が悪くても下がることのない単調非減少型を採用し、平均的に良いパフォーマンスを出すことよりも、ベストパフォーマンスが評価される形式となります。  
 
 #### コンテストの準備  
 無くても良いけど、ノートとかメモ用紙とか  
@@ -64,21 +64,11 @@ ABCクラスのCDくらいの難易度から超高難易度の問題が出題さ
 
 #### サンプルケーステストスクリプト
 [atcoder_samplecase_localtest](https://github.com/ebicochineal/atcoder_samplecase_localtest)  
-- ここが便利  
 入力と出力とプログラムの出力を並べてみることができる  
 ブラウザパスを設定していると問題ページを開くことができる  
-- とても小さな問題  
-login.txtにIDパスを平文で保存(安心と信頼の海老レンジャイ製ソフトウェア)  
-Javaとかkotlinは使えません  
-正解が複数ある系の問題も使えません  
-#### マラソンマッチ用のテストスクリプト
-[atcoder_rcomm_template](https://github.com/ebicochineal/marathon_match/tree/master/atcoder_rco_marathon_match_template)  
-```setting.ini```  
-テストするソールファイル名  
-実行時に追加するパス  
-スコア比較大小の設定  
-スレッド数  
-コンパイルオプション  
+最近使ってないもう使えないかも  
+#### ヒューリスティックコンテスト用の並列テストスクリプト
+[marathon_contest_template_v2](https://github.com/ebicochineal/marathon_match/tree/master/marathon_contest_template_v2)  
 
 #### レーティングについて
 １０回は参加しないと低く出ます  
