@@ -26,10 +26,10 @@
 
 |海老名 | twitter | 言語 | エディタ | 戦績 |
 |-|-|-|-|-|
-|海老コチニール | [@ebicochineal](https://twitter.com/ebicochineal) | C++<br>C#<br>Python | VSCode[***](https://marketplace.visualstudio.com/items?itemName=ebicochineal.select-highlight-cochineal-color) |[TopCoderMM](https://www.topcoder.com/members/ebicochineal/details/?track=DATA_SCIENCE&subTrack=MARATHON_MATCH)(黄)<br>[AtCoder](https://beta.atcoder.jp/users/ebicochineal)(水)<br>[CodinGame](https://www.codingame.com/profile/a79a37f66f7439f3b94bb35f30b329bd8000942)(Grandmaster)[*](https://www.codingame.com/contests/botters-of-the-galaxy/leaderboard/country/jp)|
-| えりすしー | [@eris_c](https://twitter.com/eris_c) | C++<br>Python<br>(PHP) | VSCode | [TopCoderMM](https://www.topcoder.com/members/eris_c/details/?track=DATA_SCIENCE&subTrack=MARATHON_MATCH)(黄)<br>[AtCoder](https://beta.atcoder.jp/users/eris_c)(水)<br>[CodinGame](https://www.codingame.com/profile/b1e1fcdbc5e92e4e99bb1cdf97c9a0dc1800952)(Grandmaster)[*](https://www.codingame.com/contests/unleash-the-geek-amadeus/leaderboard/country/jp) |
-| チョットデタ | [@Chotto_Deta](https://twitter.com/Chotto_Deta) | Java<br>Python | VSCode<br>paiza.io | [AtCoder](https://beta.atcoder.jp/users/chottodeta)(茶) |
-|海老もえぎ|[@yuh_](https://twitter.com/yuh_)| Python2 | Mery |[AtCoder](https://beta.atcoder.jp/users/ebimoegi)(灰)|
+|海老コチニール | [@ebicochineal](https://twitter.com/ebicochineal) | C++<br>C#<br>Python | VSCode[***](https://marketplace.visualstudio.com/items?itemName=ebicochineal.select-highlight-cochineal-color) |[TopCoder Marathin Match](https://www.topcoder.com/members/ebicochineal/details/?track=DATA_SCIENCE&subTrack=MARATHON_MATCH)(黄)<br>[AtCoder Algorithm](https://atcoder.jp/users/ebicochineal?contestType=algo)(水)<br>[AtCoder Heuristic](https://atcoder.jp/users/ebicochineal?contestType=heuristic)(黄)<br>[CodinGame](https://www.codingame.com/profile/a79a37f66f7439f3b94bb35f30b329bd8000942)(Grandmaster)[*](https://www.codingame.com/contests/botters-of-the-galaxy/leaderboard/country/jp)|
+| えりすしー | [@eris_c](https://twitter.com/eris_c) | C++<br>Python<br>(PHP) | VSCode | [TopCoder Marathin Match](https://www.topcoder.com/members/eris_c/details/?track=DATA_SCIENCE&subTrack=MARATHON_MATCH)(黄)<br>[AtCoder Algorithm](https://beta.atcoder.jp/users/eris_c)(水)<br>[CodinGame](https://www.codingame.com/profile/b1e1fcdbc5e92e4e99bb1cdf97c9a0dc1800952)(Grandmaster)[*](https://www.codingame.com/contests/unleash-the-geek-amadeus/leaderboard/country/jp) |
+| チョットデタ | [@Chotto_Deta](https://twitter.com/Chotto_Deta) | Java<br>Python | VSCode<br>paiza.io | [AtCoder Algorithm](https://beta.atcoder.jp/users/chottodeta)(茶) |
+|海老もえぎ|[@yuh_](https://twitter.com/yuh_)| Python2 | Mery |[AtCoder Algorithm](https://beta.atcoder.jp/users/ebimoegi)(灰)|
 |でるぴー||Perl||[1](https://atcoder.jp/contests/abc124/tasks/abc124_a), [2](https://atcoder.jp/contests/abc123/tasks/abc123_a), [3](https://atcoder.jp/contests/abc123/tasks/abc123_b), [4](https://atcoder.jp/contests/agc030/tasks/agc030_a), [5](https://yukicoder.me/problems/no/810), [6](https://atcoder.jp/contests/agc002/tasks/agc002_a), [7](https://atcoder.jp/contests/iroha2019-day3/tasks/iroha2019_day3_a), [8](https://atcoder.jp/contests/abc085/tasks/abc085_c)|
 
 ## 仮入部
@@ -84,12 +84,7 @@ A １まず風呂場に近く掃除しやすい場所で裸になります。２
 #### 競技プログラミング必要な物とあまり必要ではないけどあった方が良いもの
 - ソースファイルを作成するためのテキストエディタ(VSCode, SublimeText, notepad++, メモ帳など)
 - ソースファイルをコンピュータで実行可能にするコンパイラ, インタプリタ(MinGW(Windows C/C++), csc.exe(C#), Pythonなど)
-- 本
-  - 競技プログラマー情-ジョー
-  - プログラミングコンテストチャレンジブック(蟻本)
-  - プログラミングコンテスト攻略のためのアルゴリズムとデータ構造(螺旋本)
-  - 最強最速アルゴリズマー養成講座 プログラミングコンテストTopCoder攻略ガイド(チーター本)
-  - 銀髪赤眼の後輩と学ぶ競技プログラミング
+
 - ツイッターアカウント(競プロ始めました！ってツイートするとブァァァってフォロワーが増える)
 - マスコット, ぬいぐるみとか(自分の代わりに覚えてもらえるアイコンとしても使える), [デバッグにも使えるらしい](https://twitter.com/chokudai/status/1194164802467196928)
 - たこ焼き器, エナジードリンク
@@ -112,10 +107,10 @@ A １まず風呂場に近く掃除しやすい場所で裸になります。２
 #### 色ランク  
 AtCoder 赤 > 橙 > 黄 > 青 > 水 > 緑 > 茶 > 灰 > 無  
 TopCoder 赤 > 黄 > 青 > 緑 > 灰 > 無  
-CoginGame レジェンド > ゴールド > シルバー > ブロンズ > ウッド  
+CoginGame guru > grandmaster > master > mentor > disciple > crafter rookie
+- レジェンド > ゴールド > シルバー > ブロンズ > ウッド  
 
 ---
-
 
 #### 競プロ用語
 |||
@@ -123,9 +118,10 @@ CoginGame レジェンド > ゴールド > シルバー > ブロンズ > ウッ�
 |ABC|AtCoder Beginner Contest|
 |ARC|AtCoder Regular Contest|
 |AGC|AtCoder Grand Contest|
+|AHC|AtCoder Heuristic Contest|
 |tourist|https://atcoder.jp/user/tourist|
-|長期コンテスト<br>MM<br>マラソン<br>マラソンマッチ|数時間～数週間の期間内に高スコアを出すことを競うコンテスト<br>社会人が多い|
-|短期コンテスト<br>アルゴリズム|競プロといえばこっちを指すことが多い<br>１～数時間で４問ほど出題される|
+|長期コンテスト<br>MM<br>マラソン<br>マラソンマッチ<br>ヒューリスティック|数時間～数週間の期間内に高スコアを出すことを競うコンテスト<br>社会人が多い|
+|短期コンテスト<br>アルゴリズム|100分～数時間で数問出題される|
 |ゴルフ<br>コードゴルフ|どれだけ短くかけるかを競う<br>言語の習得にオススメ|
 |ゲームAI|ゲームのAIを作成するコンテスト。<br>毎ターンゲームの状況などが入力として渡されるのでそれを受け取り行動を決定する処理を書く<br>AIとAIを対戦させる|
 
@@ -138,19 +134,35 @@ CoginGame レジェンド > ゴールド > シルバー > ブロンズ > ウッ�
 |[AtCoder用](https://github.com/ebicochineal/atcoder_samplecase_localtest)|Python3.5|win<br>linux|AtCoderのIDパス（login.txtにIDパスを平文で保存）|サンプルケースのみ|
 
 ---
+#### 競技プログラミング関連書籍と難易度
+https://e869120.hatenablog.com/entry/2021/12/02/225743  
+https://twitter.com/drken1215/status/1537610285061926912  
+
+[蟻本](https://www.amazon.co.jp/dp/B00CY9256C/) >> [典型 90 問](https://qiita.com/e869120/items/1b2a5f0f07fd927e44e9)  >> [けんちょん本](https://www.amazon.co.jp/dp/B08PV83L3N) >= [螺旋本](https://www.amazon.co.jp/dp/B00U5MVXZO) > [PAST本](https://www.amazon.co.jp/dp/483997277X) > [「アルゴリズム×数学」本](https://www.amazon.co.jp/dp/4297125218) >> [チーター本](https://www.amazon.co.jp/dp/B00E4FW2TE) == [AtCoDeer本](https://www.amazon.co.jp/dp/404604408X) >> [アルゴリズム図鑑](https://www.amazon.co.jp/dp/B07179Q3MJ)
+
+
+[パズルで鍛えるアルゴリズム力](https://www.amazon.co.jp/dp/4297126796)  
+[銀髪赤眼の後輩と学ぶ競技プログラミング](https://booth.pm/ja/items/1324517)  
+[銀髪赤眼の後輩と学ぶ競技プログラミング2](https://booth.pm/ja/items/1582824)  
+[競技プログラマー情(ジョー)](https://www.amazon.co.jp/dp/B01MS53YUZ/)  
+
+---
 
 #### 役立ちそうなリンク
+[AtCoder Clans](https://kato-hiro.github.io/AtCoderClans/)  
 [AtCoder Problems](https://kenkoooo.com/atcoder/#/table//)  
 [AtCoder Scores](https://atcoder-scores.herokuapp.com/)  
 [AtCoder Virtual Contest](https://not-522.appspot.com/)  
   
+[Topcoder Marathon Matchの始め方（最新版）](https://qiita.com/phocom/items/da0f8123f7a8d5201cbf)  
 [TopCoder CoderRank](https://community.topcoder.com/longcontest/stats/?&sr=1&nr=50&module=CoderRank)  
 [TopCoder Events](https://www.topcoder.com/community/events/)  
 [TopCoder Marathon Practice](https://community.topcoder.com/longcontest/?module=ViewPractice)  
+
   
 [Competitive Programming Contests Calendar](https://competitiveprogramming.info/calendar)
   
-[AtCoder　コンテスト解説](https://www.youtube.com/channel/UCtG3StnbhxHxXfE6Q4cPZwQ)  
+[AtCoder コンテスト解説](https://www.youtube.com/channel/UCtG3StnbhxHxXfE6Q4cPZwQ)  
 [焼きなまし法のコツ Ver. 1.2](http://shindannin.hatenadiary.com/entry/20121224/1356364040)  
 [Topcoder Marathon Matchの始め方（最新版）](https://qiita.com/phocom/items/da0f8123f7a8d5201cbf)  
 [マラソンマッチにおける精神論](http://chokudai.hatenablog.com/entry/2014/12/04/000132)  
@@ -172,6 +184,6 @@ CoginGame レジェンド > ゴールド > シルバー > ブロンズ > ウッ�
 [ei1333's page](https://ei1333.github.io/index.html)  
 [AtCoderでの競技プログラミングがもっと楽しくなるサイトまとめ](http://noimin.hatenablog.com/entry/2017/12/16/230900)  
 [AtCoderおもしろい問題集（高橋くんの奇行集）](https://ugis.hatenadiary.jp/entry/2018/10/27/011837)  
-
+[世界四連覇AIエンジニアがゼロから教えるゲーム木探索入門](https://qiita.com/thun-c/items/058743a25c37c87b8aa4)  [オセロAI世界1位になってオセロAIをｶﾝｾﾞﾝﾆﾘｶｲｼﾀ話](https://qiita.com/Nyanyan_Cube/items/195bdc47bb1d7c6f8b24)  
 
 
