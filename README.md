@@ -138,7 +138,7 @@ CoginGame guru > grandmaster > master > mentor > disciple > crafter rookie
 https://e869120.hatenablog.com/entry/2021/12/02/225743  
 https://twitter.com/drken1215/status/1537610285061926912  
 
-[蟻本](https://www.amazon.co.jp/dp/B00CY9256C/) >> [典型 90 問](https://qiita.com/e869120/items/1b2a5f0f07fd927e44e9)  >> [けんちょん本](https://www.amazon.co.jp/dp/B08PV83L3N) >= [螺旋本](https://www.amazon.co.jp/dp/B00U5MVXZO) > [PAST本](https://www.amazon.co.jp/dp/483997277X) > [「アルゴリズム×数学」本](https://www.amazon.co.jp/dp/4297125218) >> [チーター本](https://www.amazon.co.jp/dp/B00E4FW2TE) == [AtCoDeer本](https://www.amazon.co.jp/dp/404604408X) >> [アルゴリズム図鑑](https://www.amazon.co.jp/dp/B07179Q3MJ)
+[蟻本](https://www.amazon.co.jp/dp/B00CY9256C/) >> [典型 90 問](https://qiita.com/e869120/items/1b2a5f0f07fd927e44e9)  > [けんちょん本](https://www.amazon.co.jp/dp/B08PV83L3N) >= [螺旋本](https://www.amazon.co.jp/dp/B00U5MVXZO) > [PAST本](https://www.amazon.co.jp/dp/483997277X) > [「アルゴリズム×数学」本](https://www.amazon.co.jp/dp/4297125218) >> [チーター本](https://www.amazon.co.jp/dp/B00E4FW2TE) == [AtCoDeer本](https://www.amazon.co.jp/dp/404604408X) >> [アルゴリズム図鑑](https://www.amazon.co.jp/dp/B07179Q3MJ)
 
 
 [パズルで鍛えるアルゴリズム力](https://www.amazon.co.jp/dp/4297126796)  
