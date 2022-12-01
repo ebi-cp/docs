@@ -107,7 +107,7 @@ A １まず風呂場に近く掃除しやすい場所で裸になります。２
 #### 色ランク  
 AtCoder 赤 > 橙 > 黄 > 青 > 水 > 緑 > 茶 > 灰 > 無  
 TopCoder 赤 > 黄 > 青 > 緑 > 灰 > 無  
-CoginGame guru > grandmaster > master > mentor > disciple > crafter rookie
+CoginGame guru > grandmaster > master > mentor > disciple > crafter > rookie
 - レジェンド > ゴールド > シルバー > ブロンズ > ウッド  
 
 ---
@@ -120,7 +120,7 @@ CoginGame guru > grandmaster > master > mentor > disciple > crafter rookie
 |AGC|AtCoder Grand Contest|
 |AHC|AtCoder Heuristic Contest|
 |tourist|https://atcoder.jp/user/tourist|
-|長期コンテスト<br>MM<br>マラソン<br>マラソンマッチ<br>ヒューリスティック|数時間～数週間の期間内に高スコアを出すことを競うコンテスト<br>社会人が多い|
+|長期コンテスト<br>MM<br>マラソン<br>マラソンマッチ<br>ヒューリスティック|数時間～数週間の期間内に高スコアを出すことを競うコンテスト<br>|
 |短期コンテスト<br>アルゴリズム|100分～数時間で数問出題される|
 |ゴルフ<br>コードゴルフ|どれだけ短くかけるかを競う<br>言語の習得にオススメ|
 |ゲームAI|ゲームのAIを作成するコンテスト。<br>毎ターンゲームの状況などが入力として渡されるのでそれを受け取り行動を決定する処理を書く<br>AIとAIを対戦させる|
@@ -151,9 +151,7 @@ https://twitter.com/drken1215/status/1537610285061926912
 #### 役立ちそうなリンク
 [AtCoder Clans](https://kato-hiro.github.io/AtCoderClans/)  
 [AtCoder Problems](https://kenkoooo.com/atcoder/#/table//)  
-[AtCoder Scores](https://atcoder-scores.herokuapp.com/)  
-[AtCoder Virtual Contest](https://not-522.appspot.com/)  
-  
+
 [Topcoder Marathon Matchの始め方（最新版）](https://qiita.com/phocom/items/da0f8123f7a8d5201cbf)  
 [TopCoder CoderRank](https://community.topcoder.com/longcontest/stats/?&sr=1&nr=50&module=CoderRank)  
 [TopCoder Events](https://www.topcoder.com/community/events/)  
