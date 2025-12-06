@@ -117,7 +117,7 @@ namespace UdonExample {
         void Interact () {
             // activeSelfは現在アクティブかどうかがbool型で返ってきます
             // activeSelfを！で否定することで真なら偽、偽なら真にします。それをさらにSetActiveに渡すことでオンオフを切り替えます。
-            // this省略できます。このクラスのという意味です。
+            // thisは省略できます。このクラスのという意味です。
             // このメソッド内で同名の変数があってもthisをつけることで区別できます。
             // if (this.target != null) {} targetが未設定の場合エラーになるのでnullでない場合に実行します。ただしUdonSharpは遅いので自分が使うだけの物なら省いても良いかもしれません。
             if (this.target != null) { this.target.SetActive(!this.target.activeSelf); }
@@ -141,7 +141,7 @@ namespace UdonExample {
         
         void Interact () {
             // 複数のオブジェクト例
-            GameObject配列の中身がiに順番に入ります
+            // GameObject配列の中身がiに順番に入ります
             foreach (var i in this.targets) {
                 if (i != null) { i.SetActive(!i.activeSelf); }
             }
