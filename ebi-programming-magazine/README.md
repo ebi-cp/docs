@@ -35,6 +35,7 @@ Python3 [download page](https://www.python.org/downloads/release/python-365/) Wi
 - [18 実技で学ぶPython3 Discordbot](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/18/README.md)  
 - [19 ライフゲーム解説](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/19/README.md)  
 - [20 実技で学ぶPython3 ピクチャークロスワードパズルを作る](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/20/README.md)  
+- [21 VRChat ワールドギミックを作ろう１](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/21/README.md)  
 ---
 
 追加予定  
