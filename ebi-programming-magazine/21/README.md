@@ -1,4 +1,6 @@
 ## VRChat ワールドギミックを作ろう
+[この記事を書いている人のBooth](https://ebicochineal.booth.pm/)
+
 
 ## C#を学ぼう
 - UdonSharpはビルドが遅いので一回コードを書き換えると十数秒かかります。言語学習には不向きです。

@@ -1,4 +1,5 @@
 ## VRChat ワールドギミック 時計を作ろう
+[この記事を書いている人のBooth](https://ebicochineal.booth.pm/)
 
 ## 時計を作ろう
 - 時計はローカルでいいので簡単に作れます。
