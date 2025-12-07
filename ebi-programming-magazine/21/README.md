@@ -5,8 +5,8 @@
 
 #### paiza
 - paizaの手を動かしながら学べるビデオ講座も良いかもしれないです。C#入門編4: 配列の基礎まで無料
- https://paiza.jp/works/cs/primer
-- またpaizaではオンラインコンパイラが使えるので、ちょっと変更して実行しながら学習も簡単にできます。 https://paiza.io/ja/projects/new?language=csharp
+ `https://paiza.jp/works/cs/primer`
+- またpaizaではオンラインコンパイラが使えるので、ちょっと変更して実行しながら学習も簡単にできます。 `https://paiza.io/ja/projects/new?language=csharp`
 - 言語学習において最初のハードルである環境構築がオンラインコンパイラによって不要になるのは結構大きいです。
 - ただしUnityの機能は全く使えないので、あくまで基本文法を学ぶことしかできません。
 - paizaは競技プログラミング的な問題も用意されています。
