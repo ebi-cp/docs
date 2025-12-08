@@ -9,11 +9,8 @@
 - paizaの手を動かしながら学べるビデオ講座も良いかもしれないです。C#入門編4: 配列の基礎まで無料
  `https://paiza.jp/works/cs/primer`
 - またpaizaではオンラインコンパイラが使えるので、ちょっと変更して実行しながら学習も簡単にできます。 `https://paiza.io/ja/projects/new?language=csharp`
-- 言語学習において最初のハードルである環境構築がオンラインコンパイラによって不要になるのは結構大きいです。
-- ただしUnityの機能は全く使えないので、あくまで基本文法を学ぶことしかできません。
-- paizaは競技プログラミング的な問題も用意されています。
-- スキルチェックのCランク問題が何とか解けるようになればプログラミングできると言っても良いと思います。
-- ただしスキルチェックの問題の内容は外部には漏らさないでください。わからなくても人に聞くことができないということです。
+- 言語学習において最初のハードルである環境構築がオンラインコンパイラによって不要になるのは結構大きいです。ただしUnityの機能は全く使えないので、あくまで基本文法を学ぶことしかできません。
+- paizaは競技プログラミング的な問題も用意されています。スキルチェックのCランク問題が何とか解けるようになればプログラミングできると言っても良いと思います。ただしスキルチェックの問題の内容は外部には漏らさないでください。わからなくても人に聞くことができないということです。
 
 ## Unityスクリプトリファレンス
 - すべて覚える必要はなくて良く使うコンポーネントのクラスが大体どんな事ができるかを把握すれば良いと思います。
@@ -61,7 +58,7 @@ namespace UdonExample {
 - [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]は自分で変数を同期する場合に使いますが付けておいた方が良いです。これはUdonの機能です。  
 - public class Example1 : UdonSharpBehaviourでUdonSharpBehaviourを継承しています。MonoBehaviourのUdon版で継承することでスクリプトコンポーネントとしてゲームオブジェクトに付ける事ができるようになります。またゲームオブジェクトの機能やトランスフォームの機能を使うことができます。継承とは何なのかはC#の入門書のクラスについてを調べると詳しく載っていると思います。
 
--  Interactメソッドを実装しこのスクリプトをオブジェクトに付けることでボタンとして機能するようになりますがVR環境だとビームの伸びに安定性が無いです。VRChatの立体物のスイッチはほぼ全てこれで作られています。
+- Interactメソッドを実装しこのスクリプトをオブジェクトに付けることでボタンとして機能するようになりますがVR環境だとビームの伸びがVRとデスクトップで違うなどします。VRChatの立体物のインタラクトできるボタンは全てこれで作られていますが、uGUIを使ったボタンなどもありこちらはビームの伸びが安定しています。（ビデオプレイヤーなどのボタンです）
 
 ----
 
@@ -90,10 +87,8 @@ namespace UdonExample {
     }
 }
 ```
-- Debug.Logで文字列や数値をコンソールに出力できます。変数の中身などを確認できたりするのでデバッグではよく使います。
-- Debug.Logで数値と文字を一緒に出力する場合、数値型の変数 a　"文字列" + a.ToString() で　aを文字列型に直して +で文字列を結合させることができます。
-- FixedUpdateではInput.GetKeyDown、Input.GetKeyUpは拾えないことがあるのでFixedUpdateでは使わない方が良いです
-- Input.GetKeyは現在の状態なのでFixedUpdateではこちらを使うと良いです
+- Debug.Logで文字列や数値をコンソールに出力できます。変数の中身などを確認できたりするのでデバッグではよく使います。Debug.Logで数値と文字を一緒に出力する場合、数値型の変数 a　"文字列" + a.ToString() で　aを文字列型に直して +で文字列を結合させることができます。
+- FixedUpdateではInput.GetKeyDown、Input.GetKeyUpは拾えないことがあるのでFixedUpdateでは使わない方が良いです。Input.GetKeyは現在の状態なのでFixedUpdateではこちらを使うと良いです
 - UnityではInputはよく使いますが、VRChatではデスクトップくらいでしか使わないのであまり使いません。
 - UdonSharpは普通のC#よりだいぶ遅いのであまり毎フレーム呼ばれるUpdate内で処理すると重くなります。毎秒60回程度のFixedUpdateは多少ましですがこちらでもあまり処理しない方が良いです。
 ----
@@ -196,8 +191,8 @@ namespace UdonExample {
 
 - 変数の同期を使いスイッチの状態を同期させ、その後実際のオブジェクトのオンオフを切り替える物を作ります。
 - 開始時にtargetのアクティブ状態をisActiveに入れます。
-- ゲーム内でUseされたらオーナーのOwnerUseを実行します。
-- オーナーはOwnerUse内でisActiveを反転し同期します。そしてTargetObjectSetActive実行し実際のゲームオブジェクトのアクティブ状態を変更します。
+- ゲーム内でUseされたらオーナーのOwnerSyncを実行します。
+- オーナーはOwnerSync内でisActiveを反転し同期します。そしてTargetObjectSetActive実行し実際のゲームオブジェクトのアクティブ状態を変更します。
 - オーナー以外のプレイヤーは同期変数を受け取った直後にTargetObjectSetActive実行し実際のゲームオブジェクトのアクティブ状態を変更します。
 
 ```cs
@@ -227,11 +222,11 @@ namespace UdonExample {
         
         void Interact () {
             // オブジェクトオーナーに送ります。
-            this.SendCustomNetworkEvent(NetworkEventTarget.Owner, "OwnerUse");
+            this.SendCustomNetworkEvent(NetworkEventTarget.Owner, "OwnerSync");
         }
         
         // オーナーが実行します
-        public void OwnerUse () {
+        public void OwnerSync () {
             // 変数の真偽を逆に
             this.isActive = !this.isActive;
             
