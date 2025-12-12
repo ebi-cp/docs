@@ -37,6 +37,8 @@ Python3 [download page](https://www.python.org/downloads/release/python-365/) Wi
 - [20 実技で学ぶPython3 ピクチャークロスワードパズルを作る](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/20/README.md)  
 - [21 VRChat ワールドギミックを作ろう](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/21/README.md)  
 - [22 VRChat ワールドギミック 時計を作ろう](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/22/README.md)  
+- [23 VRChat ワールドギミック リバーシを作ろう](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/23/README.md)  
+
 ---
 
 追加予定  

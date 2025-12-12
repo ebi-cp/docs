@@ -55,10 +55,10 @@ namespace UdonExample {
 ```
 - ネームスペースはクラス名がかぶることを防いでくれます。例えばグローバルスイッチのクラスを作るとしたらclass GlobalSwitchですが他人の作った同じ名前のクラスがあるかもしれません。それを含むアセットをインポートすると名前がぶつかりエラーになります。  
 
-- [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]は自分で変数を同期する場合に使いますが付けておいた方が良いです。これはUdonの機能です。  
+- [UdonBehaviourSyncMode(BehaviourSyncMode.None)]は同期タイプです。同期しない物にはNone、同期するものにはManual、Continuousなどを使います。  
 - public class Example1 : UdonSharpBehaviourでUdonSharpBehaviourを継承しています。MonoBehaviourのUdon版で継承することでスクリプトコンポーネントとしてゲームオブジェクトに付ける事ができるようになります。またゲームオブジェクトの機能やトランスフォームの機能を使うことができます。継承とは何なのかはC#の入門書のクラスについてを調べると詳しく載っていると思います。
 
-- Interactメソッドを実装しこのスクリプトをオブジェクトに付けることでボタンとして機能するようになりますがVR環境だとビームの伸びがVRとデスクトップで違うなどします。VRChatの立体物のインタラクトできるボタンは全てこれで作られていますが、uGUIを使ったボタンなどもありこちらはビームの伸びが安定しています。（ビデオプレイヤーなどのボタンです）
+- Interactメソッドを実装しこのスクNoneリプトをオブジェクトに付けることでボタンとして機能するようになりますがVR環境だとビームの伸びがVRとデスクトップで違うなどします。VRChatの立体物のインタラクトできるボタンは全てこれで作られていますが、uGUIを使ったボタンなどもありこちらはビームの伸びが安定しています。（ビデオプレイヤーなどのボタンです）
 
 ----
 
@@ -70,7 +70,7 @@ using VRC.SDKBase;
 using VRC.Udon;
 
 namespace UdonExample {
-    [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
+    [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
     public class Example2 : UdonSharpBehaviour {
         void FixedUpdate() {}
         void Update () {
@@ -102,7 +102,7 @@ using VRC.SDKBase;
 using VRC.Udon;
 
 namespace UdonExample {
-    [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
+    [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
     public class LocalSwitch : UdonSharpBehaviour {
         // publicにすることでインスペクタからオブジェクトなどを設定できるようになります。
         // ここではtargetのアクティブ、非アクティブを切り替えられるようにします。
@@ -131,7 +131,7 @@ using VRC.SDKBase;
 using VRC.Udon;
 
 namespace UdonExample {
-    [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
+    [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
     public class LocalSwitch : UdonSharpBehaviour {
         // 複数のオブジェクトを配列で持つ
         public GameObject[] targets;
