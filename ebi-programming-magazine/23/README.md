@@ -25,6 +25,7 @@
 このようなものを作り縦横8個ずつ並べると良いでしょう。  
 
 [ReversiSingleCell.unitypackage リンク先のView rawを押すとダウンロードできます](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/23/ReversiSingleCell.unitypackage)  
+
 ```cs
 using UdonSharp;
 using UnityEngine;
@@ -43,8 +44,8 @@ namespace UdonExample {
         byte cellStateSync = 0;
         
         void Start () {
-            // 初期値をもとに描画
-            this.DrawCell();
+            // 初期値をもとにSetActiveを更新
+            this.UpdateCell();
         }
         
         public void Use () {
@@ -55,15 +56,15 @@ namespace UdonExample {
             this.cellState = (byte)((this.cellState+1) % 3);
             this.cellStateSync = this.cellState;
             this.RequestSerialization();
-            this.DrawCell();
+            this.UpdateCell();
         }
         
         public override void OnDeserialization () {
             this.cellState = this.cellStateSync;
-            this.DrawCell();
+            this.UpdateCell();
         }
         
-        void DrawCell () {
+        void UpdateCell () {
             // どちらかがnullなら何もしない
             if (this.black == null || this.white == null) { return; }
             
