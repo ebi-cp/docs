@@ -70,7 +70,7 @@ namespace UdonExample {
 #### uGUI UI.Textで表示
 - UI.Text型のtextに文字列を入れれば指定したテキストを変更できます。
 - uGUIはゲームオブジェクトにCanvasを追加、子にTextを追加、サイズ指定などの設定をしなければいけません。
-- 非常に面倒なのでunitypackageを用意しました。[Clock.unitypackage](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/22/Clock.unitypackage)
+- 非常に面倒なのでunitypackageを用意しました。[Clock.unitypackage リンク先のView rawを押すとダウンロードできます](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/22/Clock.unitypackage)
 #### 自分でuGUIを追加する場合
 - GameObject - Canvas　RenderModeをWorldSpaceに　サイズが大きいのでScaleを0.001に
   - GameObject - Text (Legacy)

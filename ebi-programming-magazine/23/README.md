@@ -24,7 +24,7 @@
   
 このようなものを作り縦横8個ずつ並べると良いでしょう。  
 
-[ReversiSingleCell.unitypackage](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/23/ReversiSingleCell.unitypackage)  
+[ReversiSingleCell.unitypackage リンク先のView rawを押すとダウンロードできます](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/23/ReversiSingleCell.unitypackage)  
 ```cs
 using UdonSharp;
 using UnityEngine;
@@ -111,7 +111,7 @@ void ForcedSync (int n) {// オーナー、非オーナー
 }
 
 ```
-- この同期方法スクリプトがシンプルになり、操作した本人はラグが全く無いというメリットがあります。前回の方法でも変数の同期を待たずに見た目の更新などすればラグを感じないように出来なくも無いです。
+- この同期方法はスクリプトがシンプルになり、操作した本人はラグが全く無いというメリットがあります。前回の方法でも変数の同期を待たずに見た目の更新などすればラグを感じないように出来なくも無いです。
 - この同期方法はデメリットもあります。それがオーナー分裂問題です。SetOwnerを同時にしてしまうと互いにオーナーになり同期できなくなります。
 - リバーシは交互にボタンを押すことになります。意図的に同期ずれを引き起こさなければ同期ずれは起きにくいものと思われます。
 - 同期できなくなるのはボタンを操作していたプレイヤーのみです。第三者がゲームでオーナーになった途端同期ずれは解消されます。同期ずれを意図的に引き起こすためプレイヤーAさんとBさんがいたとして、その二人で同期ずれを引き起こしたとしても他のプレイヤーCさんとDさんが対戦しようとボタンを押した段階でオーナーが移るので正常に同期できます。
@@ -121,7 +121,7 @@ void ForcedSync (int n) {// オーナー、非オーナー
 - 変数をコピーし同期をリクエストします。
 - 同期された変数をもとに石の表示を更新します。
 
-[ReversiManual.unitypackage](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/23/ReversiManual.unitypackage)  
+[ReversiManual.unitypackage リンク先のView rawを押すとダウンロードできます](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/23/ReversiManual.unitypackage)  
 ```cs
 using UdonSharp;
 using UnityEngine;
@@ -289,7 +289,7 @@ namespace UdonExample {
 - 変数をコピーし同期をリクエストします。
 - 同期された変数をもとに石の表示を更新と、カウント用のテキストの更新、次置くことができる位置のボタンのみ有効にします。
 
-[Reversi.unitypackage](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/23/Reversi.unitypackage)  
+[Reversi.unitypackage リンク先のView rawを押すとダウンロードできます](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/23/Reversi.unitypackage)  
 ```cs
 using UdonSharp;
 using UnityEngine;
