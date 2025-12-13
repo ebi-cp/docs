@@ -1,7 +1,7 @@
 ## VRChat ワールドギミック リバーシを作ろう
 [この記事を書いている人のBooth](https://ebicochineal.booth.pm/)
 
-![Image](./4.png)
+![Image](./5.png)
 
 
 ## 手動リバーシ
@@ -14,7 +14,7 @@
 これでとりあえず二人で遊べそうです。  
 
 - Cell [Canvas]、[GraphicRaycaster]、[VRC UIShape]、[SingleCell (Script)]
-  - Panel [Image] 緑色の背景Panel
+  - Background [Image] 緑色の背景Panel
   - White [Image] Backgroundより少し小さくする
   - Black [Image] Backgroundより少し小さくする
   - Button [Button] 色が透明のボタン　SingleCellスクリプトを指定しSendCustomEventでUseメソッドを指定
@@ -344,7 +344,7 @@ namespace UdonExample {
             return cnt;
         }
         
-        // 石を置くことが出Ð切るかどうかを返します
+        // 石を置くことが出来るかどうかを返します
         bool IsValid (int n) {
             int px = n % this.boardSize;
             int py = n / this.boardSize;
