@@ -107,7 +107,7 @@ namespace UdonExample {
         // publicにすることでインスペクタからオブジェクトなどを設定できるようになります。
         // ここではtargetのアクティブ、非アクティブを切り替えられるようにします。
         // 複数のオブジェクトを切り替えるにはtargetの子に対象を入れるか、GameObjectを配列にして複数設定できるようにすれば良いです。
-        // また自身の子を切り替えるようにすればこのtargetの変数も必要ないです。子ではなく自分自身（this.gameObject）にするのはスクリプトも止まるのでダメです.
+        // また自身の子(this.transform.GetChild(0))を切り替えるようにすればこのtargetの変数も必要ないです。子ではなく自分自身（this.gameObject）にするのはスクリプトも止まるのでダメです.
         
         public GameObject target;
         

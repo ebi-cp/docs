@@ -6,8 +6,7 @@
 
 ## 手動リバーシ
 - 同期はするけど裏返すのは手動で、というリバーシを考えてみましょう。
-- グローバルスイッチのような物を8*8敷き詰めたら出来そう。
-- ただしオンオフではなく「なし」、「白」、「黒」と切り替える。
+- グローバルスイッチのような物を8*8敷き詰めたら出来そう。ただしオンオフではなく「なし」、「白」、「黒」と切り替える。
 - 状態が「なし」、「白」、「黒」の３つなので真と偽の2つの状態のBool型ではなく数値型を使う。
 - 数値型のInt型は4byteなのでサイズが大きく同期する時の通信に無駄が発生するので避けたい。なのでByte型を使う。
 
@@ -41,16 +40,17 @@ namespace UdonExample {
         byte cellStateSync = 0;
         
         void Start () {
-            // 初期値をもとにSetActiveを更新
+            // 初期値をもとにSetActiveで更新
             this.UpdateCell();
         }
         
+        // UIのボタンから呼ばれるメソッドです
         public void Use () {
             this.SendCustomNetworkEvent(NetworkEventTarget.Owner, "OwnerSync");
         }
         
         public void OwnerSync () {
-            this.cellState = (byte)((this.cellState+1) % 3);
+            this.cellState = (byte)((this.cellState+1) % 3);// 0 -> 1 -> 2 -> 0...となります
             this.cellStateSync = this.cellState;
             this.RequestSerialization();
             this.UpdateCell();
@@ -115,7 +115,7 @@ void ForcedSync (int n) {// オーナー、非オーナー
 - 同期できなくなるのはボタンを操作していたプレイヤーのみです。第三者がゲームでオーナーになった途端同期ずれは解消されます。同期ずれを意図的に引き起こすためプレイヤーAさんとBさんがいたとして、その二人で同期ずれを引き起こしたとしても他のプレイヤーCさんとDさんが対戦しようとボタンを押した段階でオーナーが移るので正常に同期できます。
  
 #### スクリプト全体の流れ
-- ボタンが押されるとオーナーでないならオーナになります。
+- ボタンが押されるとオーナーでないならオーナーになります。
 - 変数をコピーし同期をリクエストします。
 - 同期された変数をもとに石の表示を更新します。
 
