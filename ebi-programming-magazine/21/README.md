@@ -256,6 +256,8 @@ namespace UdonExample {
 }
 ```
 - 基本的な同期スイッチですが、これだけでシンプルなボードゲームなら作れるかと思います。
+- isActiveとisActiveSyncはコピーして同期先で再びコピーするなら1つにまとめられそうです。最初はそうしていたのですが、よくわからない原因で問題が起こってから、同期変数は同期直後にあまり変更しない方が良いと言うのをどこかで見かけた事もあり、これのせいかな？と思い２つ使うことにしました。
+
 
 ----
 - [戻る](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/README.md)  
