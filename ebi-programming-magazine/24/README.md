@@ -158,6 +158,8 @@ GUIアプリの場合は.pywにすると良いでしょう
 あとはやりたい事を検索したりAIに聞けば何でもできるはずです  
 
 
+VRChatでOSCを使うにはOSC有効にする必要があります。  
+
 [VRChat公式のOSCの記事](https://docs.vrchat.com/docs/osc-as-input-controller)
 
 
