@@ -38,6 +38,7 @@ Python3 [download page](https://www.python.org/downloads/release/python-365/) Wi
 - [21 VRChat ワールドギミックを作ろう](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/21/README.md)  
 - [22 VRChat ワールドギミック 時計を作ろう](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/22/README.md)  
 - [23 VRChat ワールドギミック リバーシを作ろう](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/23/README.md)  
+- [24 好きなもの発表会 Python入門とVRChat OSCでアバター切り替えアプリ](https://github.com/ebi-cp/docs/blob/master/ebi-programming-magazine/24/README.md)  
 
 ---
 
